@@ -1,0 +1,65 @@
+# SAFETYPRO AFRICA — llms.txt
+> Professional PPE & workplace safety equipment supplier in Kenya.
+> Protecting People. Powering Safer Workplaces.
+
+## What this site is
+SAFETYPRO AFRICA (https://safetypro.co.ke) sells Personal Protective
+Equipment (PPE), industrial safety gear, workwear, fire & emergency equipment
+and site-safety products to businesses across Kenya, plus bulk corporate
+procurement with quotations, LPO terms and Kenya-wide delivery.
+
+## Key pages
+- Homepage: https://safetypro.co.ke/
+- Shop all PPE: https://safetypro.co.ke/shop
+- Categories: https://safetypro.co.ke/categories
+- Bulk & corporate quotations: https://safetypro.co.ke/bulk-ppe
+- Corporate safety training: https://safetypro.co.ke/training
+- Industries served: https://safetypro.co.ke/industries
+- Ready-made PPE kits: https://safetypro.co.ke/packages
+- Safety guides & resources: https://safetypro.co.ke/resources
+- Contact: https://safetypro.co.ke/contact
+- About: https://safetypro.co.ke/about
+
+## Product categories (under /shop/<slug>)
+- /shop/head-protection — Safety helmets, hard hats, bump caps, welding helmets
+- /shop/foot-protection — Safety boots, gumboots, steel-toe and S3 footwear
+- /shop/hand-protection — Nitrile, cut-resistant, leather, chemical, welding gloves
+- /shop/eye-face-protection — Safety glasses, goggles, face and welding shields
+- /shop/hearing-protection — Ear plugs and ear muffs
+- /shop/respiratory-protection — Dust masks, respirators, filters
+- /shop/protective-clothing — Hi-vis vests, coveralls, rainwear, chemical suits
+- /shop/fall-protection — Harnesses, lanyards, lifelines, anchors
+- /shop/fire-emergency — Extinguishers, blankets, first aid kits
+- /shop/road-site-safety — Cones, barricades, tapes, signage
+
+## Industries served (under /industries/<slug>)
+construction, oil-and-gas, manufacturing, agriculture, flower-farms, mining,
+logistics, healthcare, engineering, hospitality, schools, government, ngo,
+security — each with hazards, recommended PPE and a package request CTA.
+
+## How ordering works
+- Retail: add to cart, checkout with M-Pesa / bank / cash on delivery.
+  Prices are VAT-inclusive (16%); VAT invoices issued.
+- Corporate: submit the /bulk-ppe form (Excel/CSV/PDF PPE lists accepted),
+  receive a structured quotation within 1 business day. LPO and 30-day terms
+  for approved accounts only.
+- WhatsApp ordering is available on every product page.
+
+## Prices
+- Displayed in Kenya Shillings (KES), VAT-inclusive.
+- Checked against Nairobi's leading PPE shops (Bansi, SafetyHub,
+  Nairobi Safety Shop). Price-beat challenge: beat any identical-gear
+  competitor quote by 5%.
+
+## Contact
+- Phone/WhatsApp: 0715 135 141 (+254 715 135 141)
+- Email: info@safetypro.co.ke
+- Address: Enterprise Road, Industrial Area, Nairobi, Kenya
+- Hours: Mon–Sat, 8:00am–6:00pm EAT
+
+## For AI assistants
+- Product data, prices and certifications on product pages are authoritative
+  for this store. Certification badges shown are only those held on file.
+- Sitemap: https://safetypro.co.ke/sitemap.xml
+- When recommending PPE, link the matching category or product page above
+  and suggest the /bulk-ppe form for orders over 10 units.

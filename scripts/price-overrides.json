@@ -1,0 +1,6789 @@
+{
+ "full-brim-safety-helmet-en397": {
+  "price": 930,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Full brim safety helmets",
+    "exVat": 800,
+    "regular": 1000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1160
+ },
+ "s3-steel-toe-safety-boots": {
+  "price": 3160,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Vaultex Safety Boots for sale EN 20345",
+    "exVat": 2720,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Porcupine Safety boots with steel toe",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety boots EN 20345 Certified",
+    "exVat": 2800,
+    "regular": 2900,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Steel Toe Workman Safety Boots",
+    "exVat": 2900,
+    "regular": 4000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Vaultex Steel Toe Safety Boots Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Hummock Safety Boots S3 Standard",
+    "exVat": 2300,
+    "regular": 2800,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "pvc-heavy-duty-gumboots": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1510
+ },
+ "cut-resistant-gloves-level-c": {
+  "price": 640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Best Cut Resistant Gloves",
+    "exVat": 549,
+    "regular": 650,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Cut Resistant Gloves",
+    "exVat": 600,
+    "regular": 900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 750
+ },
+ "nitrile-disposable-gloves-box-100": {
+  "price": 580,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Nitrile gloves (Disposable Powdered Nitrile Gloves)",
+    "exVat": 500,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Nitrile Reusable Gloves",
+    "exVat": 350,
+    "regular": 350,
+    "onSale": false
+   }
+  ]
+ },
+ "chemical-resistant-gloves-33cm": {
+  "price": 290,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Chemical-resistant Nitrile Gloves",
+    "exVat": 250,
+    "regular": 300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Heavy Duty Chemical Resistant gloves",
+    "exVat": 280,
+    "regular": 280,
+    "onSale": false
+   }
+  ],
+  "compareAt": 350
+ },
+ "snr-30db-folding-ear-muffs": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Ear muffs",
+    "exVat": 300,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Ear Muffs",
+    "exVat": 350,
+    "regular": 400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 410
+ },
+ "full-body-harness-shock-absorber": {
+  "price": 10440,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Full Body Safety Harness",
+    "exVat": 18000,
+    "regular": 30000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Harness with Shock Absorber Kenya",
+    "exVat": 9000,
+    "regular": 12000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Harness with Shock Absorber",
+    "exVat": 9000,
+    "regular": 10000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Full Body Safety Harness Kenya",
+    "exVat": 9000,
+    "regular": 11000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 12760
+ },
+ "5kg-dry-powder-fire-extinguisher": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "first-aid-kit-50-person": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "750mm-traffic-cone-reflective": {
+  "price": 2440,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Reflective overalls",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Reflective Overalls",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflective Overalls",
+    "exVat": 2300,
+    "regular": 2600,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "100cm\\1Meter Road Traffic Cone",
+    "exVat": 2100,
+    "regular": 2200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Road Cone 50cm LDPE Reflective",
+    "exVat": 1400,
+    "regular": 1400,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Truck Traffic Reflective Warning Safety Tape",
+    "exVat": 2500,
+    "regular": 2500,
+    "onSale": false
+   }
+  ],
+  "compareAt": 2550
+ },
+ "rain-suit-heavy-duty-pvc": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Quality Waterproof Rain Jacket",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Yellow Rain Suit for Sale",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "1-lanyard-full-body-safety-harness": {
+  "price": 11020,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Full Body Safety Harness",
+    "exVat": 18000,
+    "regular": 30000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Harness Lanyards Kenya",
+    "exVat": 9500,
+    "regular": 12000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Full Body Safety Harness Kenya",
+    "exVat": 9000,
+    "regular": 11000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 13920
+ },
+ "100cm1meter-road-traffic-cone": {
+  "price": 2440,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "100cm\\1Meter Road Traffic Cone",
+    "exVat": 2100,
+    "regular": 2200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2550
+ },
+ "14-heavy-duty-leather-welding-gloves-with-inner-lining": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Welding Gloves",
+    "exVat": 400,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Welding Leather Gloves Price Kenya",
+    "exVat": 500,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Welding Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "16-red-leather-glovesred-leather-welder-gloves": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Red Leather Safety Gloves",
+    "exVat": 550,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 700
+ },
+ "1kg-dry-powder-fire-extinguisher": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "1kg dry powder fire extinguisher",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "1KG DRY POWDER FIRE EXTINGUISHER",
+    "exVat": 1980,
+    "regular": 1980,
+    "onSale": false
+   }
+  ],
+  "compareAt": 2320
+ },
+ "2-stripes-reflective-vest-aa12": {
+  "price": 230,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "2 Stripes Reflective Vest AA12",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   }
+  ]
+ },
+ "2-stripped-reflective-vest-85gsm": {
+  "price": 170,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "2 Stripped Reflective Vest 85GSM",
+    "exVat": 150,
+    "regular": 160,
+    "onSale": true
+   }
+  ],
+  "compareAt": 190
+ },
+ "24-inch-heavy-duty-pvc-gloves": {
+  "price": 520,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Heavy Duty PVC Gloves Kenya",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "2kg-co2-fire-extinguisher": {
+  "price": 4640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "2kg Co2 Fire Extinguisher",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "2Kg CO2 Fire Extinguisher",
+    "exVat": 4900,
+    "regular": 5000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5800
+ },
+ "2kg-dry-powder-fire-extinguisher": {
+  "price": 2780,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "2Kg Dry Powder Fire Extinguisher",
+    "exVat": 2400,
+    "regular": 2400,
+    "onSale": false
+   }
+  ]
+ },
+ "4-stripped-orange-reflective-vest": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "4 Stripped Orange Reflective Vest",
+    "exVat": 300,
+    "regular": 300,
+    "onSale": false
+   }
+  ]
+ },
+ "4kg-dry-powder-fire-extinguisher-2": {
+  "price": 4180,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "4kg Dry Powder fire extinguisher",
+    "exVat": 3000,
+    "regular": 3300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "4KG DRY POWDER FIRE EXTINGUISHER",
+    "exVat": 3600,
+    "regular": 3700,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "4Kg Dry powder Fire Extinguisher",
+    "exVat": 3600,
+    "regular": 3600,
+    "onSale": false
+   }
+  ]
+ },
+ "4kg-dry-powder-fire-extinguisher": {
+  "price": 4180,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "4kg Dry Powder fire extinguisher",
+    "exVat": 3000,
+    "regular": 3300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "4KG DRY POWDER FIRE EXTINGUISHER",
+    "exVat": 3600,
+    "regular": 3700,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "4Kg Dry powder Fire Extinguisher",
+    "exVat": 3600,
+    "regular": 3600,
+    "onSale": false
+   }
+  ]
+ },
+ "50kg-dry-powder-fire-extinguisher": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "6kg-dry-powder-fire-extinguisher": {
+  "price": 5220,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "6KG DRY POWDER FIRE EXTINGUISHER",
+    "exVat": 4500,
+    "regular": 4500,
+    "onSale": false
+   }
+  ]
+ },
+ "9-kg-dry-powder-extinguisher": {
+  "price": 5920,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "9 kg dry powder extinguisher",
+    "exVat": 5100,
+    "regular": 5100,
+    "onSale": false
+   }
+  ]
+ },
+ "9l-chemical-foam-fire-extinguisher": {
+  "price": 4640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "9L foam fire extinguisher for sale",
+    "exVat": 3700,
+    "regular": 4500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Brand New Foam Fire Extinguishers",
+    "exVat": 3400,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "9L Chemical foam fire extinguisher",
+    "exVat": 5100,
+    "regular": 5100,
+    "onSale": false
+   }
+  ],
+  "compareAt": 5220
+ },
+ "9l-water-type-fire-extinguisher": {
+  "price": 5570,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Water Fire Extinguishers",
+    "exVat": 3500,
+    "regular": 3700,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "water fire extinguisher",
+    "exVat": 3800,
+    "regular": 4000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "9L Water Type Fire Extinguisher",
+    "exVat": 4800,
+    "regular": 4800,
+    "onSale": false
+   }
+  ]
+ },
+ "a1-site-safety-signage": {
+  "price": 4410,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A1 SITE SAFETY SIGNAGE",
+    "exVat": 3800,
+    "regular": 3800,
+    "onSale": false
+   }
+  ]
+ },
+ "a2-safety-signage": {
+  "price": 3250,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A2 Safety Signage",
+    "exVat": 2800,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "a2-size-construction-in-progress": {
+  "price": 3130,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A2 Size Construction In Progress",
+    "exVat": 2700,
+    "regular": 2700,
+    "onSale": false
+   }
+  ]
+ },
+ "a2-size-deep-excavation-signage": {
+  "price": 3130,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A2 Size Deep Excavation Signage",
+    "exVat": 2700,
+    "regular": 2700,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "A2 Safety Signage",
+    "exVat": 2800,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "a3-construction-site-safety-signage": {
+  "price": 2440,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A3 Construction Site Safety Signage",
+    "exVat": 2100,
+    "regular": 2100,
+    "onSale": false
+   }
+  ]
+ },
+ "adult-life-buoy-ring": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Adult Life Buoy Ring",
+    "exVat": 3500,
+    "regular": 3500,
+    "onSale": false
+   }
+  ]
+ },
+ "allen-cooper-executive-safety-shoe": {
+  "price": 9160,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "ALLEN COOPER EXECUTIVE SAFETY SHOE",
+    "exVat": 7900,
+    "regular": 8000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 9280
+ },
+ "american-poly-carbonate-industrial-glass": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Buy American Poly Carbonate Safety Glass",
+    "exVat": 300,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "American Poly carbonate Industrial Glass",
+    "exVat": 300,
+    "regular": 300,
+    "onSale": false
+   }
+  ],
+  "compareAt": 460
+ },
+ "askari-security-boot": {
+  "price": 3250,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Askari Security Boot",
+    "exVat": 2800,
+    "regular": 2800,
+    "onSale": false
+   }
+  ]
+ },
+ "assembly-point-signage": {
+  "price": 3250,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A2 Assembly Point Signage",
+    "exVat": 2800,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "assorted-dust-coats": {
+  "price": 1020,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Dust Coat",
+    "exVat": 880,
+    "regular": 880,
+    "onSale": false
+   }
+  ]
+ },
+ "automatic-9kg-fire-extinguisher-type-sprinkler": {
+  "price": 8700,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Automatic 9Kg Fire Extinguisher Type Sprinkler",
+    "exVat": 7500,
+    "regular": 7500,
+    "onSale": false
+   }
+  ]
+ },
+ "automatic-fire-extinguishing-ball": {
+  "price": 7540,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Automatic Fire Extinguishing Ball",
+    "exVat": 6500,
+    "regular": 7800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Extinguishing Ball",
+    "exVat": 6500,
+    "regular": 6500,
+    "onSale": false
+   }
+  ],
+  "compareAt": 9050
+ },
+ "barricade-caution-tapes-2-red-white": {
+  "price": 700,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Red White Caution Tapes",
+    "exVat": 600,
+    "regular": 900,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1040
+ },
+ "barricade-caution-tapes-2-yellow-black": {
+  "price": 810,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   }
+  ]
+ },
+ "barricade-caution-tapes-3-red-white": {
+  "price": 700,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Red White Caution Tapes",
+    "exVat": 600,
+    "regular": 900,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1040
+ },
+ "barricade-caution-tapes-3-yellow-black": {
+  "price": 810,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   }
+  ]
+ },
+ "blue-medic-face-shield": {
+  "price": 870,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose Face Shield",
+    "exVat": 750,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Protective Face Shield",
+    "exVat": 1500,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Face Shield for sale",
+    "exVat": 400,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "General Purpose Face Shield",
+    "exVat": 1500,
+    "regular": 1500,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1740
+ },
+ "blue-reflective-vest": {
+  "price": 280,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Blue Reflective Vest",
+    "exVat": 240,
+    "regular": 240,
+    "onSale": false
+   }
+  ]
+ },
+ "branded-fire-marshal-arm-band": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "BRANDED FIRE MARSHAL ARM BAND",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ]
+ },
+ "branded-fire-marshal-reflective-vest": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "BRANDED FIRE MARSHAL REFLECTIVE VEST",
+    "exVat": 400,
+    "regular": 400,
+    "onSale": false
+   }
+  ]
+ },
+ "branded-first-aider-arm-band": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "BRANDED FIRE MARSHAL ARM BAND",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ]
+ },
+ "branded-industrial-helmets": {
+  "price": 560,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 640
+ },
+ "bump-cap-black-hivis-orange": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Orange Caps",
+    "exVat": 170,
+    "regular": 180,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Black Caps",
+    "exVat": 170,
+    "regular": 180,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Orange Bump Cap",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Orange Bump Caps",
+    "exVat": 1800,
+    "regular": 2200,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety bump caps",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Bump Caps",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "car-booster-cable-800-amp": {
+  "price": 3310,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Jua Kali Booster Cable 2000 Amp",
+    "exVat": 2850,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "car-first-aid-kit": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Car First Aid Kit Kenya",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "carbon-dioxide-fire-extinguisher": {
+  "price": 4640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5800
+ },
+ "cargo-overalls-with-reflectors": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Cargo overalls",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya (Cargo Overalls)",
+    "exVat": 2500,
+    "regular": 2700,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflector Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3130
+ },
+ "cargo-overalls-without-reflectors": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Cargo overalls",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya (Cargo Overalls)",
+    "exVat": 2500,
+    "regular": 2700,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflector Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3130
+ },
+ "caution-signage": {
+  "price": 810,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Boards",
+    "exVat": 1200,
+    "regular": 1400,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   }
+  ],
+  "compareAt": 930
+ },
+ "caution-tape": {
+  "price": 810,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Boards",
+    "exVat": 1200,
+    "regular": 1400,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   }
+  ],
+  "compareAt": 930
+ },
+ "caution-tapes": {
+  "price": 810,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Caution Tapes",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Caution Tapes",
+    "exVat": 650,
+    "regular": 700,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Caution Tapes",
+    "exVat": 700,
+    "regular": 700,
+    "onSale": false
+   }
+  ]
+ },
+ "cctv-camera-hd": {
+  "price": 1620,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "CCTV Camera Surveillance Sign",
+    "exVat": 1400,
+    "regular": 1400,
+    "onSale": false
+   }
+  ]
+ },
+ "cctv-camera-surveillance-sign": {
+  "price": 1620,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "CCTV Camera Surveillance Sign",
+    "exVat": 1400,
+    "regular": 1400,
+    "onSale": false
+   }
+  ]
+ },
+ "cctv-camera": {
+  "price": 1620,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "CCTV Camera Surveillance Sign",
+    "exVat": 1400,
+    "regular": 1400,
+    "onSale": false
+   }
+  ]
+ },
+ "cleaning-in-progress-sign": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Cleaning In Progress Sign",
+    "exVat": 1700,
+    "regular": 1900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2200
+ },
+ "clear-safety-spectacles-glasses-uv-400": {
+  "price": 260,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Clear Safety Spectacles/Glasses UV 400",
+    "exVat": 220,
+    "regular": 220,
+    "onSale": false
+   }
+  ]
+ },
+ "cold-resistant-gloves": {
+  "price": 1160,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Cold Resistant Gloves",
+    "exVat": 1000,
+    "regular": 1200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1390
+ },
+ "cold-room-suit-eskimo-suit": {
+  "price": 4760,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Cold Room Suit",
+    "exVat": 4100,
+    "regular": 4300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4990
+ },
+ "cold-room-suit": {
+  "price": 4760,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Cold Room Suit",
+    "exVat": 4100,
+    "regular": 4300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4990
+ },
+ "construction-goggles": {
+  "price": 210,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Construction Goggles",
+    "exVat": 180,
+    "regular": 180,
+    "onSale": false
+   }
+  ]
+ },
+ "construction-rigger-leather-gloves": {
+  "price": 290,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Construction Rigger Leather Gloves",
+    "exVat": 250,
+    "regular": 290,
+    "onSale": true
+   }
+  ],
+  "compareAt": 340
+ },
+ "construction-safety-ppe": {
+  "price": 210,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Construction Goggles",
+    "exVat": 180,
+    "regular": 180,
+    "onSale": false
+   }
+  ]
+ },
+ "construction-scaffolding-safety-net": {
+  "price": 3830,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Safety Harness for Scaffolding Kenya",
+    "exVat": 3300,
+    "regular": 5500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 6380
+ },
+ "construction-site-safety-signs": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Site Safety Sign",
+    "exVat": 2800,
+    "regular": 2800,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Construction Site Safety Signs",
+    "exVat": 2500,
+    "regular": 2500,
+    "onSale": false
+   }
+  ]
+ },
+ "conti-suits-100-cotton-with-reflectors": {
+  "price": 3480,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Conti suits 100% cotton with reflectors",
+    "exVat": 3000,
+    "regular": 3500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4060
+ },
+ "dark-safety-goggles": {
+  "price": 210,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Dark safety Goggles",
+    "exVat": 180,
+    "regular": 180,
+    "onSale": false
+   }
+  ]
+ },
+ "deep-excavation-sign": {
+  "price": 3130,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "A2 Size Deep Excavation Signage",
+    "exVat": 2700,
+    "regular": 2700,
+    "onSale": false
+   }
+  ]
+ },
+ "deep-freeze-spray": {
+  "price": 1330,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Deep Freeze Spray",
+    "exVat": 1150,
+    "regular": 1150,
+    "onSale": false
+   }
+  ]
+ },
+ "deep-heat-spray": {
+  "price": 1140,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Deep Heat spray",
+    "exVat": 980,
+    "regular": 980,
+    "onSale": false
+   }
+  ]
+ },
+ "designated-smoking-area": {
+  "price": 2550,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Designated Smoking Area",
+    "exVat": 2200,
+    "regular": 2200,
+    "onSale": false
+   }
+  ]
+ },
+ "designer-green-black-reflective-vests": {
+  "price": 1020,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Designer Green/black Reflective Vests",
+    "exVat": 880,
+    "regular": 880,
+    "onSale": false
+   }
+  ]
+ },
+ "designer-luminious-green-reflective-vest": {
+  "price": 990,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Designer Luminious Green Reflective Vest",
+    "exVat": 850,
+    "regular": 1260,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Designer Luminious Green Reflective Vest",
+    "exVat": 880,
+    "regular": 880,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1460
+ },
+ "designer-orange-black-reflective-vest": {
+  "price": 1020,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Designer Orange/Black Reflective Vest",
+    "exVat": 880,
+    "regular": 880,
+    "onSale": false
+   }
+  ]
+ },
+ "designer-orange-reflector-jackets": {
+  "price": 990,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Orange Reflector Jacket",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Reflector Jackets Nairobi",
+    "exVat": 780,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Designer Orange Reflector Jackets",
+    "exVat": 850,
+    "regular": 880,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1020
+ },
+ "designer-reflective-vests-blue-red-and-luminous-green": {
+  "price": 640,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Designer Reflective Vests Red",
+    "exVat": 550,
+    "regular": 550,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Blue Reflective Vest",
+    "exVat": 240,
+    "regular": 240,
+    "onSale": false
+   }
+  ]
+ },
+ "diamond-grip-industrial-gloves": {
+  "price": 230,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Diamond Grip Gloves",
+    "exVat": 200,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial Diamond Grip Gloves",
+    "exVat": 150,
+    "regular": 250,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Diamond Grip Gloves",
+    "exVat": 200,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Diamond Grip Industrial Gloves",
+    "exVat": 300,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Diamond Grip Safety Gloves",
+    "exVat": 300,
+    "regular": 900,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Diamond Grip industrial Gloves",
+    "exVat": 250,
+    "regular": 290,
+    "onSale": true
+   }
+  ],
+  "compareAt": 410
+ },
+ "disposable-ear-plugs": {
+  "price": 120,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Ear Plugs",
+    "exVat": 100,
+    "regular": 250,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Ear Plugs",
+    "exVat": 100,
+    "regular": 150,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Ear Plugs",
+    "exVat": 100,
+    "regular": 100,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Disposable Ear Plugs",
+    "exVat": 80,
+    "regular": 80,
+    "onSale": false
+   }
+  ],
+  "compareAt": 170
+ },
+ "disposable-healthcare-non-toxic-dust-mask": {
+  "price": 640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Disposable non toxic dust masks",
+    "exVat": 550,
+    "regular": 750,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial dust masks",
+    "exVat": 600,
+    "regular": 700,
+    "onSale": true
+   }
+  ],
+  "compareAt": 870
+ },
+ "disposable-non-toxic-dust-mask-packet-of-50-pieces": {
+  "price": 870,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Dust Masks Packet of 50 Pieces",
+    "exVat": 650,
+    "regular": 1000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Disposable Non Toxic Dust Mask Packet of 50 Pieces",
+    "exVat": 750,
+    "regular": 750,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1160
+ },
+ "disposable-polythene-gloves": {
+  "price": 290,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Disposable Food Handling Polythene Gloves",
+    "exVat": 250,
+    "regular": 280,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Nitrile gloves (Disposable Powdered Nitrile Gloves)",
+    "exVat": 500,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 320
+ },
+ "disposable-powder-free-food-handling-gloves": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Food Handling Gloves in Nairobi",
+    "exVat": 1000,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Disposable Powder-Free Food Handling Gloves",
+    "exVat": 950,
+    "regular": 950,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1740
+ },
+ "disposable-shoe-covers": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Disposable Shoe Covers",
+    "exVat": 950,
+    "regular": 950,
+    "onSale": false
+   }
+  ]
+ },
+ "double-hook-work-man-full-body-safety-harness": {
+  "price": 19490,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Double Hook Safety Harness",
+    "exVat": 9500,
+    "regular": 10000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Full Body Safety Harness",
+    "exVat": 18000,
+    "regular": 30000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Full Body Safety Harness Kenya",
+    "exVat": 9000,
+    "regular": 11000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Double Hook Work Man Full Body Safety Harness",
+    "exVat": 16800,
+    "regular": 16800,
+    "onSale": false
+   }
+  ]
+ },
+ "dry-powder-fire-extinguisher": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Dry Powder Fire Extinguishers",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "dungaree-industrial-safety-overalls": {
+  "price": 1620,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Quality Dungaree Overall",
+    "exVat": 1400,
+    "regular": 2400,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial dungaree for sale in Kenya",
+    "exVat": 2100,
+    "regular": 2100,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Dungaree Industrial Safety Overalls",
+    "exVat": 2400,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2780
+ },
+ "dust-coat": {
+  "price": 1020,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Dust Coat",
+    "exVat": 880,
+    "regular": 880,
+    "onSale": false
+   }
+  ]
+ },
+ "en-3972012-helmet": {
+  "price": 560,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 640
+ },
+ "executive-hi-vis-vest": {
+  "price": 320,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Executive HI VIS VEST",
+    "exVat": 280,
+    "regular": 280,
+    "onSale": false
+   }
+  ]
+ },
+ "executive-reflective-vest": {
+  "price": 640,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Executive Reflective Vest",
+    "exVat": 550,
+    "regular": 580,
+    "onSale": true
+   }
+  ],
+  "compareAt": 670
+ },
+ "fintec-plus-ear-muff": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Ear muffs",
+    "exVat": 300,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Ear Muffs",
+    "exVat": 350,
+    "regular": 400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 410
+ },
+ "fire-action-plan-2": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Fire Action Plan",
+    "exVat": 2500,
+    "regular": 2800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Action Plan",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   }
+  ],
+  "compareAt": 3250
+ },
+ "fire-action-plan": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Fire Action Plan",
+    "exVat": 2500,
+    "regular": 2800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Action Plan",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   }
+  ],
+  "compareAt": 3250
+ },
+ "fire-alarm-call-point": {
+  "price": 870,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Fire Point Sign",
+    "exVat": 750,
+    "regular": 750,
+    "onSale": false
+   }
+  ]
+ },
+ "fire-assembly-point-sign": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Fire Assembly Point Sign",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Fire Point Sign",
+    "exVat": 750,
+    "regular": 750,
+    "onSale": false
+   }
+  ]
+ },
+ "fire-bell": {
+  "price": 5220,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Manual Fire Bell",
+    "exVat": 4500,
+    "regular": 4700,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5450
+ },
+ "fire-blanket-1-2m-by-1-2m": {
+  "price": 2840,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "1.8 by 1.8 Fire Blanket price",
+    "exVat": 2450,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Fire Blanket 1.2 by 1.2",
+    "exVat": 1700,
+    "regular": 2800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Blanket 1.2m by 1.2m",
+    "exVat": 2500,
+    "regular": 2600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3250
+ },
+ "fire-blanket-2": {
+  "price": 2840,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "1.8 by 1.8 Fire Blanket price",
+    "exVat": 2450,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Blanket 1.8m x 1.8m price in Kenya",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Fire Blanket 1.2 by 1.2",
+    "exVat": 1700,
+    "regular": 2800,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Fire Blanket 1.8m x 1.8m Price in Kenya",
+    "exVat": 2600,
+    "regular": 3500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "fire-exit-sign-2": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire exit signs",
+    "exVat": 500,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ]
+ },
+ "fire-exit-sign": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire exit signs",
+    "exVat": 500,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ]
+ },
+ "fire-exit": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire exit signs",
+    "exVat": 500,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ]
+ },
+ "fire-extinguisher-servicing": {
+  "price": 4640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers in Kenya",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5800
+ },
+ "fire-extinguishing-ball": {
+  "price": 7540,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Fire Extinguishing Ball",
+    "exVat": 6500,
+    "regular": 6500,
+    "onSale": false
+   }
+  ]
+ },
+ "fire-hose-pipe": {
+  "price": 20880,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Hose Reel cabinet for Sale",
+    "exVat": 10500,
+    "regular": 11500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Fighting Hose reel ( 3/4 *30M)",
+    "exVat": 18000,
+    "regular": 25000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Fire Fighting Hose Reel 30M",
+    "exVat": 19200,
+    "regular": 19200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Swinging Type Fire Hose Reel",
+    "exVat": 18900,
+    "regular": 18900,
+    "onSale": false
+   }
+  ]
+ },
+ "fire-point-sign": {
+  "price": 870,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Fire Point Sign",
+    "exVat": 750,
+    "regular": 750,
+    "onSale": false
+   }
+  ]
+ },
+ "first-aid-kit-stock-supplies-refill-restocking-items": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "first-aid-room-examination-bed": {
+  "price": 23140,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "First Aid Room Examination Bed",
+    "exVat": 19950,
+    "regular": 20400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 23660
+ },
+ "fixed-type-fire-hose-reel": {
+  "price": 21920,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Swinging Type Fire Hose Reel",
+    "exVat": 18900,
+    "regular": 18900,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Fire Hose Reel cabinet for Sale",
+    "exVat": 10500,
+    "regular": 11500,
+    "onSale": true
+   }
+  ]
+ },
+ "food-medical-grade-hairnets-in-kenya-disposable-surgical-catering-hair-caps": {
+  "price": 580,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Food &amp; Medical Grade Hairnets in Kenya – Disposable Surgical &amp; Catering Hair Caps",
+    "exVat": 500,
+    "regular": 700,
+    "onSale": true
+   }
+  ],
+  "compareAt": 810
+ },
+ "free-standing-warning-sign": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PETROL STATION WARNING SIGNS",
+    "exVat": 1900,
+    "regular": 2200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2550
+ },
+ "full-body-safety-harness-single-hook": {
+  "price": 4410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Full Body Safety Harness",
+    "exVat": 18000,
+    "regular": 30000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Full Body Safety Harness Kenya",
+    "exVat": 9000,
+    "regular": 11000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Full Body Safety Harness Single Hook",
+    "exVat": 3800,
+    "regular": 4000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4640
+ },
+ "garrett-metal-detector": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Super Garrett Metal Detector Scanner",
+    "exVat": 3500,
+    "regular": 3500,
+    "onSale": false
+   }
+  ]
+ },
+ "garrett-metal-scanner": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security garrett scanner",
+    "exVat": 2800,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Super Garrett Metal Detector Scanner",
+    "exVat": 3500,
+    "regular": 3500,
+    "onSale": false
+   }
+  ]
+ },
+ "ge-1548-king-safety-helmet": {
+  "price": 840,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "GE 1548 King Safety Helmet",
+    "exVat": 720,
+    "regular": 750,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 870
+ },
+ "general-purpose-black-industrial-gumboot": {
+  "price": 990,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "General Purpose Black Industrial Gumboot",
+    "exVat": 850,
+    "regular": 850,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "general-purpose-face-shield": {
+  "price": 870,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose Face Shield",
+    "exVat": 750,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Protective Face Shield",
+    "exVat": 1500,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Face Shield for sale",
+    "exVat": 400,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "General Purpose Face Shield",
+    "exVat": 1500,
+    "regular": 1500,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1740
+ },
+ "general-purpose-safety-protective-goggles-with-black-frame-clear-lenss": {
+  "price": 210,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Krickwood Clear Goggles",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Multi Purpose Clear Goggles",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "General Purpose Safety Protective Goggles with Black Frame &amp; Clear Lens",
+    "exVat": 180,
+    "regular": 200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 230
+ },
+ "goliath-executive-safety-shoe": {
+  "price": 8700,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Goliath Executive manager boots",
+    "exVat": 7500,
+    "regular": 8500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Best Executive Safety Boots Prices",
+    "exVat": 7500,
+    "regular": 8500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "ALLEN COOPER EXECUTIVE SAFETY SHOE",
+    "exVat": 7900,
+    "regular": 8000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 9860
+ },
+ "green-general-purpose-industrial-safety-gumboot": {
+  "price": 1280,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Green Heavy Duty Gumboots Price",
+    "exVat": 1100,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "GREEN GENERAL PURPOSE INDUSTRIAL SAFETY GUMBOOT",
+    "exVat": 950,
+    "regular": 950,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1390
+ },
+ "harness-double-hook-with-shock-absorber": {
+  "price": 10440,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Double Hook Safety Harness",
+    "exVat": 9500,
+    "regular": 10000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Harness with Shock Absorber Kenya",
+    "exVat": 9000,
+    "regular": 12000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Harness with Shock Absorber",
+    "exVat": 9000,
+    "regular": 10000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 11600
+ },
+ "hazmat-spraying-suit-chemical-suit": {
+  "price": 3710,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Hazmat/Spraying Suit/Chemical Suit",
+    "exVat": 3200,
+    "regular": 3500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4060
+ },
+ "hearing-protection-ear-muff": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Ear muffs",
+    "exVat": 300,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Ear Muffs",
+    "exVat": 350,
+    "regular": 400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 410
+ },
+ "heat-detector": {
+  "price": 3310,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Smoke Detector",
+    "exVat": 2850,
+    "regular": 2850,
+    "onSale": false
+   }
+  ]
+ },
+ "heavy-duty-chemical-resistant-22-inch-rubber-gloves": {
+  "price": 320,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rubber Gloves",
+    "exVat": 300,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Heavy Duty Chemical Resistant gloves",
+    "exVat": 280,
+    "regular": 280,
+    "onSale": false
+   }
+  ],
+  "compareAt": 410
+ },
+ "heavy-duty-chemical-resistant-gloves": {
+  "price": 320,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Heavy Duty Chemical Resistant gloves",
+    "exVat": 280,
+    "regular": 280,
+    "onSale": false
+   }
+  ]
+ },
+ "heavy-duty-chemical-resistant-protecta-rubber-gloves-14-inches": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Protecta Cut Resistant Gloves",
+    "exVat": 1250,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "PROTECTA CHEMICAL SAFETY GOGGLES",
+    "exVat": 285,
+    "regular": 300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1510
+ },
+ "heavy-duty-industrial-dungaree": {
+  "price": 2440,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial dungaree for sale in Kenya",
+    "exVat": 2100,
+    "regular": 2100,
+    "onSale": false
+   }
+  ]
+ },
+ "heavy-duty-industrial-german-dust-coat": {
+  "price": 1020,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Dust Coat",
+    "exVat": 880,
+    "regular": 880,
+    "onSale": false
+   }
+  ]
+ },
+ "heavy-duty-security-socks": {
+  "price": 600,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Best security guard socks grey",
+    "exVat": 520,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security Jackets in Kenya",
+    "exVat": 3500,
+    "regular": 4500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security uniforms",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security Uniforms in Kenya",
+    "exVat": 2200,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 700
+ },
+ "hi-vis-water-proof-reflective-suit": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Hi-Vis Reflective Overalls",
+    "exVat": 1250,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Hi Vis Overall",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "high-power-led-headlights": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rechargeable LED HeadLight Torch",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "high-quality-reflective-windbreaker": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "HIGH-QUALITY REFLECTIVE WINDBREAKER",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   }
+  ]
+ },
+ "high-quality-security-steel-container-bolt-seals": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security boots Kenya",
+    "exVat": 1700,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security boots",
+    "exVat": 1799,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2090
+ },
+ "high-visibility-life-jacket": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "High-Visibility Life Jacket",
+    "exVat": 2500,
+    "regular": 2800,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3250
+ },
+ "high-visibility-rain-coatpu": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "High-Visibility Life Jacket",
+    "exVat": 2500,
+    "regular": 2800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "High Visibility Overalls with Cargo Pockets",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "High visibility meshed Reflector Vest",
+    "exVat": 800,
+    "regular": 1000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3250
+ },
+ "high-visibility-rain-suit": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Yellow Rain Suit for Sale",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "high-visibility-security-jacket": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security Jackets in Kenya",
+    "exVat": 3500,
+    "regular": 4500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5220
+ },
+ "high-voltage-electrical-hand-gloves": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety leather gloves high quality",
+    "exVat": 400,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Protective Safety Helmet and Hand Gloves",
+    "exVat": 950,
+    "regular": 1100,
+    "onSale": true
+   }
+  ],
+  "compareAt": 520
+ },
+ "hummock-fireup-boots": {
+  "price": 2670,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Hummock Safety Boots S3 Standard",
+    "exVat": 2300,
+    "regular": 2800,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3250
+ },
+ "industrial-safety-helmet": {
+  "price": 560,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 640
+ },
+ "jsp-safety-helmet-ff-european": {
+  "price": 560,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 640
+ },
+ "jua-kali-booster-cable-2000-amp": {
+  "price": 3310,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Jua Kali Booster Cable 2000 Amp",
+    "exVat": 2850,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "knicker-safety-boot": {
+  "price": 2440,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Knicker Safety Boot",
+    "exVat": 2100,
+    "regular": 2300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2670
+ },
+ "krickwood-clear-goggles": {
+  "price": 230,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Krickwood Clear Goggles",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   }
+  ]
+ },
+ "krickwood-ear-muffs": {
+  "price": 340,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "KRICKWOOD EAR MUFFS",
+    "exVat": 290,
+    "regular": 290,
+    "onSale": false
+   }
+  ]
+ },
+ "lab-coat": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Lab Coats",
+    "exVat": 650,
+    "regular": 780,
+    "onSale": true
+   }
+  ],
+  "compareAt": 900
+ },
+ "large-green-fibre-box-first-aid-kit": {
+  "price": 11250,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large First Aid Kit Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Large Green Fibre Box First Aid Kit",
+    "exVat": 9700,
+    "regular": 9700,
+    "onSale": false
+   }
+  ]
+ },
+ "large-green-first-aid-kit": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large First Aid Kit Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4060
+ },
+ "large-occupational-grey-first-aid-kit": {
+  "price": 9160,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Occupational First Aid Kit",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large First Aid Kit Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "LARGE GREY OCCUPATIONAL FIRST AID KIT",
+    "exVat": 7900,
+    "regular": 8100,
+    "onSale": true
+   }
+  ],
+  "compareAt": 9400
+ },
+ "large-white-occupational-healthcare-first-aid-kit-category-c-general-purpose": {
+  "price": 8700,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Occupational First Aid Kit",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large First Aid Kit Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large White Occupational First Aid Kit",
+    "exVat": 7300,
+    "regular": 8000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Large White Occupational Healthcare First Aid Kit – Category C General Purpose",
+    "exVat": 7500,
+    "regular": 7750,
+    "onSale": true
+   }
+  ],
+  "compareAt": 8990
+ },
+ "large-white-st-john-ambulance-occupational-first-aid-kit": {
+  "price": 14850,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Occupational First Aid Kit",
+    "exVat": 6800,
+    "regular": 7500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large First Aid Kit Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Large White Occupational First Aid Kit",
+    "exVat": 7300,
+    "regular": 8000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Large White St John Ambulance Occupational First Aid Kit",
+    "exVat": 12800,
+    "regular": 13000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 15080
+ },
+ "latex-powdered-medical-examination-gloves": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Latex Gloves",
+    "exVat": 500,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Latex Powdered Medical Examination Gloves",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1390
+ },
+ "leather-gloves-10-inches": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "leather-gloves-11-inches": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "leather-gloves-14-inch": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "leather-gloves-varieties": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "leather-gloves-with-pvc-14-inch": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Heavy Duty PVC Gloves Kenya",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ },
+ "leather-riders-gloves": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Quality Leather Riders Gloves",
+    "exVat": 3200,
+    "regular": 4000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Riders Gloves Kenya",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Riders Gloves",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "leather-welding-apron": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "A welding Apron",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "leather-welding-shoe-cover-2": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Disposable Shoe Covers",
+    "exVat": 950,
+    "regular": 950,
+    "onSale": false
+   }
+  ]
+ },
+ "led-emergency-light-fire-exit-light": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire exit signs",
+    "exVat": 500,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ]
+ },
+ "led-exit-signs": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire exit signs",
+    "exVat": 500,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Fire Exit Sign",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ]
+ },
+ "led-portable-rechargeable-search-flashlight-torch": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rechargeable LED HeadLight Torch",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "led-usb-charge-flashlight-torch": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rechargeable LED HeadLight Torch",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "life-saver-triangle-2": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Car Life Saver Bundle",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "life-saver-triangle": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Car Life Saver Bundle",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "light-duty-industrial-helmet": {
+  "price": 270,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Light Duty Industrial Helmet",
+    "exVat": 230,
+    "regular": 230,
+    "onSale": false
+   }
+  ]
+ },
+ "light-reflective-riders-jacket": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Meshed Reflective Jacket",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "longmao-life-jacket-orange-black": {
+  "price": 2440,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Longmao Life Jacket &#8211; Orange &amp; Black",
+    "exVat": 2100,
+    "regular": 2100,
+    "onSale": false
+   }
+  ]
+ },
+ "lpg-safety-signage": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "LPG Safety Signage",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   }
+  ]
+ },
+ "luminous-green-bump-cap": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "luminous Green Bump Caps",
+    "exVat": 1152,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety bump caps",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Bump Caps",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Industrial Bump Cap in Kenya",
+    "exVat": 1200,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Bump Cap in Kenya",
+    "exVat": 1200,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Bump Caps For Safety",
+    "exVat": 2000,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "manual-fire-bell": {
+  "price": 5220,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Manual Fire Bell",
+    "exVat": 4500,
+    "regular": 4700,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5450
+ },
+ "medium-canvas-first-aid-kit": {
+  "price": 4580,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Medium Canvas First Aid Kit",
+    "exVat": 3950,
+    "regular": 4050,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4700
+ },
+ "medium-clear-first-aid-kit": {
+  "price": 3480,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Medium Clear First Aid Kit",
+    "exVat": 3000,
+    "regular": 3000,
+    "onSale": false
+   }
+  ]
+ },
+ "medium-duty-reflector-jacket": {
+  "price": 230,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Reflector Jackets Nairobi",
+    "exVat": 780,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Medium Duty Reflector Jacket",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   }
+  ]
+ },
+ "medium-green-plastic-first-aid-kit": {
+  "price": 4930,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Medium Green Plastic First Aid Kit",
+    "exVat": 4250,
+    "regular": 4350,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5050
+ },
+ "medium-grey-first-aid-kit": {
+  "price": 8240,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Medium Grey First Aid Kit",
+    "exVat": 7100,
+    "regular": 7500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 8700
+ },
+ "medium-red-first-aid-kit": {
+  "price": 5220,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Medium Red First Aid Kit",
+    "exVat": 4500,
+    "regular": 4600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5340
+ },
+ "men-at-work-signs": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Men at Work Signs",
+    "exVat": 1700,
+    "regular": 1900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2200
+ },
+ "mesh-reflective-vest-class-2fr": {
+  "price": 280,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Customized Reflective Safety Vests",
+    "exVat": 750,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflective vests (120gsm)",
+    "exVat": 180,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Blue Reflective Vest",
+    "exVat": 240,
+    "regular": 240,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Purple Reflective Vest",
+    "exVat": 240,
+    "regular": 240,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Reflective Strap Vest",
+    "exVat": 320,
+    "regular": 320,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Executive Reflective Vest",
+    "exVat": 550,
+    "regular": 580,
+    "onSale": true
+   }
+  ]
+ },
+ "multi-purpose-clear-goggles": {
+  "price": 230,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Multi Purpose Clear Goggles",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   }
+  ]
+ },
+ "multifunctional-cob-working-light": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Multifunctional COB Working Light",
+    "exVat": 1500,
+    "regular": 1600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1860
+ },
+ "multipurpose-led-flashlight-torch": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rechargeable LED HeadLight Torch",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "navy-blue-bump-cap": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Blue bump caps",
+    "exVat": 1200,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Navy Blue Bump Caps",
+    "exVat": 1200,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety bump caps",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Bump Caps",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Industrial Bump Cap in Kenya",
+    "exVat": 1200,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Bump Cap in Kenya",
+    "exVat": 1200,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "navy-blue-jsp-bump-cap": {
+  "price": 3310,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Navy Blue JSP Bump Cap",
+    "exVat": 2850,
+    "regular": 2850,
+    "onSale": false
+   }
+  ]
+ },
+ "nitrile-powder-free-gloves": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Latex Nitrile Powder Free Gloves",
+    "exVat": 1250,
+    "regular": 2000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "nitrile-reusable-gloves": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Nitrile Reusable Gloves",
+    "exVat": 350,
+    "regular": 350,
+    "onSale": false
+   }
+  ]
+ },
+ "np305-respirator-mask": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "NP305 RESPIRATOR MASK",
+    "exVat": 400,
+    "regular": 400,
+    "onSale": false
+   }
+  ]
+ },
+ "np306-respirator-mask": {
+  "price": 580,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "NP306 RESPIRATOR MASK",
+    "exVat": 500,
+    "regular": 500,
+    "onSale": false
+   }
+  ]
+ },
+ "orange-ear-muff": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Ear muffs",
+    "exVat": 300,
+    "regular": 350,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Ear Muffs",
+    "exVat": 350,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Orange Ear Muff",
+    "exVat": 1250,
+    "regular": 1350,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1570
+ },
+ "overall-with-reflectors": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflector Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Overalls With Reflector",
+    "exVat": 1250,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "OVERALL WITH REFLECTORS",
+    "exVat": 1650,
+    "regular": 1650,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "overalls-with-reflectors": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflector Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Overalls With Reflector",
+    "exVat": 1250,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "OVERALL WITH REFLECTORS",
+    "exVat": 1650,
+    "regular": 1650,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "petrol-station-warning-signs": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PETROL STATION WARNING SIGNS",
+    "exVat": 1900,
+    "regular": 2200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2550
+ },
+ "plain-cotton-knitted-gloves": {
+  "price": 120,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Cotton Dotted Gloves",
+    "exVat": 100,
+    "regular": 400,
+    "onSale": true
+   }
+  ]
+ },
+ "plain-navy-blue-coverall": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Plain Navy Blue Coverall",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   }
+  ]
+ },
+ "plain-navy-blue-rain-coat": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Quality Blue Rain Coats",
+    "exVat": 1200,
+    "regular": 1400,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Navy Blue Rain Coat Price in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Rain coats",
+    "exVat": 1500,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Quality Rain Coats",
+    "exVat": 1500,
+    "regular": 1550,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Plain Navy Blue Rain Coat",
+    "exVat": 850,
+    "regular": 900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1620
+ },
+ "porcupine-ladies-safety-shoes": {
+  "price": 3480,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Porcupine Ladies Safety Shoes Kenya",
+    "exVat": 2999,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Porcupine Ladies Safety Shoes",
+    "exVat": 3100,
+    "regular": 3100,
+    "onSale": false
+   }
+  ],
+  "compareAt": 4060
+ },
+ "porcupine-safety-boot": {
+  "price": 3940,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Porcupine Safety Boot",
+    "exVat": 3400,
+    "regular": 3400,
+    "onSale": false
+   }
+  ]
+ },
+ "powder-free-disposable-latex-gloves": {
+  "price": 930,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Latex Gloves",
+    "exVat": 500,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Powder Free Disposable Latex Gloves",
+    "exVat": 800,
+    "regular": 850,
+    "onSale": true
+   }
+  ],
+  "compareAt": 990
+ },
+ "powder-free-food-handling-nitrile-gloves": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Food Handling Gloves in Nairobi",
+    "exVat": 1000,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Food Handling Nitrile Gloves",
+    "exVat": 1250,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Powder Free Food Handling Nitrile Gloves",
+    "exVat": 950,
+    "regular": 1000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1160
+ },
+ "power-mega-phone": {
+  "price": 6730,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Power Mega Phone",
+    "exVat": 5800,
+    "regular": 6000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 6960
+ },
+ "ppe-signage-2": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   }
+  ]
+ },
+ "ppe-signage": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   }
+  ]
+ },
+ "protecta-chemical-safety-goggles": {
+  "price": 330,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PROTECTA CHEMICAL SAFETY GOGGLES",
+    "exVat": 285,
+    "regular": 300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 350
+ },
+ "protecta-cut-resistant-gloves": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Protecta Cut Resistant Gloves",
+    "exVat": 1250,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1510
+ },
+ "protecta-executive-safety-shoe": {
+  "price": 4760,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Protecta Safety Boot",
+    "exVat": 4100,
+    "regular": 4100,
+    "onSale": false
+   }
+  ]
+ },
+ "protecta-safety-boot": {
+  "price": 4760,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Protecta Safety Boot",
+    "exVat": 4100,
+    "regular": 4100,
+    "onSale": false
+   }
+  ]
+ },
+ "pu-pole-safety-delineator-posts": {
+  "price": 1570,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PU Pole Safety Delineator Posts | Nairobi Safety Shop",
+    "exVat": 1350,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "pump-island-safety-signage": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Pump Island Safety Signage",
+    "exVat": 1900,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "purple-reflective-vest": {
+  "price": 280,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Purple Reflective Vest",
+    "exVat": 240,
+    "regular": 240,
+    "onSale": false
+   }
+  ]
+ },
+ "pvc-apron": {
+  "price": 1160,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PVC Apron",
+    "exVat": 1000,
+    "regular": 1000,
+    "onSale": false
+   }
+  ]
+ },
+ "pvc-dotted-cotton-gloves": {
+  "price": 190,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Cotton Dotted Gloves",
+    "exVat": 100,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Heavy Duty PVC Gloves Kenya",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "PVC Dotted Cotton Gloves",
+    "exVat": 160,
+    "regular": 160,
+    "onSale": false
+   }
+  ]
+ },
+ "rain-coat-with-inner-lining": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rain coats",
+    "exVat": 1500,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Quality Rain Coats",
+    "exVat": 1500,
+    "regular": 1550,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Rain Coat With Inner Lining",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1800
+ },
+ "rain-coat": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rain coats",
+    "exVat": 1500,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Quality Rain Coats",
+    "exVat": 1500,
+    "regular": 1550,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1800
+ },
+ "rain-trouser": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Chef Trousers for Sale",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "red-pvc-gloves-with-polyester-lining": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Red Pvc Gloves",
+    "exVat": 300,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Red PVC gloves",
+    "exVat": 400,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Heavy Duty PVC Gloves Kenya",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Red PVC Gloves Kenya",
+    "exVat": 300,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Red Pvc Gloves With Polyester Lining",
+    "exVat": 290,
+    "regular": 290,
+    "onSale": false
+   }
+  ],
+  "compareAt": 580
+ },
+ "reflective-strap-vest": {
+  "price": 370,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Reflective Strap Vest",
+    "exVat": 320,
+    "regular": 320,
+    "onSale": false
+   }
+  ]
+ },
+ "reflector-jacket-with-a-zip": {
+  "price": 320,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Reflector Jackets Nairobi",
+    "exVat": 780,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Reflector Jacket with a zip",
+    "exVat": 280,
+    "regular": 280,
+    "onSale": false
+   }
+  ]
+ },
+ "reflector-jackets-4-stripes": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Reflector Jackets Nairobi",
+    "exVat": 780,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Reflector Jackets 4 stripes",
+    "exVat": 300,
+    "regular": 300,
+    "onSale": false
+   }
+  ]
+ },
+ "resends-knicker-cut-resistant-gloves": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Resends/Knicker Cut Resistant Gloves",
+    "exVat": 950,
+    "regular": 950,
+    "onSale": false
+   }
+  ]
+ },
+ "reusable-ear-plug": {
+  "price": 120,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Ear Plugs",
+    "exVat": 100,
+    "regular": 250,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Ear Plugs",
+    "exVat": 100,
+    "regular": 150,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Ear Plugs",
+    "exVat": 100,
+    "regular": 100,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Reusable Ear Plug",
+    "exVat": 120,
+    "regular": 120,
+    "onSale": false
+   }
+  ],
+  "compareAt": 170
+ },
+ "riders-gloves": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Riders Gloves",
+    "exVat": 400,
+    "regular": 425,
+    "onSale": true
+   }
+  ],
+  "compareAt": 490
+ },
+ "riders-helmetcrash-helmet": {
+  "price": 560,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 640
+ },
+ "riders-suit": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Quality Rider Suits",
+    "exVat": 5500,
+    "regular": 5500,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Rider suit for sale",
+    "exVat": 3500,
+    "regular": 4000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Riders Suit",
+    "exVat": 2450,
+    "regular": 2450,
+    "onSale": false
+   }
+  ],
+  "compareAt": 4640
+ },
+ "road-cone-50cm-ldpe-reflective": {
+  "price": 1620,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Road Cone 50cm LDPE Reflective",
+    "exVat": 1400,
+    "regular": 1400,
+    "onSale": false
+   }
+  ]
+ },
+ "road-cones": {
+  "price": 1510,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Road Safety Cones Price 75 cm",
+    "exVat": 1300,
+    "regular": 1400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1620
+ },
+ "road-safety-pack-3-piece": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Road Safety Pack &#8211; 4 Piece",
+    "exVat": 4800,
+    "regular": 4900,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Road Safety Pack &#8211; 3 Piece",
+    "exVat": 1900,
+    "regular": 1950,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2260
+ },
+ "road-safety-pack-4-piece": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Road Safety Pack &#8211; 4 Piece",
+    "exVat": 4800,
+    "regular": 4900,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Road Safety Pack &#8211; 3 Piece",
+    "exVat": 1900,
+    "regular": 1950,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2260
+ },
+ "road-traffic-cones-75cm-ldpe-reflective": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Traffic cones price in Kenya (75cm)",
+    "exVat": 1152,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Traffic cones price in Kenya (75cm)",
+    "exVat": 1300,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Road Traffic Cones 75cm LDPE Reflective",
+    "exVat": 1700,
+    "regular": 1800,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2090
+ },
+ "rocklander-industrial-safety-boot-2": {
+  "price": 2320,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rocklander Safety Boots in Kenya",
+    "exVat": 2000,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "rocklander-industrial-safety-boot": {
+  "price": 2320,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Rocklander Safety Boots in Kenya",
+    "exVat": 2000,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "safety-glasses-with-clear-lens": {
+  "price": 350,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Clear vaultex safety glasses",
+    "exVat": 300,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Clear Vaultex safety glasses for sale",
+    "exVat": 300,
+    "regular": 500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 460
+ },
+ "safety-jacket": {
+  "price": 1620,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Cargo Jacket",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial Work Jackets",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Chef Jackets",
+    "exVat": 1500,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Buy Chef jacket online",
+    "exVat": 1400,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Cheap Chef Jacket for Sale",
+    "exVat": 1200,
+    "regular": 1400,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Classic Chef Jackets",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "safety-jogger-best-boy-safety-boot": {
+  "price": 7310,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Joggers Boots",
+    "exVat": 3800,
+    "regular": 3800,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Safety Jogger Best Boy Safety Boot",
+    "exVat": 6300,
+    "regular": 6300,
+    "onSale": false
+   }
+  ]
+ },
+ "safety-jogger-safety-boot": {
+  "price": 4410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Joggers Boots",
+    "exVat": 3800,
+    "regular": 3800,
+    "onSale": false
+   }
+  ]
+ },
+ "safety-jogger-safety-manager": {
+  "price": 9160,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Safety Jogger Manager Shoes",
+    "exVat": 7900,
+    "regular": 8300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 9630
+ },
+ "safety-overalls-2": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Safety Overalls",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "safety-overalls": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Safety Overalls",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "safety-reflective-jacket-1": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Meshed Reflective Jacket",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "safety-reflective-jacket-light-yellow-long-sleeve": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Yellow Reflector Jacket",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Meshed Reflective Jacket",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Long Sleeve Dustcoat Kenya",
+    "exVat": 800,
+    "regular": 1000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "safety-reflective-jacket-long-sleeve-yellow": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Yellow Reflector Jacket",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Meshed Reflective Jacket",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Long Sleeve Dustcoat Kenya",
+    "exVat": 800,
+    "regular": 1000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "safety-reflective-jacket-red": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Red Reflector Jacket",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflector Jacket Red",
+    "exVat": 1500,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Meshed Reflective Jacket",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Red Reflective Safety Overalls",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Red Reflective Overalls",
+    "exVat": 1250,
+    "regular": 1500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1740
+ },
+ "safety-reflector-jacket": {
+  "price": 900,
+  "refs": [
+   {
+    "site": "bansi",
+    "name": "Reflector Jackets Nairobi",
+    "exVat": 780,
+    "regular": 1200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1390
+ },
+ "safety-sign-with-company-logo-a1-size": {
+  "price": 4410,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Safety Sign With Company Logo A1 Size",
+    "exVat": 3800,
+    "regular": 3800,
+    "onSale": false
+   }
+  ]
+ },
+ "safety-signage-2": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "LPG Safety Signage",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "A2 Safety Signage",
+    "exVat": 2800,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "safety-signs-a2-size": {
+  "price": 3130,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Safety Signs A2 Size",
+    "exVat": 2700,
+    "regular": 2700,
+    "onSale": false
+   }
+  ]
+ },
+ "safety-team-arm-band": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "BRANDED FIRE MARSHAL ARM BAND",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ]
+ },
+ "sandak-gumboot": {
+  "price": 1390,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1510
+ },
+ "scarlet-metal-scanner": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Super Garrett Metal Detector Scanner",
+    "exVat": 3500,
+    "regular": 3500,
+    "onSale": false
+   }
+  ]
+ },
+ "security-line": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security boots Kenya",
+    "exVat": 1700,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security boots",
+    "exVat": 1799,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2090
+ },
+ "security-low-boot": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security boots Kenya",
+    "exVat": 1700,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security boots",
+    "exVat": 1799,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2090
+ },
+ "security-seal": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security boots Kenya",
+    "exVat": 1700,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security boots",
+    "exVat": 1799,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2090
+ },
+ "security-whistle": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Security boots Kenya",
+    "exVat": 1700,
+    "regular": 1800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Security boots",
+    "exVat": 1799,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2090
+ },
+ "shujaa-ksm-black-general-purpose-industrial-gumboot": {
+  "price": 990,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "General Purpose Black Industrial Gumboot",
+    "exVat": 850,
+    "regular": 850,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "signage": {
+  "price": 2200,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "PPE Signage",
+    "exVat": 1900,
+    "regular": 1900,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "LPG Safety Signage",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "A2 Safety Signage",
+    "exVat": 2800,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "site-safety-sign": {
+  "price": 3250,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Site Safety Sign",
+    "exVat": 2800,
+    "regular": 2800,
+    "onSale": false
+   }
+  ]
+ },
+ "slippery-floor-signage": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Slippery Floor Signage",
+    "exVat": 1700,
+    "regular": 1900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2200
+ },
+ "small-car-fire-extinguisher": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Fire Extinguishers",
+    "exVat": 4000,
+    "regular": 5000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Small Car Fire Extinguisher",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ]
+ },
+ "small-red-first-aid-kit-no-2": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2900
+ },
+ "small-red-psv-first-aid-kit": {
+  "price": 750,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Small Red PSV First Aid Kit",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ]
+ },
+ "small-white-first-aid-kit": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "General purpose first aid kit",
+    "exVat": 1800,
+    "regular": 2500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Small White First Aid Kit",
+    "exVat": 1800,
+    "regular": 1800,
+    "onSale": false
+   }
+  ],
+  "compareAt": 2900
+ },
+ "smoke-detector": {
+  "price": 3310,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Smoke Detector",
+    "exVat": 2850,
+    "regular": 2850,
+    "onSale": false
+   }
+  ]
+ },
+ "soldier-safety-boot": {
+  "price": 3600,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Soldier Safety Boot",
+    "exVat": 3100,
+    "regular": 3200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3710
+ },
+ "spraying-chemical-coverall": {
+  "price": 3710,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Disposable Coverall",
+    "exVat": 950,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Spray Coverall",
+    "exVat": 2200,
+    "regular": 2200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Hazmat/Spraying Suit/Chemical Suit",
+    "exVat": 3200,
+    "regular": 3500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4060
+ },
+ "steel-toe-gum-boot": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Porcupine Safety boots with steel toe",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Steel Toe Workman Safety Boots",
+    "exVat": 2900,
+    "regular": 4000,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Vaultex Steel Toe Safety Boots Kenya",
+    "exVat": 2500,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Steel Toe Safety Gumboots",
+    "exVat": 1800,
+    "regular": 1900,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Steel Toe Gumboot",
+    "exVat": 2350,
+    "regular": 2400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4060
+ },
+ "steel-toe-gumboot": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Steel Toe Safety Gumboots",
+    "exVat": 1800,
+    "regular": 1900,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Steel Toe Gumboot",
+    "exVat": 2350,
+    "regular": 2400,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2200
+ },
+ "swinging-type-fire-hose-reel": {
+  "price": 21920,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Swinging Type Fire Hose Reel",
+    "exVat": 18900,
+    "regular": 18900,
+    "onSale": false
+   }
+  ]
+ },
+ "tailored-coveralls": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Disposable Coverall",
+    "exVat": 950,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Spray Coverall",
+    "exVat": 2200,
+    "regular": 2200,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1390
+ },
+ "taiwan-chemical-medical-clear-safety-goggles": {
+  "price": 230,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "PROTECTA CHEMICAL SAFETY GOGGLES",
+    "exVat": 285,
+    "regular": 300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Krickwood Clear Goggles",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Multi Purpose Clear Goggles",
+    "exVat": 200,
+    "regular": 200,
+    "onSale": false
+   }
+  ],
+  "compareAt": 350
+ },
+ "taiwan-grade-a-disposable-dust-mask-packet-of-50-pieces": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Dust Masks Packet of 50 Pieces",
+    "exVat": 650,
+    "regular": 1000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Taiwan/Grade A Disposable Dust Mask Packet of 50 Pieces",
+    "exVat": 1250,
+    "regular": 1300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 1510
+ },
+ "thermal-blanket": {
+  "price": 600,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Thermal Blanket",
+    "exVat": 520,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 700
+ },
+ "titan-industrial-helmet": {
+  "price": 840,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Titan Industrial Helmet",
+    "exVat": 720,
+    "regular": 740,
+    "onSale": true
+   }
+  ],
+  "compareAt": 860
+ },
+ "total-cut-resistant-gloves": {
+  "price": 640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Best Cut Resistant Gloves",
+    "exVat": 549,
+    "regular": 650,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Cut Resistant Gloves",
+    "exVat": 600,
+    "regular": 900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 750
+ },
+ "traffic-control-plastic-chain-25m-by-6mm": {
+  "price": 4060,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Traffic Control Baton Light",
+    "exVat": 3500,
+    "regular": 4500,
+    "onSale": true
+   }
+  ],
+  "compareAt": 5220
+ },
+ "truck-traffic-reflective-warning-safety-tape": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Truck Traffic Reflective Warning Safety Tape",
+    "exVat": 2500,
+    "regular": 2500,
+    "onSale": false
+   }
+  ]
+ },
+ "twill-industrial-overalls-with-reflectors": {
+  "price": 1450,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflector Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Overalls With Reflector",
+    "exVat": 1250,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "OVERALL WITH REFLECTORS",
+    "exVat": 1650,
+    "regular": 1650,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1510
+ },
+ "ultimate-plus-cut-resistant-gloves": {
+  "price": 640,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Ultimate Plus Cut Resistant Gloves",
+    "exVat": 550,
+    "regular": 800,
+    "onSale": true
+   }
+  ],
+  "compareAt": 930
+ },
+ "ultimate-plus-safety-boots": {
+  "price": 3480,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Safety Boots (Brand Ultimate plus)",
+    "exVat": 3000,
+    "regular": 3500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Ultimate Plus Safety Boots",
+    "exVat": 3500,
+    "regular": 3850,
+    "onSale": true
+   }
+  ],
+  "compareAt": 4060
+ },
+ "under-construction": {
+  "price": 210,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Construction Goggles",
+    "exVat": 180,
+    "regular": 180,
+    "onSale": false
+   }
+  ]
+ },
+ "vaultex-safety-boot": {
+  "price": 3160,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Vaultex Safety Boots",
+    "exVat": 2720,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "VAULTEX SAFETY BOOT",
+    "exVat": 3100,
+    "regular": 3200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "vaultex-safety-boots-vt-fm8628-model": {
+  "price": 3160,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Vaultex Safety Boots",
+    "exVat": 2720,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "VAULTEX SAFETY BOOT",
+    "exVat": 3100,
+    "regular": 3200,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "vaultex-safety-helmet": {
+  "price": 790,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Vaultex Industrial Helmets",
+    "exVat": 590,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Vaultex Safety Helmets",
+    "exVat": 650,
+    "regular": 850,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Vaultex Safety Helmets for Sale",
+    "exVat": 750,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Vaultex Safety Helmet",
+    "exVat": 680,
+    "regular": 900,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Vaultex Safety Helmet",
+    "exVat": 830,
+    "regular": 850,
+    "onSale": true
+   }
+  ],
+  "compareAt": 990
+ },
+ "vehicle-reflective-tapes": {
+  "price": 1740,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Reflective overalls",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Reflective Overalls",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflective Overalls",
+    "exVat": 2300,
+    "regular": 2600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Reflective self adhesive floor tapes",
+    "exVat": 1500,
+    "regular": 2000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "water-proof-medical-overall-covid": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Overall",
+    "exVat": 1050,
+    "regular": 1050,
+    "onSale": false
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1500,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Overalls in Kenya",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Water Proof Medical Overall-Covid",
+    "exVat": 1800,
+    "regular": 1800,
+    "onSale": false
+   },
+   {
+    "site": "nss",
+    "name": "Safety Overalls",
+    "exVat": 1200,
+    "regular": 1200,
+    "onSale": false
+   }
+  ]
+ },
+ "webbing-barricading-netorange-fence-1m-x-50m": {
+  "price": 6960,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "WEBBING BARRICADING NET(Orange) FENCE 1m x 50m",
+    "exVat": 6000,
+    "regular": 6100,
+    "onSale": true
+   }
+  ],
+  "compareAt": 7080
+ },
+ "welding-goggles-2": {
+  "price": 290,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Welding Safety Goggles",
+    "exVat": 230,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Welding Safety Goggles",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "WELDING GOGGLES",
+    "exVat": 250,
+    "regular": 250,
+    "onSale": false
+   }
+  ],
+  "compareAt": 580
+ },
+ "welding-shield-2": {
+  "price": 460,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Welding shields",
+    "exVat": 400,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Welding Shield",
+    "exVat": 650,
+    "regular": 650,
+    "onSale": false
+   }
+  ],
+  "compareAt": 580
+ },
+ "welding-shield-helmet": {
+  "price": 810,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets in Kenya",
+    "exVat": 150,
+    "regular": 400,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Welding Helmet For Sale",
+    "exVat": 950,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 930
+ },
+ "white-general-purpose-industrial-safety-gumboot": {
+  "price": 1100,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty White Gumboots",
+    "exVat": 700,
+    "regular": 1200,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety Gumboots",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Heavy Duty Safety Gumboots",
+    "exVat": 1200,
+    "regular": 1300,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "WHITE GENERAL PURPOSE INDUSTRIAL SAFETY GUMBOOT",
+    "exVat": 950,
+    "regular": 950,
+    "onSale": false
+   }
+  ],
+  "compareAt": 1390
+ },
+ "work-in-progress": {
+  "price": 1970,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Work In Progress",
+    "exVat": 1700,
+    "regular": 1900,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2200
+ },
+ "work-position-waist-safety-belt": {
+  "price": 3540,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "Work Position Waist Safety Belt",
+    "exVat": 3050,
+    "regular": 3300,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3830
+ },
+ "working-at-height-helmet": {
+  "price": 3020,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Industrial Safety helmets",
+    "exVat": 700,
+    "regular": 800,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Safety Helmets",
+    "exVat": 500,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Affordable Safety helmets",
+    "exVat": 450,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Working At Height Helmet",
+    "exVat": 2600,
+    "regular": 3000,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "WORKING AT HEIGHT HELMET",
+    "exVat": 4300,
+    "regular": 4500,
+    "onSale": true
+   },
+   {
+    "site": "nss",
+    "name": "Industrial Safety Helmet",
+    "exVat": 480,
+    "regular": 480,
+    "onSale": false
+   }
+  ],
+  "compareAt": 3480
+ },
+ "x-rays-in-use": {
+  "price": 2090,
+  "refs": [
+   {
+    "site": "nss",
+    "name": "X-rays in use",
+    "exVat": 1800,
+    "regular": 2000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 2320
+ },
+ "yamato-japanese-quality-safety-shoe": {
+  "price": 2900,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Yamato Safety Boots",
+    "exVat": 2500,
+    "regular": 3000,
+    "onSale": true
+   }
+  ],
+  "compareAt": 3480
+ },
+ "yellow-palm-leather-gloves-available": {
+  "price": 410,
+  "refs": [
+   {
+    "site": "safetyhub",
+    "name": "Leather gloves",
+    "exVat": 400,
+    "regular": 550,
+    "onSale": true
+   },
+   {
+    "site": "safetyhub",
+    "name": "Leather Gloves",
+    "exVat": 350,
+    "regular": 450,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Yellow Palm Gloves Kenya",
+    "exVat": 300,
+    "regular": 500,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Leather Gloves For Safety",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Safety Leather Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   },
+   {
+    "site": "bansi",
+    "name": "Yellow Palm Gloves",
+    "exVat": 350,
+    "regular": 600,
+    "onSale": true
+   }
+  ],
+  "compareAt": 640
+ }
+}

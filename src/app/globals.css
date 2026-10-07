@@ -1,26 +1,74 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-navy-950: #011951;
+  --color-navy-900: #0a245c;
+  --color-navy-800: #162f6b;
+  --color-safety-700: #123d7c;
+  --color-safety-600: #17509e;
+  --color-safety-500: #2165c1;
+  --color-safety-100: #d9e6fa;
+  --color-safety-50: #eef4fc;
+  --color-accent-700: #a04e00;
+  --color-accent-600: #c65d01;
+  --color-accent-500: #e8720c;
+  --color-accent-100: #fde2c6;
+  --color-accent-50: #fdf1e1;
+  --color-mist: #f5f7fa;
+  --color-ink: #131f31;
+  --font-sans: "Inter", "Roboto", "Open Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Poppins", "Inter", "Roboto", ui-sans-serif, system-ui, sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: #ffffff;
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0;
+  font-feature-settings: "ss01";
+}
+
+/* Industrial display headings — condensed, uppercase-capable, datasheet feel */
+h1, h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  line-height: 1.05;
+}
+
+h3 {
+  font-family: var(--font-sans);
+  letter-spacing: 0;
+}
+
+/* thin styled scrollbar for drawers */
+.nice-scroll::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.nice-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 999px;
+}
+
+.hero-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 44px 44px;
+  mask-image: radial-gradient(ellipse 90% 80% at 60% 20%, black 40%, transparent 100%);
+}
+
+.texture-diagonal {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgba(232, 114, 12, 0.16) 0 10px,
+    transparent 10px 20px
+  );
 }
