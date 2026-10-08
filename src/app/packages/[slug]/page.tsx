@@ -35,24 +35,26 @@ export default async function PackageDetailPage({ params }: { params: Promise<{ 
   return (
     <>
       <Breadcrumbs items={[{ label: "PPE Packages", href: "/packages" }, { label: pkg.name }]} />
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-      <div className="relative mt-3 overflow-hidden rounded-3xl bg-navy-950 p-8 text-white sm:p-10">
+      {/* full-bleed hero — square edges, image background */}
+      <div className="relative overflow-hidden bg-navy-950 text-white">
         {pkg.items[0]?.image && (
           <>
-            <Image src={pkg.items[0].image} alt={pkg.name} fill sizes="100vw" className="object-cover opacity-40" />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-navy-950/25" />
+            <Image src={pkg.items[0].image} alt={pkg.name} fill priority sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/70 to-navy-950/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
           </>
         )}
-        <div className="relative">
-        <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-accent-500"><Package size={15} /> PPE package</p>
-        <h1 className="mt-2 text-3xl font-extrabold sm:text-4xl">{pkg.name}</h1>
-        <p className="mt-2 max-w-2xl text-slate-200">{pkg.blurb}</p>
-        <p className="mt-4 text-2xl font-extrabold text-accent-500">{kes(pkg.price)} <span className="text-sm font-medium text-slate-300">guide price per worker</span></p>
-        <div className="mt-5 flex flex-wrap gap-3">
-          <Link href={`/bulk-ppe?package=${pkg.slug}`} className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-6 py-3 text-sm font-extrabold uppercase text-navy-950 hover:bg-white"><FileText size={16} /> Get scaled quotation</Link>
-        </div>
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+          <p className="flex items-center gap-2 text-xs font-bold uppercase tracking-[0.2em] text-accent-500"><Package size={15} /> PPE package</p>
+          <h1 className="mt-2 max-w-2xl text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-5xl">{pkg.name}</h1>
+          <p className="mt-2.5 max-w-2xl text-[15px] leading-relaxed text-slate-200">{pkg.blurb}</p>
+          <p className="mt-4 text-2xl font-extrabold text-accent-500">{kes(pkg.price)} <span className="text-sm font-medium text-slate-300">guide price per worker</span></p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href={`/bulk-ppe?package=${pkg.slug}`} className="inline-flex items-center gap-2 rounded-xl bg-accent-500 px-6 py-3 text-sm font-extrabold uppercase text-navy-950 hover:bg-white"><FileText size={16} /> Get scaled quotation</Link>
+          </div>
         </div>
       </div>
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
       <h2 className="mt-8 flex items-center gap-2 text-xl font-extrabold text-navy-950"><CheckCircle2 size={20} className="text-emerald-600" /> What&apos;s in the kit ({pkg.items.length} items)</h2>
       <div className="mt-4 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
         {pkg.items.map((p) => <ProductCard key={p.slug} p={p} waNumber={settings.whatsapp} />)}

@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { ChevronDown, SlidersHorizontal, Star, X } from "lucide-react";
 import type { CatalogProduct, Category } from "@/lib/catalog";
 import { INDUSTRIES, BRANDS_ALL as BRANDS, categoryName } from "@/lib/catalog";
@@ -32,9 +32,16 @@ export function ShopClient({ products, categories, waNumber, initialQuery = "", 
   const [drawer, setDrawer] = useState(false);
 
   // Header searches navigate /shop?q=… client-side without remounting us,
-  // and category hops reuse this client too — resync when the URL changes.
-  useEffect(() => { setQ(initialQuery); setPage(1); }, [initialQuery]);
-  useEffect(() => { setCats(initialCategory ? [initialCategory] : []); setPage(1); }, [initialCategory]);
+  // and category hops reuse this client too — resync when the URL changes
+  // (state adjusted during render, no effect).
+  const [lastQuery, setLastQuery] = useState(initialQuery);
+  if (lastQuery !== initialQuery) {
+    setLastQuery(initialQuery); setQ(initialQuery); setPage(1);
+  }
+  const [lastCat, setLastCat] = useState(initialCategory);
+  if (lastCat !== initialCategory) {
+    setLastCat(initialCategory); setCats(initialCategory ? [initialCategory] : []); setPage(1);
+  }
 
   const allCerts = useMemo(() => Array.from(new Set(products.flatMap((p) => p.certifications))).sort(), [products]);
   const topPrice = useMemo(() => Math.max(...products.map((p) => p.price), 13000), [products]);
@@ -73,35 +80,43 @@ export function ShopClient({ products, categories, waNumber, initialQuery = "", 
 
   const clearAll = () => { setCats([]); setBrands([]); setCerts([]); setInds([]); setInStock(false); setMaxPrice(topPrice); setQ(""); setPage(1); };
 
+  const chips: { label: string; clear: () => void }[] = [
+    ...cats.map((s) => ({ label: categoryName(s), clear: () => { setCats(cats.filter((x) => x !== s)); setPage(1); } })),
+    ...brands.map((s) => ({ label: s, clear: () => { setBrands(brands.filter((x) => x !== s)); setPage(1); } })),
+    ...certs.map((s) => ({ label: s, clear: () => { setCerts(certs.filter((x) => x !== s)); setPage(1); } })),
+    ...inds.map((s) => ({ label: INDUSTRIES.find((i) => i.slug === s)?.name ?? s, clear: () => { setInds(inds.filter((x) => x !== s)); setPage(1); } })),
+    ...(inStock ? [{ label: "In stock", clear: () => setInStock(false) }] : []),
+  ];
+
   const filters = (
-    <div className="space-y-6">
-      <FilterGroup title="Category">
+    <div className="divide-y divide-slate-100">
+      <FilterGroup title="Category" count={cats.length} defaultOpen>
         {categories.map((c) => (
           <Check key={c.slug} label={c.name} checked={cats.includes(c.slug)} onChange={() => { toggle(cats, c.slug, setCats); setPage(1); }} />
         ))}
       </FilterGroup>
-      <FilterGroup title="Max price">
-        <input type="range" min={300} max={topPrice} step={100} value={maxPrice} onChange={(e) => { setMaxPrice(Number(e.target.value)); setPage(1); }} className="w-full accent-accent-500" />
+      <FilterGroup title="Max price" defaultOpen>
+        <input type="range" min={300} max={topPrice} step={100} value={maxPrice} onChange={(e) => { setMaxPrice(Number(e.target.value)); setPage(1); }} className="w-full accent-accent-500" aria-label="Maximum price" />
         <p className="text-[13px] font-bold text-navy-950">Up to KES {maxPrice.toLocaleString()}</p>
       </FilterGroup>
-      <FilterGroup title="Brand">
+      <FilterGroup title="Brand" count={brands.length} scroll>
         {BRANDS.filter((b) => products.some((p) => p.brand === b)).map((b) => (
           <Check key={b} label={b} checked={brands.includes(b)} onChange={() => { toggle(brands, b, setBrands); setPage(1); }} />
         ))}
       </FilterGroup>
       {allCerts.length > 0 && (
-        <FilterGroup title="Certification">
+        <FilterGroup title="Certification" count={certs.length} scroll>
           {allCerts.map((c) => (
             <Check key={c} label={c} checked={certs.includes(c)} onChange={() => { toggle(certs, c, setCerts); setPage(1); }} />
           ))}
         </FilterGroup>
       )}
-      <FilterGroup title="Industry">
+      <FilterGroup title="Industry" count={inds.length} scroll>
         {INDUSTRIES.map((i) => (
           <Check key={i.slug} label={i.name} checked={inds.includes(i.slug)} onChange={() => { toggle(inds, i.slug, setInds); setPage(1); }} />
         ))}
       </FilterGroup>
-      <FilterGroup title="Availability">
+      <FilterGroup title="Availability" count={inStock ? 1 : 0}>
         <Check label="In stock only" checked={inStock} onChange={() => { setInStock(!inStock); setPage(1); }} />
       </FilterGroup>
     </div>
@@ -144,6 +159,19 @@ export function ShopClient({ products, categories, waNumber, initialQuery = "", 
           Showing <strong className="text-navy-950">{visible.length}</strong> of <strong className="text-navy-950">{filtered.length}</strong> products
           {initialCategory && <span> in <strong className="text-safety-600">{categoryName(initialCategory)}</strong></span>}
         </p>
+        {chips.length > 0 && (
+          <div className="mt-2 flex flex-wrap items-center gap-1.5">
+            {chips.map((c) => (
+              <button
+                key={c.label} onClick={c.clear}
+                className="inline-flex items-center gap-1 rounded-full bg-navy-950 py-1 pl-3 pr-1.5 text-xs font-bold text-white transition hover:bg-safety-600"
+              >
+                {c.label} <X size={13} />
+              </button>
+            ))}
+            <button onClick={clearAll} className="text-xs font-bold text-red-500 hover:underline">Clear all</button>
+          </div>
+        )}
 
         {visible.length === 0 ? (
           <div className="mt-6 rounded-2xl border border-dashed border-slate-300 bg-white p-12 text-center">
@@ -189,11 +217,33 @@ export function ShopClient({ products, categories, waNumber, initialQuery = "", 
   );
 }
 
-function FilterGroup({ title, children }: { title: string; children: React.ReactNode }) {
+function FilterGroup({ title, children, count = 0, defaultOpen = false, scroll = false }: {
+  title: string; children: React.ReactNode; count?: number; defaultOpen?: boolean; scroll?: boolean;
+}) {
+  // Open by default for the primary group or whenever it holds active selections.
+  const [open, setOpen] = useState(defaultOpen || count > 0);
+  const [seenCount, setSeenCount] = useState(count);
+  if (seenCount !== count) {
+    setSeenCount(count);
+    if (count > 0) setOpen(true);
+  }
   return (
-    <div>
-      <h3 className="mb-2 text-[12px] font-extrabold uppercase tracking-widest text-slate-400">{title}</h3>
-      <div className="space-y-1.5">{children}</div>
+    <div className="py-1">
+      <button
+        onClick={() => setOpen(!open)} aria-expanded={open}
+        className="flex w-full items-center justify-between rounded-lg px-1 py-2.5 text-left transition hover:bg-mist"
+      >
+        <span className="flex items-center gap-2 text-[12px] font-extrabold uppercase tracking-widest text-navy-950">
+          {title}
+          {count > 0 && (
+            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-accent-500 px-1 text-[10px] font-extrabold text-navy-950">{count}</span>
+          )}
+        </span>
+        <ChevronDown size={15} className={cn("shrink-0 text-slate-400 transition-transform", open && "rotate-180")} />
+      </button>
+      {open && (
+        <div className={cn("space-y-1.5 pb-2", scroll && "nice-scroll max-h-48 overflow-y-auto pr-1")}>{children}</div>
+      )}
     </div>
   );
 }

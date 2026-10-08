@@ -10,6 +10,7 @@ export async function GET(req: Request) {
     results: results.slice(0, 20).map((p) => ({
       name: p.name, slug: p.slug, sku: p.sku, brand: p.brand,
       category: p.category, price: p.price, certifications: p.certifications,
+      image: p.image,
     })),
   });
 }

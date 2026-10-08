@@ -56,6 +56,9 @@ export default async function HomePage() {
   const newArrivals = shuffle(newPool).slice(0, 4);
   const kitFrom = packages.length > 0 ? Math.min(...packages.map((p) => p.price)) : 0;
 
+  // Homepage articles — 3 random picks, reshuffled every hit.
+  const homePosts = shuffle(posts).slice(0, 3);
+
   // Essentials by category — product-first task row.
   const picksFor = (slug: string, n = 3) => shuffle(allProducts.filter((p) => p.category === slug)).slice(0, n);
   const essentials = [
@@ -472,7 +475,7 @@ export default async function HomePage() {
           <Link href="/resources" className="inline-flex items-center gap-1.5 text-sm font-bold text-safety-600 hover:text-accent-600">All articles <ArrowRight size={16} /></Link>
         </div>
         <div className="mt-8 grid gap-4 md:grid-cols-3">
-          {posts.filter((p) => p.featured).slice(0, 3).map((post) => (
+          {homePosts.map((post) => (
             <Link key={post.slug} href={`/resources/${post.slug}`} className="group overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-xl">
               <div className="relative h-44 overflow-hidden">
                 {post.image ? (

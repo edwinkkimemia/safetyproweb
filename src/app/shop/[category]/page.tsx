@@ -37,27 +37,33 @@ export default async function CategoryShopPage({ params }: { params: Promise<{ c
   const { category } = await params;
   const [products, categories, settings] = await Promise.all([getProducts({}), getCategories(), getSettings()]);
   if (!categories.some((c) => c.slug === category) && products.every((p) => p.category !== category)) notFound();
+  const count = products.filter((p) => p.category === category).length;
   return (
     <>
       <Breadcrumbs items={[{ label: "Shop", href: "/shop" }, { label: categoryName(category) }]} />
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-      <div className="relative mt-3 overflow-hidden rounded-3xl bg-navy-950">
+      {/* full-bleed hero — square edges, image background, no card whitespace */}
+      <div className="relative overflow-hidden bg-navy-950">
         {CATEGORY_IMAGES[category] && (
           <>
-            <Image src={CATEGORY_IMAGES[category]} alt={categoryName(category)} fill sizes="100vw" className="object-cover opacity-45" />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/75 to-navy-950/20" />
+            <Image src={CATEGORY_IMAGES[category]} alt={categoryName(category)} fill priority sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/70 to-navy-950/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
           </>
         )}
-        <div className="relative p-7 sm:p-9">
-          <h1 className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{categoryName(category)}</h1>
-          <p className="mt-1.5 max-w-2xl text-[15px] text-slate-200">
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+          <p className="text-xs font-extrabold uppercase tracking-[0.2em] text-accent-500">
+            Shop{count > 0 ? ` • ${count} product${count === 1 ? "" : "s"}` : ""}
+          </p>
+          <h1 className="mt-2 max-w-2xl text-3xl font-extrabold tracking-tight text-white text-balance sm:text-4xl lg:text-5xl">
+            {categoryName(category)}
+          </h1>
+          <p className="mt-2.5 max-w-2xl text-[15px] leading-relaxed text-slate-200">
             {categories.find((c) => c.slug === category)?.blurb ?? `Professional ${categoryName(category).toLowerCase()} stocked in Nairobi.`}
           </p>
         </div>
       </div>
-      <div className="mt-6">
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
         <ShopClient products={products} categories={categories} waNumber={settings.whatsapp} initialCategory={category} />
-      </div>
       </div>
     </>
   );

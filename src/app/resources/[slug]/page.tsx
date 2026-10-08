@@ -6,6 +6,7 @@ import { ArrowRight, FileText } from "lucide-react";
 import { getPosts, getProducts, getSettings } from "@/lib/data";
 import { waLink } from "@/lib/whatsapp";
 import { ProductCard } from "@/components/ProductCard";
+import { ShareButtons } from "@/components/ShareButtons";
 import { Badge, Breadcrumbs, WhatsAppIcon } from "@/components/ui";
 
 export const revalidate = 300;
@@ -32,7 +33,8 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   const [posts, products, settings] = await Promise.all([getPosts(), getProducts({}), getSettings()]);
   const post = posts.find((p) => p.slug === slug);
   if (!post) notFound();
-  const relatedPosts = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 2);
+  const relatedPosts = posts.filter((p) => p.slug !== slug && p.category === post.category).slice(0, 3);
+  const sidebarPosts = (relatedPosts.length > 0 ? relatedPosts : posts.filter((p) => p.slug !== slug).slice(0, 3));
   const tokens = `${post.title} ${post.excerpt}`.toLowerCase().split(/[^a-z0-9]+/).filter((t) => t.length > 4);
   const relatedProducts = products
     .map((p) => ({ p, score: tokens.filter((t) => `${p.name} ${p.short} ${p.category}`.toLowerCase().includes(t)).length }))
@@ -49,40 +51,81 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   return (
     <>
       <Breadcrumbs items={[{ label: "Resources", href: "/resources" }, { label: post.category, href: `/resources?cat=${encodeURIComponent(post.category)}` }, { label: post.title }]} />
-      <div className="mx-auto max-w-4xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
       {faqJsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }} />}
-      <div className="relative mt-4 overflow-hidden rounded-3xl bg-navy-950 p-8 text-white sm:p-10">
+      {/* full-bleed hero — square edges, image background */}
+      <div className="relative overflow-hidden bg-navy-950 text-white">
         {(post as any).image && (
           <>
-            <Image src={(post as any).image} alt={post.title} fill sizes="(max-width: 768px) 100vw, 60vw" className="object-cover opacity-40" />
-            <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/80 to-navy-950/30" />
+            <Image src={(post as any).image} alt={post.title} fill priority sizes="100vw" className="object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/70 to-navy-950/20" />
+            <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
           </>
         )}
-        <div className="relative">
-        <Badge tone="accent">{post.category}</Badge>
-        <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl">{post.title}</h1>
-        <p className="mt-2 text-slate-300">{post.excerpt}</p>
-        <p className="mt-3 text-xs font-semibold text-slate-400">{post.author} • {post.date} • {post.readMins} min read</p>
+        <div className="relative mx-auto max-w-4xl px-4 py-10 sm:px-6 sm:py-14">
+          <Badge tone="accent">{post.category}</Badge>
+          <h1 className="mt-3 text-3xl font-extrabold tracking-tight text-balance sm:text-4xl">{post.title}</h1>
+          <p className="mt-2 text-[15px] leading-relaxed text-slate-200">{post.excerpt}</p>
+          <p className="mt-3 text-xs font-semibold text-slate-400">{post.author} • {post.date} • {post.readMins} min read</p>
         </div>
       </div>
 
-      <article className="mt-8 space-y-5 rounded-3xl border border-slate-200 bg-white p-6 text-[15.5px] leading-relaxed text-slate-700 sm:p-9">
-        {post.body.map((para, i) => <p key={i}>{para}</p>)}
-      </article>
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <div className="grid items-start gap-8 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="min-w-0">
+          <article className="space-y-5 rounded-3xl border border-slate-200 bg-white p-6 text-[15.5px] leading-relaxed text-slate-700 sm:p-9">
+            <div className="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-5">
+              <p className="text-[11px] font-extrabold uppercase tracking-widest text-slate-400">
+                Share this guide
+              </p>
+              <ShareButtons title={post.title} excerpt={post.excerpt} path={`/resources/${post.slug}`} />
+            </div>
+            {post.body.map((para, i) => <p key={i}>{para}</p>)}
+          </article>
 
-      {post.faqs.length > 0 && (
-        <section className="mt-8 rounded-3xl bg-mist p-6 sm:p-8">
-          <h2 className="text-xl font-extrabold text-navy-950">Frequently asked questions</h2>
-          <div className="mt-4 space-y-3">
-            {post.faqs.map((f) => (
-              <details key={f.q} className="group rounded-2xl border border-slate-200 bg-white p-4">
-                <summary className="cursor-pointer font-bold text-navy-950">{f.q}</summary>
-                <p className="mt-2 text-sm leading-relaxed text-slate-600">{f.a}</p>
-              </details>
-            ))}
+          {post.faqs.length > 0 && (
+            <section className="mt-8 rounded-3xl bg-mist p-6 sm:p-8">
+              <h2 className="text-xl font-extrabold text-navy-950">Frequently asked questions</h2>
+              <div className="mt-4 space-y-3">
+                {post.faqs.map((f) => (
+                  <details key={f.q} className="group rounded-2xl border border-slate-200 bg-white p-4">
+                    <summary className="cursor-pointer font-bold text-navy-950">{f.q}</summary>
+                    <p className="mt-2 text-sm leading-relaxed text-slate-600">{f.a}</p>
+                  </details>
+                ))}
+              </div>
+            </section>
+          )}
+        </div>
+
+        {/* ============ SIDEBAR ============ */}
+        <aside className="space-y-4 lg:sticky lg:top-32">
+          {sidebarPosts.length > 0 && (
+            <div className="rounded-2xl border border-slate-200 bg-white p-5">
+              <h2 className="text-[12px] font-extrabold uppercase tracking-widest text-slate-400">More guides</h2>
+              <div className="mt-3 space-y-3">
+                {sidebarPosts.map((r) => (
+                  <Link key={r.slug} href={`/resources/${r.slug}`} className="group block rounded-xl p-2 transition hover:bg-mist">
+                    <Badge tone="accent">{r.category}</Badge>
+                    <h3 className="mt-1.5 line-clamp-2 text-[14px] font-bold leading-snug text-navy-950 group-hover:text-safety-600">{r.title}</h3>
+                    <p className="mt-1.5 inline-flex items-center gap-1 text-[13px] font-bold text-safety-600">Read guide <ArrowRight size={13} /></p>
+                  </Link>
+                ))}
+              </div>
+              <Link href="/resources" className="mt-3 inline-flex items-center gap-1 text-[13px] font-bold text-safety-600 hover:text-accent-600">
+                All articles <ArrowRight size={14} />
+              </Link>
+            </div>
+          )}
+
+          <div className="rounded-2xl bg-navy-950 p-5 text-white">
+            <h2 className="font-extrabold">Need this PPE?</h2>
+            <p className="mt-1 text-[13px] text-slate-300">Get a structured quotation within one business day.</p>
+            <Link href="/bulk-ppe" className="mt-3 flex items-center justify-center gap-2 rounded-xl bg-accent-500 py-2.5 text-[13px] font-extrabold uppercase text-navy-950 hover:bg-white">
+              <FileText size={15} /> Get quotation
+            </Link>
           </div>
-        </section>
-      )}
+        </aside>
+      </div>
 
       {relatedProducts.length > 0 && (
         <section className="mt-10">
@@ -102,17 +145,6 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
         </div>
       </div>
 
-      {relatedPosts.length > 0 && (
-        <div className="mt-8 grid gap-4 sm:grid-cols-2">
-          {relatedPosts.map((r) => (
-            <Link key={r.slug} href={`/resources/${r.slug}`} className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:shadow-lg">
-              <Badge tone="accent">{r.category}</Badge>
-              <h3 className="mt-2 font-extrabold text-navy-950">{r.title}</h3>
-              <p className="mt-2 inline-flex items-center gap-1 text-sm font-bold text-safety-600">Read next <ArrowRight size={14} /></p>
-            </Link>
-          ))}
-        </div>
-      )}
       </div>
     </>
   );

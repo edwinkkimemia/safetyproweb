@@ -88,45 +88,46 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
 
       <ProductDetailClient p={p} waNumber={settings.whatsapp} />
 
-      {/* description — prioritized: full width, first, proper paragraphs */}
-      <div id="product-description" className="mt-8 scroll-mt-28 rounded-3xl border border-slate-200 bg-white p-6 sm:p-8 lg:p-10">
-        <p className="text-[11.5px] font-extrabold uppercase tracking-[0.16em] text-safety-600">Product description</p>
-        <h2 className="mt-1 max-w-3xl text-xl font-extrabold tracking-tight text-navy-950 sm:text-2xl">About this product</h2>
-        <div className="mt-4 grid gap-4 lg:grid-cols-2 lg:gap-8">
-          {p.description.split(/\n\n+/).map((para, i) => (
-            <p key={i} className={i === 0 ? "text-[16px] font-medium leading-relaxed text-navy-950 lg:col-span-2 lg:text-lg" : "text-[15px] leading-relaxed text-slate-600"}>{para}</p>
-          ))}
-        </div>
-        {p.applications.length > 0 && (
-          <>
-            <h3 className="mt-6 text-[13px] font-extrabold uppercase tracking-widest text-slate-400">Typical applications</h3>
-            <div className="mt-2 flex flex-wrap gap-1.5">
-              {p.applications.map((a) => <Badge key={a} tone="grey">{a}</Badge>)}
-            </div>
-          </>
-        )}
-      </div>
-
-      {/* specs */}
-      <div className="mt-6 overflow-hidden rounded-3xl border border-slate-200 bg-white">
-        <h2 className="bg-navy-950 px-6 py-4 text-[15px] font-extrabold uppercase tracking-wide text-white">Specifications</h2>
-        <table className="w-full text-sm">
-          <tbody>
-            {p.specs.map((s, i) => (
-              <tr key={s.key} className={i % 2 ? "bg-white" : "bg-mist"}>
-                <td className="px-6 py-3 font-bold text-navy-950">{s.key}</td>
-                <td className="px-6 py-3 text-slate-600">{s.value}</td>
-              </tr>
+      {/* description + specs — side by side on desktop */}
+      <div className="mt-8 grid items-start gap-6 lg:grid-cols-2">
+        <div id="product-description" className="scroll-mt-28 rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
+          <p className="text-[11.5px] font-extrabold uppercase tracking-[0.16em] text-safety-600">Product description</p>
+          <h2 className="mt-1 text-xl font-extrabold tracking-tight text-navy-950 sm:text-2xl">About this product</h2>
+          <div className="mt-4 space-y-4">
+            {p.description.split(/\n\n+/).map((para, i) => (
+              <p key={i} className={i === 0 ? "text-[16px] font-medium leading-relaxed text-navy-950" : "text-[15px] leading-relaxed text-slate-600"}>{para}</p>
             ))}
-            <tr className="bg-white"><td className="px-6 py-3 font-bold text-navy-950">SKU</td><td className="px-6 py-3 font-mono text-slate-600">{p.sku}</td></tr>
-            <tr className="bg-mist"><td className="px-6 py-3 font-bold text-navy-950">Brand</td><td className="px-6 py-3 text-slate-600">{p.brand}</td></tr>
-          </tbody>
-        </table>
-        {p.certifications.length > 0 && (
-          <div className="flex items-center gap-2 border-t border-slate-100 px-6 py-4 text-[13px] text-slate-500">
-            <ShieldCheck size={16} className="text-safety-600" /> Standards on file: <strong className="text-navy-950">{p.certifications.join(", ")}</strong>
           </div>
-        )}
+          {p.applications.length > 0 && (
+            <>
+              <h3 className="mt-6 text-[13px] font-extrabold uppercase tracking-widest text-slate-400">Typical applications</h3>
+              <div className="mt-2 flex flex-wrap gap-1.5">
+                {p.applications.map((a) => <Badge key={a} tone="grey">{a}</Badge>)}
+              </div>
+            </>
+          )}
+        </div>
+
+        <div className="overflow-hidden rounded-3xl border border-slate-200 bg-white">
+          <h2 className="bg-navy-950 px-6 py-4 text-[15px] font-extrabold uppercase tracking-wide text-white">Specifications</h2>
+          <table className="w-full text-sm">
+            <tbody>
+              {p.specs.map((s, i) => (
+                <tr key={s.key} className={i % 2 ? "bg-white" : "bg-mist"}>
+                  <td className="px-6 py-3 font-bold text-navy-950">{s.key}</td>
+                  <td className="px-6 py-3 text-slate-600">{s.value}</td>
+                </tr>
+              ))}
+              <tr className="bg-white"><td className="px-6 py-3 font-bold text-navy-950">SKU</td><td className="px-6 py-3 font-mono text-slate-600">{p.sku}</td></tr>
+              <tr className="bg-mist"><td className="px-6 py-3 font-bold text-navy-950">Brand</td><td className="px-6 py-3 text-slate-600">{p.brand}</td></tr>
+            </tbody>
+          </table>
+          {p.certifications.length > 0 && (
+            <div className="flex items-center gap-2 border-t border-slate-100 px-6 py-4 text-[13px] text-slate-500">
+              <ShieldCheck size={16} className="text-safety-600" /> Standards on file: <strong className="text-navy-950">{p.certifications.join(", ")}</strong>
+            </div>
+          )}
+        </div>
       </div>
 
       {/* related */}

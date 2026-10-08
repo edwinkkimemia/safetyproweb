@@ -20,20 +20,22 @@ export default function AboutPage() {
   return (
     <>
       <Breadcrumbs items={[{ label: "About Us" }]} />
-      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
-      <div className="relative mt-3 overflow-hidden rounded-3xl bg-navy-950 p-8 text-white sm:p-12">
-        <Image src={HERO_IMAGE} alt="Industrial construction site in Kenya" fill sizes="100vw" className="object-cover opacity-35" />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/85 to-navy-950/30" />
-        <div className="relative">
-        <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-500">About SafetyPro Africa</p>
-        <h1 className="mt-2 max-w-2xl text-3xl font-extrabold tracking-tight text-balance sm:text-4xl">Protecting People. Powering Safer Workplaces.</h1>
-        <p className="mt-3 max-w-2xl text-slate-300">Professional PPE & workplace safety solutions across Africa — starting with Kenyan construction, industry, agriculture and institutions. We combine a modern e-commerce store with a corporate procurement desk, so a single pair of gloves and a 5,000-worker rollout get the same structured service.</p>
-        <div className="mt-6 flex flex-wrap gap-3">
-          <Link href="/shop" className="rounded-xl bg-accent-500 px-6 py-3 text-sm font-extrabold uppercase text-navy-950 hover:bg-white">Shop PPE</Link>
-          <Link href="/bulk-ppe" className="rounded-xl border border-white/25 px-6 py-3 text-sm font-bold text-white hover:border-accent-500 hover:text-accent-500">Corporate procurement</Link>
-        </div>
+      {/* full-bleed hero — square edges, image background */}
+      <div className="relative overflow-hidden bg-navy-950 text-white">
+        <Image src={HERO_IMAGE} alt="Industrial construction site in Kenya" fill priority sizes="100vw" className="object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-r from-navy-950 via-navy-950/70 to-navy-950/20" />
+        <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
+        <div className="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8">
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-accent-500">About SafetyPro Africa</p>
+          <h1 className="mt-2 max-w-2xl text-3xl font-extrabold tracking-tight text-balance sm:text-4xl lg:text-5xl">Protecting People. Powering Safer Workplaces.</h1>
+          <p className="mt-3 max-w-2xl text-[15px] leading-relaxed text-slate-200">Professional PPE & workplace safety solutions across Africa — starting with Kenyan construction, industry, agriculture and institutions. We combine a modern e-commerce store with a corporate procurement desk, so a single pair of gloves and a 5,000-worker rollout get the same structured service.</p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/shop" className="rounded-xl bg-accent-500 px-6 py-3 text-sm font-extrabold uppercase text-navy-950 hover:bg-white">Shop PPE</Link>
+            <Link href="/bulk-ppe" className="rounded-xl border border-white/25 px-6 py-3 text-sm font-bold text-white hover:border-accent-500 hover:text-accent-500">Corporate procurement</Link>
+          </div>
         </div>
       </div>
+      <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
 
       <div className="mt-10">
         <SectionHead eyebrow="How we work" title="A supplier built for procurement teams" />
