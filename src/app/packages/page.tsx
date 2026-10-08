@@ -8,8 +8,14 @@ import { ProductCard } from "@/components/ProductCard";
 import { Breadcrumbs } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "PPE Packages & Kits",
-  description: "Ready-made PPE kits: construction starter, oil & gas, warehouse and flower farm packages with per-worker pricing in Kenya.",
+  title: "PPE Kits Per Worker Kenya — Construction, Oil & Gas, Warehouse & Farm",
+  description:
+    "Ready-made PPE kits from KES/worker: construction starter, oil & gas, warehouse & flower farm packages. Standardised issue, volume discounts, LPO terms & Kenya-wide delivery.",
+  keywords: [
+    "PPE kits Kenya", "construction PPE kit price Kenya", "oil gas PPE kit", "warehouse PPE kit",
+    "flower farm PPE kit", "per worker PPE pricing Kenya", "bulk PPE packages Kenya",
+  ],
+  alternates: { canonical: "/packages" },
 };
 
 export const revalidate = 300;

@@ -80,7 +80,7 @@ function BulkForm() {
         <Field label="Company name *"><input required className={inputCls} value={form.companyName} onChange={(e) => set("companyName", e.target.value)} placeholder="Acme Construction Ltd" /></Field>
         <Field label="Contact person *"><input required className={inputCls} value={form.contactPerson} onChange={(e) => set("contactPerson", e.target.value)} placeholder="John Mwangi" /></Field>
         <Field label="Work email *"><input required type="email" className={inputCls} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="procurement@company.co.ke" /></Field>
-        <Field label="Phone *"><input required className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0715 135 141" /></Field>
+        <Field label="Phone *"><input required className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0729 396 174" /></Field>
         <Field label="Industry">
           <select className={inputCls} value={form.industry} onChange={(e) => set("industry", e.target.value)}>
             <option value="">Select industry…</option>

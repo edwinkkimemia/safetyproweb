@@ -61,7 +61,7 @@ function RegisterForm() {
           <Field label="Full name *"><input required className={inputCls} value={form.name} onChange={(e) => set("name", e.target.value)} placeholder="Jane Wanjiku" /></Field>
           <div className="grid gap-4 sm:grid-cols-2">
             <Field label="Email *"><input required type="email" className={inputCls} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@company.co.ke" /></Field>
-            <Field label="Phone"><input className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0715 135 141" /></Field>
+            <Field label="Phone"><input className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0729 396 174" /></Field>
           </div>
           <Field label="Password * (min 8 characters)"><input required minLength={8} type="password" className={inputCls} value={form.password} onChange={(e) => set("password", e.target.value)} placeholder="••••••••" /></Field>
           {error && <p className="rounded-xl bg-red-50 p-3 text-sm font-semibold text-red-600">{error}</p>}

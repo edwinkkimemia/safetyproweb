@@ -20,8 +20,9 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const ind = (await getIndustries()).find((i) => i.slug === slug);
   if (!ind) return { title: "Industry not found" };
   return {
-    title: `${ind.name} PPE`,
-    description: `${ind.blurb} Recommended PPE, hazards and package pricing in Kenya.`,
+    title: `${ind.name} PPE Packages Kenya — Hazards, Gear & Bulk Prices`,
+    description: `${ind.blurb} Recommended ${ind.name.toLowerCase()} PPE, site hazards and per-worker package pricing in Kenya. LPO terms, VAT invoices & 47-county delivery.`,
+    keywords: [`${ind.name} PPE Kenya`, `${ind.name} safety equipment`, "bulk PPE Kenya", "industry PPE packages Kenya"],
     alternates: { canonical: `/industries/${slug}` },
   };
 }

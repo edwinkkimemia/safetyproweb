@@ -4,8 +4,14 @@ import { Breadcrumbs } from "@/components/ui";
 import { getProducts, getCategories, getSettings } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Shop PPE & Safety Equipment",
-  description: "Shop safety helmets, boots, gloves, respirators, coveralls, fire safety and site equipment online in Kenya. VAT invoices, M-Pesa & Kenya-wide delivery.",
+  title: "Shop PPE Online Kenya — Best Prices on Helmets, Boots & Gloves",
+  description:
+    "Shop 900+ PPE products online in Kenya: EN397 helmets, S3 boots, cut-resistant & nitrile gloves, FFP2 masks, coveralls, harnesses & extinguishers. VAT invoices, M-Pesa, 47-county delivery.",
+  keywords: [
+    "shop PPE Kenya", "buy safety equipment online Kenya", "safety helmets price Kenya",
+    "S3 boots price Kenya", "nitrile gloves price Kenya", "respirators Kenya", "coveralls price Kenya",
+  ],
+  alternates: { canonical: "/shop" },
 };
 
 export const revalidate = 300;

@@ -20,15 +20,20 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const p = await getProduct(slug);
   if (!p) return { title: "Product not found" };
   const gallery = productImages(p);
+  const certs = p.certifications.length ? ` (${p.certifications.join(", ")})` : "";
   return {
-    title: `${p.name} — ${kes(p.price)}`,
-    description: `${p.short} SKU ${p.sku}. Buy online in Kenya with VAT invoice, M-Pesa & Kenya-wide delivery.`,
+    title: `Buy ${p.name} Online in Kenya — ${kes(p.price)}`,
+    description: `${p.name}${certs} — ${p.short} SKU ${p.sku}. Best price ${kes(p.price)}, VAT invoice, LPO terms, M-Pesa & 47-county delivery. In stock now.`,
+    keywords: [
+      p.name, `${p.name} Kenya`, `${p.name} price Kenya`, p.brand, categoryName(p.category),
+      ...p.certifications, `buy ${categoryName(p.category).toLowerCase()} Nairobi`, p.sku,
+    ],
     alternates: { canonical: `/product/${p.slug}` },
     openGraph: {
-      title: p.name, description: p.short, type: "website",
+      title: `${p.name} — ${kes(p.price)} | SAFETYPRO AFRICA`, description: `${p.short} Buy online in Kenya. VAT invoice & Kenya-wide delivery.`, type: "website",
       ...(gallery.length ? { images: gallery.slice(0, 4).map((url) => ({ url, alt: p.name })) } : {}),
     },
-    twitter: { card: "summary_large_image", title: p.name, description: p.short },
+    twitter: { card: "summary_large_image", title: `${p.name} — ${kes(p.price)}`, description: `${p.short} Buy online in Kenya.` },
   };
 }
 

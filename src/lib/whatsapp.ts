@@ -1,5 +1,5 @@
 export function siteWhatsapp(): string {
-  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "254715135141";
+  return process.env.NEXT_PUBLIC_WHATSAPP_NUMBER || "254729396174";
 }
 
 export function waLink(message: string, phone?: string): string {

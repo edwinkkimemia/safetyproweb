@@ -3,9 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useCallback, useEffect, useState } from "react";
-import { ArrowRight, ChevronLeft, ChevronRight, ShoppingCart } from "lucide-react";
-import { kes } from "@/lib/format";
-import { useStore } from "@/lib/store";
+import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
 import type { CatalogProduct } from "@/lib/catalog";
 import { cn } from "@/lib/utils";
 
@@ -82,39 +80,17 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
 }
 
 export function HeroSideCard({ p }: { p: CatalogProduct }) {
-  const { add } = useStore();
-  const [added, setAdded] = useState(false);
-  const discount = p.compareAt ? Math.round((1 - p.price / p.compareAt) * 100) : 0;
-
   return (
-    <div className="group relative flex min-h-0 flex-1 flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg">
-      {discount > 0 && (
-        <span className="absolute left-2 top-2 z-10 rounded-md bg-accent-500 px-1.5 py-0.5 text-[10.5px] font-extrabold text-navy-950">-{discount}%</span>
+    <Link
+      href={`/product/${p.slug}`}
+      aria-label={p.name}
+      className="relative block min-h-0 flex-1 overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg"
+    >
+      {p.image ? (
+        <Image src={p.image} alt={p.name} fill sizes="250px" className="object-contain" />
+      ) : (
+        <div className="h-full w-full bg-gradient-to-br from-safety-600 to-navy-950" />
       )}
-      <Link href={`/product/${p.slug}`} className="relative block h-24 shrink-0 overflow-hidden sm:h-32 lg:h-auto lg:min-h-[64px] lg:flex-1">
-        {p.image ? (
-          <Image src={p.image} alt={p.name} fill sizes="250px" className="object-cover transition-transform duration-300 group-hover:scale-105" />
-        ) : (
-          <div className="h-full w-full bg-gradient-to-br from-safety-600 to-navy-950" />
-        )}
-      </Link>
-      <div className="flex flex-1 flex-col p-2.5 lg:flex-none lg:p-2.5">
-        <p className="text-[10px] font-bold uppercase tracking-widest text-safety-600">{p.brand}</p>
-        <Link href={`/product/${p.slug}`} className="line-clamp-2 min-h-[2.4em] text-[13px] font-bold leading-snug text-navy-950 hover:text-safety-600">
-          {p.name}
-        </Link>
-        <div className="mt-1 flex items-baseline gap-1.5">
-          <span className="text-[15px] font-extrabold text-navy-950">{kes(p.price)}</span>
-          {p.compareAt && <span className="text-[11px] text-slate-400 line-through">{kes(p.compareAt)}</span>}
-        </div>
-        <button
-          onClick={() => { add({ slug: p.slug, name: p.name, sku: p.sku, price: p.price }, 1); setAdded(true); setTimeout(() => setAdded(false), 1300); }}
-          disabled={p.stock <= 0}
-          className={cn("mt-2 inline-flex h-10 items-center justify-center gap-1.5 rounded-lg text-xs font-extrabold uppercase tracking-wide text-white transition active:scale-95",
-            added ? "bg-emerald-600" : "bg-navy-950 hover:bg-accent-500 hover:text-navy-950")}>
-          <ShoppingCart size={13} /> {added ? "Added!" : "Add to cart"}
-        </button>
-      </div>
-    </div>
+    </Link>
   );
 }

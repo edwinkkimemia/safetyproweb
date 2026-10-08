@@ -7,8 +7,14 @@ import { CategoryIcon } from "@/components/ProductVisual";
 import { Breadcrumbs } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "PPE Categories",
-  description: "Browse all PPE categories: head, foot, hand, eye, hearing, respiratory, clothing, fall, fire and site safety equipment in Kenya.",
+  title: "PPE Categories Kenya — Head, Foot, Hand, Eye, Fall & Fire Safety",
+  description:
+    "Browse all PPE categories in Kenya at best prices: head protection, S3 foot protection, cut-resistant gloves, eye & face, hearing, respiratory, coveralls, fall arrest, fire & road safety.",
+  keywords: [
+    "PPE categories Kenya", "head protection Kenya", "foot protection Kenya", "hand protection Kenya",
+    "eye protection Kenya", "fall protection Kenya", "fire safety equipment Kenya",
+  ],
+  alternates: { canonical: "/categories" },
 };
 
 export const revalidate = 300;

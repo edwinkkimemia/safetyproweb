@@ -5,7 +5,7 @@ import { ArrowRight, FileText, Minus, Plus, ShoppingCart, Trash2 } from "lucide-
 import { useStore } from "@/lib/store";
 import { kes, vatAmount } from "@/lib/format";
 import { ProductVisual } from "@/components/ProductVisual";
-import { findProduct, PRODUCT_IMAGES } from "@/lib/catalog";
+import { findProduct, PRODUCT_IMAGES, productImages } from "@/lib/catalog";
 
 export default function CartPage() {
   const { lines, setQty, remove, subtotal, clear } = useStore();
@@ -34,10 +34,12 @@ export default function CartPage() {
       <div className="mt-6 grid gap-6 lg:grid-cols-[1fr_360px]">
         <div className="space-y-3">
           {lines.map((l) => {
-            const cat = findProduct(l.slug)?.category ?? "shield";
+            const found = findProduct(l.slug);
+            const cat = found?.category ?? "shield";
+            const img = PRODUCT_IMAGES[l.slug] ?? found?.image ?? productImages({ slug: l.slug })[0];
             return (
               <div key={`${l.slug}-${l.size}-${l.colour}`} className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-3.5">
-                <ProductVisual category={cat} name={l.name} sku={l.sku} image={PRODUCT_IMAGES[l.slug]} className="h-24 w-24 shrink-0 rounded-xl" iconSize={30} />
+                <ProductVisual category={cat} name={l.name} sku={l.sku} image={img} className="h-24 w-24 shrink-0 rounded-xl" iconSize={30} />
                 <div className="min-w-0 flex-1">
                   <Link href={`/product/${l.slug}`} className="line-clamp-1 font-bold text-navy-950 hover:text-safety-600">{l.name}</Link>
                   <p className="mt-0.5 font-mono text-xs text-slate-400">{l.sku}{l.size ? ` • ${l.size}` : ""}{l.colour ? ` • ${l.colour}` : ""}</p>

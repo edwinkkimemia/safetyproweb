@@ -65,7 +65,7 @@ export default function CheckoutPage() {
               <Field label="Full name *"><input required className={inputCls} value={form.customerName} onChange={(e) => set("customerName", e.target.value)} placeholder="Jane Wanjiku" /></Field>
               <Field label="Company (optional)"><input className={inputCls} value={form.company} onChange={(e) => set("company", e.target.value)} placeholder="Acme Construction Ltd" /></Field>
               <Field label="Email *"><input required type="email" className={inputCls} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@company.co.ke" /></Field>
-              <Field label="Phone / M-Pesa number *"><input required className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0715 135 141" /></Field>
+              <Field label="Phone / M-Pesa number *"><input required className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0729 396 174" /></Field>
               <Field label="Delivery address *"><input required className={inputCls} value={form.address} onChange={(e) => set("address", e.target.value)} placeholder="Plot, road, building" /></Field>
               <Field label="Town *"><input required className={inputCls} value={form.town} onChange={(e) => set("town", e.target.value)} placeholder="Nairobi" /></Field>
               <Field label="County *">

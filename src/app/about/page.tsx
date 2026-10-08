@@ -6,8 +6,14 @@ import { SectionHead, Breadcrumbs } from "@/components/ui";
 import { HERO_IMAGE } from "@/lib/catalog";
 
 export const metadata: Metadata = {
-  title: "About Us",
-  description: "SAFETYPRO AFRICA — professional PPE and workplace safety equipment supplier serving Kenyan businesses, contractors and institutions.",
+  title: "About Us — Kenya's Trusted PPE Supplier for Corporates & Contractors",
+  description:
+    "SAFETYPRO AFRICA — Kenya's trusted PPE supplier: certified stock, structured BOQ quotations in 24hrs, LPO & 30-day terms, VAT invoices and 47-county delivery for contractors & institutions.",
+  keywords: [
+    "PPE supplier Kenya", "safety equipment supplier Nairobi", "corporate PPE Kenya",
+    "bulk safety equipment Kenya", "LPO PPE suppliers",
+  ],
+  alternates: { canonical: "/about" },
 };
 
 export default function AboutPage() {

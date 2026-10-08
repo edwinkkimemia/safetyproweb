@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { CheckCircle2, Clock, Mail, MapPin, Phone } from "lucide-react";
+import { CheckCircle2, Clock, Mail, Phone } from "lucide-react";
 import { waLink } from "@/lib/whatsapp";
 import { Breadcrumbs, Field, WhatsAppIcon, inputCls } from "@/components/ui";
 
@@ -35,20 +35,15 @@ export default function ContactPage() {
           <div className="rounded-3xl bg-navy-950 p-6 text-white">
             <h2 className="font-extrabold">Contact information</h2>
             <div className="mt-4 space-y-3.5 text-sm">
-              <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Phone size={17} /></span><span><strong className="block text-white">+254 715 135 141</strong><span className="text-slate-400">Sales & support line</span></span></p>
+              <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Phone size={17} /></span><span><strong className="block text-white">+254 729 396 174</strong><span className="text-slate-400">Sales & support line</span></span></p>
               <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><WhatsAppIcon size={17} /></span><span><strong className="block text-white">WhatsApp chat</strong><span className="text-slate-400">Fastest for product questions</span></span></p>
               <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Mail size={17} /></span><span><strong className="block text-white">info@safetypro.co.ke</strong><span className="text-slate-400">Quotes & LPO documents</span></span></p>
-              <p className="flex items-start gap-3"><span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-white/10 text-accent-500"><MapPin size={17} /></span><span><strong className="block text-white">Enterprise Road, Industrial Area, Nairobi</strong><span className="text-slate-400">Pickup & trade counter</span></span></p>
               <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Clock size={17} /></span><span><strong className="block text-white">Mon–Sat, 8:00am–6:00pm EAT</strong><span className="text-slate-400">Closed Sundays & public holidays</span></span></p>
             </div>
             <div className="mt-5 grid grid-cols-2 gap-2.5">
               <a href={waLink("Hello SAFETYPRO AFRICA, I have an enquiry.")} target="_blank" rel="noopener" className="flex items-center justify-center gap-2 rounded-xl bg-[#25D366] py-3 text-sm font-bold text-white"><WhatsAppIcon size={16} /> WhatsApp</a>
               <a href="/bulk-ppe" className="flex items-center justify-center gap-2 rounded-xl bg-accent-500 py-3 text-sm font-extrabold text-navy-950">Get quotation</a>
             </div>
-          </div>
-          <div className="overflow-hidden rounded-3xl border border-slate-200">
-            <iframe title="SafetyPro Africa location map" src="https://www.google.com/maps?q=Enterprise+Road+Industrial+Area+Nairobi&output=embed"
-              className="h-64 w-full" loading="lazy" />
           </div>
         </div>
 
@@ -65,7 +60,7 @@ export default function ContactPage() {
               <div className="mt-4 grid gap-4 sm:grid-cols-2">
                 <Field label="Full name *"><input required className={inputCls} value={form.name} onChange={(e) => set("name", e.target.value)} placeholder="Jane Wanjiku" /></Field>
                 <Field label="Email *"><input required type="email" className={inputCls} value={form.email} onChange={(e) => set("email", e.target.value)} placeholder="you@company.co.ke" /></Field>
-                <Field label="Phone"><input className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0715 135 141" /></Field>
+                <Field label="Phone"><input className={inputCls} value={form.phone} onChange={(e) => set("phone", e.target.value)} placeholder="0729 396 174" /></Field>
                 <Field label="Subject"><input className={inputCls} value={form.subject} onChange={(e) => set("subject", e.target.value)} placeholder="Bulk helmets enquiry" /></Field>
               </div>
               <div className="mt-4"><Field label="Message *"><textarea required rows={5} className={inputCls} value={form.message} onChange={(e) => set("message", e.target.value)} placeholder="Tell us quantities, site location and timelines…" /></Field></div>

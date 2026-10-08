@@ -3,12 +3,17 @@
 import Link from "next/link";
 import { Heart } from "lucide-react";
 import { useStore } from "@/lib/store";
-import { ALL_PRODUCTS as PRODUCTS } from "@/lib/catalog";
+import { ALL_PRODUCTS as PRODUCTS, PRODUCT_IMAGES, productImages } from "@/lib/catalog";
 import { ProductCard } from "@/components/ProductCard";
+
+function withResolvedImage<T extends { slug: string; image?: string; images?: string[] }>(p: T): T {
+  const gallery = productImages({ slug: p.slug, image: PRODUCT_IMAGES[p.slug] ?? p.image, images: p.images });
+  return { ...p, image: gallery[0] ?? p.image, images: gallery.slice(1) } as T;
+}
 
 export default function WishlistPage() {
   const { wishlist } = useStore();
-  const items = PRODUCTS.filter((p) => wishlist.includes(p.slug));
+  const items = PRODUCTS.filter((p) => wishlist.includes(p.slug)).map(withResolvedImage);
   return (
     <div className="mx-auto max-w-7xl px-4 py-8 lg:py-12">
       <h1 className="flex items-center gap-2.5 text-3xl font-extrabold tracking-tight text-navy-950"><Heart size={26} className="text-red-500" /> My wishlist</h1>

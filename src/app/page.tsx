@@ -2,24 +2,38 @@ import Link from "next/link";
 import Image from "next/image";
 import {
   ArrowRight, Building2, CheckCircle2, ClipboardList,
-  Factory, FileText, HardHat, MapPin, Minus, Package,
+  Factory, FileText, HardHat, Minus, Package,
   Phone, ShieldCheck, Sprout, Star, Trophy, Truck, ChevronRight, XCircle,
   type LucideIcon,
 } from "lucide-react";
 import { getProducts, getCategories, getIndustries, getPackages, getPosts, getSettings } from "@/lib/data";
-import { BULK_CTA_IMAGE, ALL_PRODUCTS } from "@/lib/catalog";
+import { BULK_CTA_IMAGE, ALL_PRODUCTS, shuffle } from "@/lib/catalog";
 import { kes } from "@/lib/format";
 import { waLink } from "@/lib/whatsapp";
-import { ProductCard } from "@/components/ProductCard";
+import { DealCard, ProductCard } from "@/components/ProductCard";
 import { CategoryIcon, ProductVisual } from "@/components/ProductVisual";
 import { HeroSlider, HeroSideCard } from "@/components/Hero";
 import { Badge, Button, SectionHead, WhatsAppIcon } from "@/components/ui";
+import type { Metadata } from "next";
 
-export const revalidate = 300;
+// Always fresh: picks are reshuffled every hit, so no caching.
+export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+  title: "Buy PPE Online in Kenya — Helmets, Boots, Gloves & Bulk Supply",
+  description:
+    "Kenya's #1 PPE shop: EN397 helmets, S3 boots, cut-resistant gloves, respirators, coveralls & fire safety at best prices. LPO & 30-day terms, VAT invoices, M-Pesa, 47-county delivery.",
+  keywords: [
+    "buy PPE online Kenya", "PPE Kenya", "safety shop Nairobi", "safety helmets EN397",
+    "S3 safety boots Kenya", "cut resistant gloves", "respirators Kenya", "coveralls Kenya",
+    "bulk PPE Kenya", "corporate PPE procurement Kenya", "LPO suppliers Kenya",
+  ],
+  alternates: { canonical: "/" },
+};
 
 export default async function HomePage() {
-  const [featured, allProducts, categories, industries, packages, posts, settings] = await Promise.all([
-    getProducts({ featured: true, limit: 8 }),
+  const [featuredPool, allProducts, categories, industries, packages, posts, settings] = await Promise.all([
+    getProducts({ featured: true, limit: 24 }),
     getProducts({ limit: 60 }),
     getCategories(),
     getIndustries(),
@@ -29,18 +43,21 @@ export default async function HomePage() {
   ]);
   const wa = settings.whatsapp;
 
+  // Reshuffled every hit: same sections, fresh products on every refresh.
+  const featured = shuffle(featuredPool).slice(0, 8);
   // Product-first derivations (packages demoted to a slim strip below).
   const deals = allProducts
     .filter((p) => p.compareAt && p.compareAt > p.price)
     .sort((a, b) => 1 - b.price / (b.compareAt ?? b.price) - (1 - a.price / (a.compareAt ?? a.price)))
-    .slice(0, 4);
-  const dealsFallback = deals.length > 0 ? deals : featured.slice(0, 4);
+    .slice(0, 12);
+  const dealsFallback = shuffle(deals.length > 0 ? deals : featuredPool).slice(0, 4);
   const fresh = allProducts.filter((p) => p.isNew);
-  const newArrivals = (fresh.length > 0 ? fresh : [...allProducts].sort((a, b) => b.rating - a.rating)).slice(0, 4);
+  const newPool = fresh.length >= 4 ? fresh : [...allProducts].sort((a, b) => b.rating - a.rating).slice(0, 12);
+  const newArrivals = shuffle(newPool).slice(0, 4);
   const kitFrom = packages.length > 0 ? Math.min(...packages.map((p) => p.price)) : 0;
 
   // Essentials by category — product-first task row.
-  const picksFor = (slug: string, n = 3) => allProducts.filter((p) => p.category === slug).slice(0, n);
+  const picksFor = (slug: string, n = 3) => shuffle(allProducts.filter((p) => p.category === slug)).slice(0, n);
   const essentials = [
     { slug: "head-protection", title: "Head protection", blurb: "Helmets & hard hats" },
     { slug: "foot-protection", title: "Foot protection", blurb: "S3 boots & gumboots" },
@@ -189,14 +206,14 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ============ TOP DEALS — product-first ============ */}
+      {/* ============ TOP DEALS — square-frame deal cards ============ */}
       <section className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <SectionHead eyebrow="Top deals" title="Biggest savings right now" sub="Discounted certified stock — same VAT invoice and Kenya-wide delivery, while stock lasts." />
           <Link href="/shop" className="inline-flex items-center gap-1.5 rounded-xl bg-navy-950 px-5 py-2.5 text-sm font-bold text-white hover:bg-safety-600">Shop all deals <ArrowRight size={16} /></Link>
         </div>
         <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
-          {dealsFallback.map((p) => <ProductCard key={p.slug} p={p} waNumber={wa} compact />)}
+          {dealsFallback.map((p) => <DealCard key={p.slug} p={p} />)}
         </div>
       </section>
 
@@ -495,13 +512,11 @@ export default async function HomePage() {
             <h3 className="font-extrabold">Corporate procurement desk</h3>
             <p className="mt-1 text-[13px] text-slate-400">Mon–Sat, 8:00am–6:00pm EAT • Response within one business day</p>
             <div className="mt-4 space-y-3 text-sm text-slate-300">
-              <p className="flex items-start gap-2.5"><MapPin size={17} className="mt-0.5 shrink-0 text-accent-500" /> Enterprise Road, Industrial Area, Nairobi, Kenya<br /></p>
-              <p className="flex items-center gap-2.5"><Phone size={17} className="shrink-0 text-accent-500" /> 0715 135 141 (Mon–Sat, 8am–6pm EAT)</p>
-              <p className="flex items-center gap-2.5"><Truck size={17} className="shrink-0 text-accent-500" /> Nairobi same-day pickup • Upcountry 24–72h dispatch</p>
+              <p className="flex items-center gap-2.5"><Phone size={17} className="shrink-0 text-accent-500" /> 0729 396 174 (Mon–Sat, 8am–6pm EAT)</p>
+              <p className="flex items-center gap-2.5"><Truck size={17} className="shrink-0 text-accent-500" /> Nairobi same-day delivery • Upcountry 24–72h dispatch</p>
             </div>
             <div className="mt-5 flex flex-wrap gap-3">
               <Link href="/contact" className="inline-flex items-center gap-2 rounded-xl bg-white px-5 py-2.5 text-sm font-bold text-navy-950 hover:bg-accent-100">Contact page <ArrowRight size={15} /></Link>
-              <a href={`https://maps.google.com/?q=${encodeURIComponent("Enterprise Road Industrial Area Nairobi")}`} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-xl border border-white/25 px-5 py-2.5 text-sm font-bold text-white hover:border-accent-500 hover:text-accent-500"><MapPin size={15} /> Get directions</a>
             </div>
           </div>
         </div>

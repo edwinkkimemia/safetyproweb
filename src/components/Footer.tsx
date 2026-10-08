@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 
 function SocialIcon({ path, label, href }: { path: string; label: string; href: string }) {
   return (
@@ -54,9 +54,8 @@ export function Footer() {
             Kenya&apos;s corporate PPE partner — certified stock, structured quotations and accountable delivery for contractors, industry and institutions.
           </p>
           <div className="mt-4 space-y-2 text-sm">
-            <p className="flex items-center gap-2"><Phone size={15} className="text-accent-500" /> 0715 135 141 <span className="text-slate-500">(Mon–Sat, 8am–6pm)</span></p>
+            <p className="flex items-center gap-2"><Phone size={15} className="text-accent-500" /> 0729 396 174 <span className="text-slate-500">(Mon–Sat, 8am–6pm)</span></p>
             <p className="flex items-center gap-2"><Mail size={15} className="text-accent-500" /> sales@safetypro.co.ke</p>
-            <p className="flex items-start gap-2"><MapPin size={15} className="mt-0.5 shrink-0 text-accent-500" /> Enterprise Road, Industrial Area, Nairobi, Kenya</p>
           </div>
           <div className="mt-4 flex gap-2">
             {SOCIALS.map((s) => <SocialIcon key={s.label} {...s} />)}

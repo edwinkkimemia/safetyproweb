@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Heart, Menu, Phone, Search, ShoppingCart, User, X, FileText } from "lucide-react";
 import { useStore } from "@/lib/store";
 import { CATEGORIES } from "@/lib/catalog";
@@ -28,42 +28,8 @@ export function Header() {
   const { count, wishlist } = useStore();
   const [open, setOpen] = useState(false);
   const [q, setQ] = useState("");
-  const [hidden, setHidden] = useState(false);
   const router = useRouter();
   const pathname = usePathname();
-
-  // Hide only the top utility bar on scroll down, reveal on scroll up.
-  // The main header (logo / search / cart) stays pinned.
-  // Instant toggle (no height animation): animating max-height inside a
-  // sticky backdrop-blur header repaints every frame and flickers on scroll.
-  // 10px dead zone ignores scroll oscillation (mobile URL bar, trackpads).
-  useEffect(() => {
-    let last = window.scrollY;
-    let ticking = false;
-    const onScroll = () => {
-      if (ticking) return;
-      ticking = true;
-      requestAnimationFrame(() => {
-        const y = window.scrollY;
-        const dy = y - last;
-        if (Math.abs(dy) < 10) {
-          ticking = false;
-          return;
-        }
-        if (y <= 40) {
-          setHidden((prev) => (prev ? false : prev));
-        } else if (dy > 0) {
-          setHidden((prev) => (prev ? prev : true));
-        } else {
-          setHidden((prev) => (prev ? false : prev));
-        }
-        last = y;
-        ticking = false;
-      });
-    };
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -73,26 +39,25 @@ export function Header() {
 
   return (
     <>
-    <header className="sticky top-0 z-50">
-      {/* utility bar — corporate assurance, collapses away on scroll down */}
-      <div aria-hidden={hidden} className={cn("overflow-hidden bg-navy-950 text-white", hidden ? "max-h-0 opacity-0" : "max-h-10 opacity-100")}>
-        <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-1.5 text-[11.5px] sm:px-6 sm:text-xs lg:px-8">
-          <p className="truncate font-medium tracking-wide">
-            <span className="font-bold text-accent-500">CORPORATE SUPPLY</span>
-            <span className="mx-1.5 text-white/30">|</span> LPO Accepted
-            <span className="mx-1.5 text-white/30">|</span> VAT Invoices
-            <span className="mx-1.5 hidden text-white/30 sm:inline">|</span>
-            <span className="hidden sm:inline">24hr Quotation SLA</span>
-          </p>
-          <div className="hidden shrink-0 items-center gap-4 sm:flex">
-            <a href="mailto:sales@safetypro.co.ke" className="font-semibold text-slate-300 hover:text-accent-500">sales@safetypro.co.ke</a>
-            <a href="tel:+254715135141" className="flex items-center gap-1.5 font-bold text-accent-100 hover:text-accent-500">
-              <Phone size={13} /> 0715 135 141
-            </a>
-          </div>
+    {/* utility bar — static, scrolls away naturally so the sticky header below never changes height (no flicker) */}
+    <div className="bg-navy-950 text-white">
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-1.5 text-[11.5px] sm:px-6 sm:text-xs lg:px-8">
+        <p className="truncate font-medium tracking-wide">
+          <span className="font-bold text-accent-500">CORPORATE SUPPLY</span>
+          <span className="mx-1.5 text-white/30">|</span> LPO Accepted
+          <span className="mx-1.5 text-white/30">|</span> VAT Invoices
+          <span className="mx-1.5 hidden text-white/30 sm:inline">|</span>
+          <span className="hidden sm:inline">24hr Quotation SLA</span>
+        </p>
+        <div className="hidden shrink-0 items-center gap-4 sm:flex">
+          <a href="mailto:sales@safetypro.co.ke" className="font-semibold text-slate-300 hover:text-accent-500">sales@safetypro.co.ke</a>
+          <a href="tel:+254729396174" className="flex items-center gap-1.5 font-bold text-accent-100 hover:text-accent-500">
+            <Phone size={13} /> 0729 396 174
+          </a>
         </div>
       </div>
-
+    </div>
+    <header className="sticky top-0 z-50">
       {/* main bar */}
       <div className="border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center gap-3 px-4 py-2.5 sm:gap-4 sm:px-6 lg:gap-8 lg:px-8 lg:py-3">

@@ -747,6 +747,17 @@ export function getRelatedProducts<T extends {
   return pool.slice(0, limit).map((s) => s.x);
 }
 
+// Fisher-Yates shuffle — returns a new array, never mutates the input.
+// Used to rotate storefront picks (featured / deals / new arrivals) on every hit.
+export function shuffle<T>(arr: readonly T[]): T[] {
+  const out = [...arr];
+  for (let i = out.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [out[i], out[j]] = [out[j], out[i]];
+  }
+  return out;
+}
+
 // Full range = 24 curated products + auto-generated photo products.
 // (Defined last: needs PRODUCTS, AUTO_PRODUCTS and BRANDS above.)
 export const ALL_PRODUCTS: CatalogProduct[] = [...PRODUCTS, ...AUTO_PRODUCTS];

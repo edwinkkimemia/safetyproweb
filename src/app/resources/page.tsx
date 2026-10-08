@@ -6,8 +6,14 @@ import { getPosts } from "@/lib/data";
 import { Badge, Breadcrumbs } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Safety Resources & Guides",
-  description: "PPE buying guides, EN standards explained, construction compliance and industry checklists for Kenyan workplaces.",
+  title: "Safety Guides Kenya — PPE Buying Guides, EN Standards & Checklists",
+  description:
+    "Free PPE buying guides for Kenyan buyers: EN397 helmets, S1 vs S2 vs S3 boots, chemical gloves, respirators, construction compliance & industry checklists — each linked to exact products.",
+  keywords: [
+    "PPE buying guide Kenya", "EN397 explained", "S1 vs S2 vs S3 boots", "safety helmet guide",
+    "chemical gloves guide", "construction safety Kenya", "workplace safety checklist Kenya",
+  ],
+  alternates: { canonical: "/resources" },
 };
 
 export const revalidate = 300;

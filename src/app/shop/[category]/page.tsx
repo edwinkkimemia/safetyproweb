@@ -11,9 +11,25 @@ export const revalidate = 300;
 export async function generateMetadata({ params }: { params: Promise<{ category: string }> }): Promise<Metadata> {
   const { category } = await params;
   const name = categoryName(category);
+  const key = category.toLowerCase();
+  const extra: Record<string, string> = {
+    "head-protection": "EN397 helmets & hard hats",
+    "foot-protection": "S3 steel-toe boots & gumboots",
+    "hand-protection": "cut-resistant, nitrile & chemical gloves",
+    "eye-face-protection": "safety glasses, goggles & face shields",
+    "hearing-protection": "ear plugs & SNR-rated muffs",
+    "respiratory-protection": "FFP2 dust masks & A2P3 respirators",
+    "protective-clothing": "coveralls, hi-vis vests & rainwear",
+    "fall-protection": "harnesses, lanyards & lifelines",
+    "fire-emergency": "extinguishers, blankets & first aid kits",
+    "road-site-safety": "cones, barricades & warning lights",
+  };
+  const hook = extra[key] ? `${extra[key]} at best prices` : "certified stock at best prices";
   return {
-    title: `${name} Kenya`,
-    description: `Buy ${name.toLowerCase()} online in Kenya — quality stock, VAT invoices, M-Pesa payment and Kenya-wide delivery from SAFETYPRO AFRICA.`,
+    title: `${name} — Buy Online in Kenya at Best Prices`,
+    description: `Buy ${name.toLowerCase()} online in Kenya — ${hook}. VAT invoices, LPO terms, M-Pesa & 47-county delivery from SAFETYPRO AFRICA.`,
+    keywords: [name, `${name} Kenya`, `${name} price Kenya`, `buy ${name.toLowerCase()} Nairobi`, "bulk PPE Kenya"],
+    alternates: { canonical: `/shop/${category}` },
   };
 }
 

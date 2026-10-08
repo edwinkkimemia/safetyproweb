@@ -18,7 +18,13 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const pkg = (await getPackages()).find((p) => p.slug === slug);
-  return { title: pkg ? `${pkg.name} — ${kes(pkg.price)}/worker` : "Package not found" };
+  if (!pkg) return { title: "Package not found" };
+  return {
+    title: `${pkg.name} Kenya — ${kes(pkg.price)}/Worker + Bulk Discounts`,
+    description: `${pkg.name}: ${pkg.blurb} Guide price ${kes(pkg.price)}/worker. Scaled pricing for 10–10,000 workers, LPO terms, VAT invoices & Kenya-wide delivery.`,
+    keywords: [pkg.name, `${pkg.name} Kenya`, "PPE kits Kenya", "per worker PPE pricing Kenya", "bulk PPE Kenya"],
+    alternates: { canonical: `/packages/${slug}` },
+  };
 }
 
 export default async function PackageDetailPage({ params }: { params: Promise<{ slug: string }> }) {

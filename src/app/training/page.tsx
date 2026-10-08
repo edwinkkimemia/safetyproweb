@@ -4,8 +4,13 @@ import { Breadcrumbs } from "@/components/ui";
 import { TrainingForm } from "./TrainingForm";
 
 export const metadata: Metadata = {
-  title: "Corporate Safety Training Kenya",
-  description: "On-site corporate safety training across Kenya: first aid, fire safety, work at height, PPE use, HSE induction and chemical handling — with certificates and records for every trainee.",
+  title: "Corporate Safety Training Kenya — First Aid, Fire & Work at Height",
+  description:
+    "Book on-site corporate safety training in Kenya: first aid at work, fire safety & extinguisher handling, work at height, PPE use & HSE induction — certificates & records for every trainee.",
+  keywords: [
+    "safety training Kenya", "first aid training Kenya", "fire safety training Nairobi",
+    "work at height training Kenya", "HSE training Kenya", "corporate safety courses Kenya",
+  ],
   alternates: { canonical: "/training" },
 };
 
@@ -94,7 +99,7 @@ export default function TrainingPage() {
             <div className="rounded-xl bg-navy-950 p-6 text-white">
               <h3 className="font-extrabold">Talk to the training desk</h3>
               <div className="mt-4 space-y-3 text-sm">
-                <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Phone size={17} /></span><span><strong className="block text-white">0715 135 141</strong><span className="text-slate-400">Mon–Sat, 8am–6pm EAT</span></span></p>
+                <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Phone size={17} /></span><span><strong className="block text-white">0729 396 174</strong><span className="text-slate-400">Mon–Sat, 8am–6pm EAT</span></span></p>
                 <p className="flex items-center gap-3"><span className="flex h-10 w-10 items-center justify-center rounded-xl bg-white/10 text-accent-500"><Mail size={17} /></span><span><strong className="block text-white">sales@safetypro.co.ke</strong><span className="text-slate-400">Course outlines & proposals</span></span></p>
               </div>
               <div className="mt-5 rounded-lg bg-white/[0.06] p-4 text-[13px] text-slate-300 ring-1 ring-white/10">

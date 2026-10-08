@@ -569,8 +569,8 @@ model SiteSettings {
   id                  Int     @id @default(1)
   siteName            String  @default("SAFETYPRO AFRICA")
   tagline             String  @default("Protecting People. Powering Safer Workplaces.")
-  phone               String  @default("+254722000000")
-  whatsapp            String  @default("254722000000")
+  phone               String  @default("+254729396174")
+  whatsapp            String  @default("254729396174")
   email               String  @default("info@safetypro.co.ke")
   address             String  @default("Nairobi, Kenya")
   mapUrl              String?

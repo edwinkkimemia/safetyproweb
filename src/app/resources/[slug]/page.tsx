@@ -15,14 +15,15 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const post = (await getPosts()).find((p) => p.slug === slug);
   if (!post) return { title: "Article not found" };
   return {
-    title: post.title,
-    description: post.excerpt,
+    title: `${post.title} — Kenya PPE Guide`,
+    description: `${post.excerpt} Shop the exact certified products mentioned, with VAT invoices & Kenya-wide delivery.`,
+    keywords: [post.title, post.category, "PPE guide Kenya", "safety standards Kenya", "buy PPE Kenya"],
     alternates: { canonical: `/resources/${slug}` },
     openGraph: {
-      title: post.title, description: post.excerpt, type: "article",
+      title: `${post.title} — Kenya PPE Guide`, description: post.excerpt, type: "article",
       ...((post as any).image ? { images: [{ url: (post as any).image, alt: post.title }] } : {}),
     },
-    twitter: { card: "summary_large_image", title: post.title, description: post.excerpt },
+    twitter: { card: "summary_large_image", title: `${post.title} — Kenya PPE Guide`, description: post.excerpt },
   };
 }
 

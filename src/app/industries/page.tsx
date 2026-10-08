@@ -7,8 +7,14 @@ import { ProductCard } from "@/components/ProductCard";
 import { Breadcrumbs } from "@/components/ui";
 
 export const metadata: Metadata = {
-  title: "Industries We Serve",
-  description: "PPE programmes for construction, oil & gas, manufacturing, flower farms, mining, logistics, healthcare and more across Kenya.",
+  title: "Industry PPE Packages Kenya — Construction, Oil & Gas, Farms & More",
+  description:
+    "PPE programmes for 14 Kenyan industries: construction, oil & gas, manufacturing, flower farms, mining, logistics, healthcare. Hazards, recommended gear & per-worker package pricing.",
+  keywords: [
+    "construction PPE Kenya", "oil and gas PPE Kenya", "manufacturing PPE Kenya",
+    "flower farm PPE Kenya", "mining PPE Kenya", "healthcare PPE Kenya", "industry safety packages Kenya",
+  ],
+  alternates: { canonical: "/industries" },
 };
 
 export const revalidate = 300;

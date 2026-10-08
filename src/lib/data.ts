@@ -165,7 +165,18 @@ export async function getPackages(): Promise<PackageDTO[]> {
     });
     if (!rows.length) throw new Error("empty");
     return rows.map((r) => ({ slug: r.slug, name: r.name, blurb: r.description ?? "", price: Number(r.price ?? 0), image: r.image ?? undefined as string | undefined, items: r.items.map((i) => rowToDTO(i.product)), badge: undefined as string | undefined }));
-  }, PACKAGES.map((p) => ({ ...p, image: undefined as string | undefined, items: p.items.map((s) => ALL_PRODUCTS.find((x) => x.slug === s)!).filter(Boolean) })));
+  }, PACKAGES.map((p) => ({
+    ...p,
+    image: undefined as string | undefined,
+    items: p.items
+      .map((s) => {
+        const prod = ALL_PRODUCTS.find((x) => x.slug === s);
+        if (!prod) return null;
+        const gallery = productImages({ slug: prod.slug, image: PRODUCT_IMAGES[prod.slug] ?? prod.image, images: prod.images });
+        return { ...prod, image: gallery[0] ?? prod.image, images: gallery.slice(1) };
+      })
+      .filter(Boolean) as CatalogProduct[],
+  })));
 }
 
 export async function getPosts() {
@@ -181,7 +192,7 @@ export async function getSettings() {
     const s = await tx.siteSettings.findUnique({ where: { id: 1 } });
     if (!s) throw new Error("missing");
     return { whatsapp: s.whatsapp, phone: s.phone, email: s.email, address: s.address, mpesaPaybill: s.mpesaPaybill };
-  }, { whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "254715135141", phone: "+254715135141", email: "info@safetypro.co.ke", address: "Nairobi, Kenya", mpesaPaybill: "400200" });
+  }, { whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "254729396174", phone: "+254729396174", email: "info@safetypro.co.ke", address: "Nairobi, Kenya", mpesaPaybill: "400200" });
 }
 
 export { CATEGORIES, INDUSTRIES, PACKAGES, POSTS, PRODUCT_GALLERIES, productImages, getRelatedProducts };
