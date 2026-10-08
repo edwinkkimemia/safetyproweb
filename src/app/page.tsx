@@ -11,7 +11,7 @@ import { BULK_CTA_IMAGE, ALL_PRODUCTS } from "@/lib/catalog";
 import { kes } from "@/lib/format";
 import { waLink } from "@/lib/whatsapp";
 import { ProductCard } from "@/components/ProductCard";
-import { CategoryIcon } from "@/components/ProductVisual";
+import { CategoryIcon, ProductVisual } from "@/components/ProductVisual";
 import { HeroSlider, HeroSideCard } from "@/components/Hero";
 import { Badge, Button, SectionHead, WhatsAppIcon } from "@/components/ui";
 
@@ -144,28 +144,6 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* dominance stats band */}
-      <section className="mt-6 border-y border-accent-500 bg-navy-950 text-white lg:mt-10">
-        <div className="mx-auto max-w-7xl px-4 py-10 lg:py-12">
-          <p className="text-center text-xs font-extrabold uppercase tracking-[0.22em] text-accent-500">Kenya&apos;s widest stocked PPE range</p>
-          <div className="mx-auto mt-5 grid max-w-5xl grid-cols-2 gap-6 text-center sm:grid-cols-3 lg:grid-cols-5">
-            {[
-              [`${ALL_PRODUCTS.length}+`, "Products in stock"],
-              [`${categories.length}`, "PPE categories"],
-              [`${industries.length}`, "Industries served"],
-              ["47", "Counties delivered"],
-              ["24hrs", "Quote turnaround"],
-            ].map(([v, l]) => (
-              <div key={l}>
-                <p className="text-3xl font-extrabold tracking-tight text-white sm:text-4xl">{v}</p>
-                <p className="mt-1 text-[12px] font-bold uppercase tracking-widest text-slate-400">{l}</p>
-              </div>
-            ))}
-          </div>
-          <p className="mx-auto mt-5 max-w-2xl text-center text-sm text-slate-300">One supplier for every worksite — construction, oil &amp; gas, factories, flower farms, warehouses and institutions. Nobody stocks wider.</p>
-        </div>
-      </section>
-
       {/* ============ FEATURED PRODUCTS ============ */}
       <section className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
         <div className="flex flex-wrap items-end justify-between gap-4">
@@ -232,6 +210,46 @@ export default async function HomePage() {
           <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
             {newArrivals.map((p) => <ProductCard key={p.slug} p={p} waNumber={wa} compact />)}
           </div>
+        </div>
+      </section>
+
+      {/* ============ ESSENTIALS BY CATEGORY — product-first ============ */}
+      <section className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <SectionHead eyebrow="Essentials by task" title="Start with what crews buy most" sub="Top picks per trade — open a category for sizes, specs and volume pricing." />
+          <Link href="/categories" className="inline-flex items-center gap-1.5 text-sm font-bold text-safety-600 hover:text-accent-600">All categories <ArrowRight size={16} /></Link>
+        </div>
+        <div className="mt-8 grid gap-4 lg:grid-cols-3">
+          {essentials.map((g) => (
+            <div key={g.slug} className="overflow-hidden rounded-lg border border-slate-200 bg-white">
+              <div className="flex items-center justify-between bg-navy-950 px-5 py-4 text-white">
+                <div>
+                  <h3 className="font-extrabold">{g.title}</h3>
+                  <p className="text-xs text-slate-400">{g.blurb}</p>
+                </div>
+                <Link href={`/shop/${g.slug}`} className="inline-flex items-center gap-1 text-[13px] font-bold text-accent-500 hover:text-white">Shop <ArrowRight size={14} /></Link>
+              </div>
+              <ul className="divide-y divide-slate-100">
+                {g.items.map((p) => (
+                  <li key={p.slug}>
+                    <Link href={`/product/${p.slug}`} className="group flex items-center gap-3 px-4 py-3 transition hover:bg-mist">
+                      <ProductVisual category={p.category} name={p.name} image={p.image} fit="contain" iconSize={22} className="h-14 w-14 shrink-0 rounded-xl border border-slate-100" />
+                      <span className="min-w-0 flex-1">
+                        <span className="block truncate text-[14px] font-bold text-navy-950 group-hover:text-safety-600">{p.name}</span>
+                        <span className="mt-0.5 block truncate text-xs text-slate-500">{p.short?.slice(0, 60) ?? `${p.brand} • In stock`}</span>
+                      </span>
+                      <span className="shrink-0 text-right">
+                        <span className="block text-[15px] font-extrabold text-navy-950">{kes(p.price)}</span>
+                        {p.compareAt && <span className="block text-xs text-slate-400 line-through">{kes(p.compareAt)}</span>}
+                      </span>
+                      <ChevronRight size={16} className="shrink-0 text-slate-300 transition group-hover:translate-x-0.5 group-hover:text-accent-600" />
+                    </Link>
+                  </li>
+                ))}
+                {g.items.length === 0 && <li className="px-5 py-4 text-sm text-slate-500">Stock landing soon — <Link href={`/shop/${g.slug}`} className="font-bold text-safety-600">browse category</Link>.</li>}
+              </ul>
+            </div>
+          ))}
         </div>
       </section>
 
