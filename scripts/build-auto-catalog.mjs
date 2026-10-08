@@ -220,6 +220,20 @@ function attrPhrase(attrs, name) {
   return bits.length ? ` in ${bits.join(" · ")}` : "";
 }
 
+// SEO-rich category keyword phrases (buy-intent terms buyers search for).
+const CAT_KEYWORDS = {
+  "head-protection": "safety helmets & hard hats",
+  "foot-protection": "safety boots & gumboots",
+  "hand-protection": "safety gloves",
+  "eye-face-protection": "safety glasses & goggles",
+  "hearing-protection": "hearing protection",
+  "respiratory-protection": "respirators & dust masks",
+  "protective-clothing": "coveralls & hi-vis workwear",
+  "fall-protection": "fall protection harnesses & lanyards",
+  "fire-emergency": "fire safety equipment",
+  "road-site-safety": "road & site safety equipment",
+};
+
 function buildShort(name, cat, attrs, cert, h) {
   const hook = attrPhrase(attrs, name);
   const benefit = {
@@ -234,18 +248,19 @@ function buildShort(name, cat, attrs, cert, h) {
     "fire-emergency": "first-response readiness",
     "road-site-safety": "cordon, warn and illuminate",
   }[cat];
-  return `${name}${hook} — ${benefit} for Kenyan worksites.`;
+  return `${name}${hook} — ${benefit}. Buy online in Kenya at the best price.`;
 }
 
 function buildDescription(name, brand, cat, attrs, cert, inds, h) {
   const hook = attrPhrase(attrs, name);
+  const kw = CAT_KEYWORDS[cat] ?? "safety equipment";
   const std = cert.length
     ? ` Declared to ${cert.join(" and ")}, with conformity documentation available on request — only standards held on file are ever listed.`
     : ` Carried in our stocked workplace range, with sizing and specification guidance available before you order.`;
-  const p1 = `${name}${hook} from ${brand}.${std}`;
+  const p1 = `Buy the ${name}${hook} online in Kenya at the best price from ${brand} — quality ${kw} with M-Pesa payment, VAT invoice and Kenya-wide delivery.${std}`;
   const p2 = APP_COPY[cat];
   const apps = inds.map((i) => i.replace(/-/g, " ")).join(", ");
-  const p3 = `${USE_OPENERS[h % USE_OPENERS.length]} it suits ${apps}. Stocked in Nairobi with Kenya-wide dispatch, VAT invoicing and LPO terms for approved accounts. ${USE_CLOSERS[(h >> 4) % USE_CLOSERS.length]}`;
+  const p3 = `${USE_OPENERS[h % USE_OPENERS.length]} it suits ${apps}. Buy online today: Nairobi stock, Kenya-wide dispatch, VAT invoicing and LPO terms for approved accounts. ${USE_CLOSERS[(h >> 4) % USE_CLOSERS.length]}`;
   return `${p1}\n\n${p2}\n\n${p3}`;
 }
 
