@@ -18,8 +18,9 @@ import { Badge, Button, SectionHead, WhatsAppIcon } from "@/components/ui";
 export const revalidate = 300;
 
 export default async function HomePage() {
-  const [featured, categories, industries, packages, posts, settings] = await Promise.all([
+  const [featured, allProducts, categories, industries, packages, posts, settings] = await Promise.all([
     getProducts({ featured: true, limit: 8 }),
+    getProducts({ limit: 60 }),
     getCategories(),
     getIndustries(),
     getPackages(),
@@ -27,6 +28,24 @@ export default async function HomePage() {
     getSettings(),
   ]);
   const wa = settings.whatsapp;
+
+  // Product-first derivations (packages demoted to a slim strip below).
+  const deals = allProducts
+    .filter((p) => p.compareAt && p.compareAt > p.price)
+    .sort((a, b) => 1 - b.price / (b.compareAt ?? b.price) - (1 - a.price / (a.compareAt ?? a.price)))
+    .slice(0, 4);
+  const dealsFallback = deals.length > 0 ? deals : featured.slice(0, 4);
+  const fresh = allProducts.filter((p) => p.isNew);
+  const newArrivals = (fresh.length > 0 ? fresh : [...allProducts].sort((a, b) => b.rating - a.rating)).slice(0, 4);
+  const kitFrom = packages.length > 0 ? Math.min(...packages.map((p) => p.price)) : 0;
+
+  // Essentials by category — product-first task row.
+  const picksFor = (slug: string, n = 3) => allProducts.filter((p) => p.category === slug).slice(0, n);
+  const essentials = [
+    { slug: "head-protection", title: "Head protection", blurb: "Helmets & hard hats" },
+    { slug: "foot-protection", title: "Foot protection", blurb: "S3 boots & gumboots" },
+    { slug: "hand-protection", title: "Hand protection", blurb: "Gloves for every task" },
+  ].map((g) => ({ ...g, items: picksFor(g.slug) }));
 
   return (
     <>
@@ -192,37 +211,42 @@ export default async function HomePage() {
         </div>
       </section>
 
-      {/* ============ PPE PACKAGES ============ */}
+      {/* ============ TOP DEALS — product-first ============ */}
       <section className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
-        <SectionHead align="center" eyebrow="PPE packages" title="Ready-made kits per worker" sub="Standardised kits simplify issue, budgeting and re-orders. Request kit pricing for 10, 50 or 500+ workers." />
-        <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {packages.map((pkg) => (
-            <div key={pkg.slug} className="relative flex flex-col overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:-translate-y-1 hover:shadow-xl">
-              {pkg.badge && <span className="absolute right-3 top-3 z-10 rounded-md bg-accent-500 px-2 py-1 text-[10.5px] font-extrabold uppercase tracking-wide text-navy-950">{pkg.badge}</span>}
-              <div className="relative h-36 overflow-hidden">
-                {pkg.items[0]?.image ? (
-                  <Image src={pkg.items[0].image} alt={pkg.name} fill sizes="(max-width: 640px) 100vw, 25vw" className="object-cover" />
-                ) : (
-                  <div className="h-full w-full bg-gradient-to-br from-safety-600 to-navy-950" />
-                )}
-                <div className="absolute inset-0 bg-gradient-to-t from-navy-950/90 via-navy-950/25 to-transparent" />
-                <div className="absolute bottom-3 left-4 right-4 flex items-end justify-between gap-2">
-                  <h3 className="text-[17px] font-extrabold leading-tight text-white">{pkg.name}</h3>
-                  <Package size={26} strokeWidth={1.8} className="shrink-0 text-accent-500" />
-                </div>
-              </div>
-              <p className="px-5 pt-3 text-[13px] text-slate-500">{pkg.blurb}</p>
-              <ul className="flex-1 space-y-1.5 p-5 text-[13px] text-slate-600">
-                {pkg.items.slice(0, 5).map((i) => <li key={i.slug} className="flex items-start gap-2"><CheckCircle2 size={14} className="mt-0.5 shrink-0 text-emerald-600" /> {i.name}</li>)}
-                {pkg.items.length > 5 && <li className="text-xs font-semibold text-slate-400">+ {pkg.items.length - 5} more items</li>}
-              </ul>
-              <div className="border-t border-slate-100 p-4">
-                <p className="text-[11px] font-bold uppercase tracking-widest text-slate-400">Kit guide price</p>
-                <p className="text-xl font-extrabold text-navy-950">{kes(pkg.price)} <span className="text-xs font-medium text-slate-400">/ worker</span></p>
-                <Link href={`/packages/${pkg.slug}`} className="mt-2.5 flex items-center justify-center gap-2 rounded-xl bg-navy-950 py-2.5 text-sm font-bold text-white hover:bg-safety-600">View kit <ArrowRight size={15} /></Link>
-              </div>
+        <div className="flex flex-wrap items-end justify-between gap-4">
+          <SectionHead eyebrow="Top deals" title="Biggest savings right now" sub="Discounted certified stock — same VAT invoice and Kenya-wide delivery, while stock lasts." />
+          <Link href="/shop" className="inline-flex items-center gap-1.5 rounded-xl bg-navy-950 px-5 py-2.5 text-sm font-bold text-white hover:bg-safety-600">Shop all deals <ArrowRight size={16} /></Link>
+        </div>
+        <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+          {dealsFallback.map((p) => <ProductCard key={p.slug} p={p} waNumber={wa} compact />)}
+        </div>
+      </section>
+
+      {/* ============ NEW ARRIVALS — product-first ============ */}
+      <section className="bg-mist">
+        <div className="mx-auto max-w-7xl px-4 py-14 lg:py-20">
+          <div className="flex flex-wrap items-end justify-between gap-4">
+            <SectionHead eyebrow="New arrivals" title="Fresh stock, latest specs" sub="Newly stocked PPE lines added to our Nairobi warehouse — be first to kit your team." />
+            <Link href="/shop" className="inline-flex items-center gap-1.5 text-sm font-bold text-safety-600 hover:text-accent-600">Shop new in <ArrowRight size={16} /></Link>
+          </div>
+          <div className="mt-8 grid grid-cols-2 gap-3 sm:gap-4 lg:grid-cols-4">
+            {newArrivals.map((p) => <ProductCard key={p.slug} p={p} waNumber={wa} compact />)}
+          </div>
+        </div>
+      </section>
+
+      {/* ============ KITS STRIP — demoted, links out ============ */}
+      <section className="mx-auto max-w-7xl px-4 py-10 lg:py-12">
+        <div className="flex flex-col items-start justify-between gap-4 overflow-hidden rounded-xl border border-slate-200 bg-white p-6 sm:flex-row sm:items-center sm:p-7">
+          <div className="flex items-start gap-4">
+            <span className="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-navy-950 text-accent-500"><Package size={22} /></span>
+            <div>
+              <p className="text-xs font-extrabold uppercase tracking-widest text-safety-600">Need kits for 10+ workers?</p>
+              <h2 className="mt-1 text-xl font-extrabold tracking-tight text-navy-950 sm:text-2xl">Ready-made PPE kits {kitFrom > 0 && <span className="text-slate-500">from {kes(kitFrom)}/worker</span>}</h2>
+              <p className="mt-1 text-sm text-slate-500">{packages.length} standard kits • standardised issue, budgeting and re-orders.</p>
             </div>
-          ))}
+          </div>
+          <Link href="/packages" className="inline-flex shrink-0 items-center gap-2 rounded-xl bg-navy-950 px-6 py-3 text-sm font-bold text-white hover:bg-safety-600">Browse kits <ArrowRight size={16} /></Link>
         </div>
       </section>
 

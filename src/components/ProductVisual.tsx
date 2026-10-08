@@ -28,8 +28,8 @@ const CAT_ICON: Record<string, string> = {
 };
 
 export function ProductVisual({
-  category, name, sku, image, className, iconSize = 56, eager = false, fit = "cover",
-}: { category: string; name: string; sku: string; image?: string; className?: string; iconSize?: number; eager?: boolean; fit?: "cover" | "contain" }) {
+  category, name, image, className, iconSize = 56, eager = false, fit = "cover",
+}: { category: string; name: string; sku?: string; image?: string; className?: string; iconSize?: number; eager?: boolean; fit?: "cover" | "contain" }) {
   const Icon = ICONS[CAT_ICON[category] ?? "shield"] ?? ShieldCheck;
   const contain = fit === "contain";
   return (
@@ -39,7 +39,6 @@ export function ProductVisual({
           <Image src={image} alt={name} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
             className={contain ? "object-contain" : "object-cover"} priority={eager} />
           {!contain && <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent" />}
-          <span className="absolute bottom-2 left-2 rounded bg-black/55 px-2 py-0.5 font-mono text-[10px] font-bold tracking-widest text-white backdrop-blur-sm">{sku}</span>
         </>
       ) : (
         <>
@@ -50,7 +49,6 @@ export function ProductVisual({
             <span className="flex items-center justify-center rounded-2xl bg-white/15 p-3 ring-1 ring-white/30 backdrop-blur-sm">
               <Icon size={iconSize} className="text-white" strokeWidth={1.6} />
             </span>
-            <span className="rounded bg-black/30 px-2 py-0.5 font-mono text-[10px] font-bold tracking-widest text-white/90">{sku}</span>
           </div>
         </>
       )}
