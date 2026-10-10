@@ -31,6 +31,7 @@ type SuggestItem = { name: string; slug: string; price: number; category: string
 export function Header() {
   const { count, wishlist } = useStore();
   const [open, setOpen] = useState(false);
+  const [mSearch, setMSearch] = useState(false);
   const [q, setQ] = useState("");
   const [suggest, setSuggest] = useState<SuggestItem[]>([]);
   const [sTotal, setSTotal] = useState(0);
@@ -83,6 +84,7 @@ export function Header() {
   const submit = (e: React.FormEvent) => {
     e.preventDefault();
     setSOpen(false);
+    setMSearch(false);
     router.push(q.trim() ? `/shop?q=${encodeURIComponent(q.trim())}` : "/shop");
     setOpen(false);
   };
@@ -176,6 +178,12 @@ export function Header() {
           </form>
 
           <div className="ml-auto flex shrink-0 items-center gap-1.5 sm:gap-2">
+            <button
+              onClick={() => setMSearch(!mSearch)} aria-expanded={mSearch} aria-label={mSearch ? "Close search" : "Open search"}
+              className="flex h-11 w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-navy-950 shadow-sm transition hover:border-safety-600/40 hover:bg-safety-50 hover:text-safety-600 md:hidden"
+            >
+              {mSearch ? <X size={20} /> : <Search size={20} />}
+            </button>
             <Link href="/account" title="Account" aria-label="Account" className="hidden h-11 w-11 items-center justify-center rounded-lg border border-slate-200 bg-white text-navy-950 shadow-sm transition hover:border-safety-600/40 hover:bg-safety-50 hover:text-safety-600 sm:flex">
               <User size={20} />
             </Link>
@@ -191,18 +199,20 @@ export function Header() {
         </div>
       </div>
 
-      {/* mobile search */}
-      <div className="border-b border-slate-200 bg-white px-4 pb-2.5 pt-1 sm:px-6 md:hidden">
-        <form onSubmit={submit} className="relative" role="search">
-          <Search size={16} aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
-          <input value={q} onChange={(e) => handleQ(e.target.value)} onFocus={() => setSOpen(true)} onBlur={() => setSOpen(false)}
-            onKeyDown={(e) => { if (e.key === "Escape") setSOpen(false); }}
-            type="search" aria-label="Search products" autoComplete="off" enterKeyHint="search"
-            placeholder="Search PPE, SKU, EN397…"
-            className="h-10 w-full rounded-xl border border-slate-300 bg-mist pl-9 pr-3 text-sm outline-none focus:border-safety-600" />
-          {suggestPanel}
-        </form>
-      </div>
+      {/* mobile search — toggled by the search icon */}
+      {mSearch && (
+        <div className="border-b border-slate-200 bg-white px-4 pb-2.5 pt-1 sm:px-6 md:hidden">
+          <form onSubmit={submit} className="relative" role="search">
+            <Search size={16} aria-hidden="true" className="pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-slate-400" />
+            <input autoFocus value={q} onChange={(e) => handleQ(e.target.value)} onFocus={() => setSOpen(true)} onBlur={() => setSOpen(false)}
+              onKeyDown={(e) => { if (e.key === "Escape") { setSOpen(false); setMSearch(false); } }}
+              type="search" aria-label="Search products" autoComplete="off" enterKeyHint="search"
+              placeholder="Search PPE, SKU, EN397…"
+              className="h-10 w-full rounded-xl border border-slate-300 bg-mist pl-9 pr-3 text-sm outline-none focus:border-safety-600" />
+            {suggestPanel}
+          </form>
+        </div>
+      )}
     </header>
 
       {/* mobile drawer — outside <header> so the hide-on-scroll transform never traps it */}

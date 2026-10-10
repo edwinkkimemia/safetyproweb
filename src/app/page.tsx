@@ -71,7 +71,7 @@ export default async function HomePage() {
     <>
       {/* ============ HERO: categories | slider | spotlights ============ */}
       <section className="bg-mist">
-        <div className="mx-auto max-w-7xl px-4 py-4 lg:h-[calc(100svh-192px)] lg:min-h-[430px] lg:max-h-[620px] lg:py-5">
+        <div className="mx-auto max-w-7xl px-4 py-3 lg:h-[calc(100svh-192px)] lg:min-h-[430px] lg:max-h-[620px] lg:py-5">
           <div className="grid items-stretch gap-4 lg:h-full lg:grid-cols-[236px_minmax(0,1fr)_256px]">
             {/* LEFT: category rail */}
             <aside className="hidden lg:block">
@@ -151,14 +151,14 @@ export default async function HomePage() {
           </div>
 
           {/* mobile / tablet: category chips + spotlights */}
-          <div className="nice-scroll mt-3 flex gap-2 overflow-x-auto pb-1 lg:hidden">
+          <div className="nice-scroll mt-2 flex gap-2 overflow-x-auto pb-1 lg:hidden">
             {categories.map((c) => (
-              <Link key={c.slug} href={`/shop/${c.slug}`} className="shrink-0 rounded-full border border-slate-200 bg-white px-3.5 py-2 text-[12.5px] font-bold text-navy-950">
+              <Link key={c.slug} href={`/shop/${c.slug}`} className="shrink-0 rounded-full border border-slate-200 bg-white px-3 py-1.5 text-[12px] font-bold text-navy-950">
                 {c.name}
               </Link>
             ))}
           </div>
-          <div className="mt-3 grid grid-cols-2 gap-3 sm:mx-auto sm:max-w-xl lg:hidden">
+          <div className="mt-2 grid grid-cols-2 gap-2 sm:mx-auto sm:max-w-xl lg:hidden">
             {featured.slice(0, 2).map((p) => <HeroSideCard key={p.slug} p={p} />)}
           </div>
         </div>

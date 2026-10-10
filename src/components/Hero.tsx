@@ -33,7 +33,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
 
   return (
     <div
-      className="relative h-[250px] overflow-hidden rounded-lg bg-navy-950 sm:h-[340px] lg:h-full lg:min-h-0"
+      className="relative h-[210px] overflow-hidden rounded-lg bg-navy-950 sm:h-[300px] lg:h-full lg:min-h-0"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -52,7 +52,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
         <h1 className="mt-2 max-w-md text-[22px] font-extrabold leading-[1.08] tracking-tight text-white text-balance sm:mt-2.5 sm:text-4xl">
           {s.title} <span className="text-accent-500">{s.accent}</span>
         </h1>
-        <p className="mt-2 max-w-md text-[13px] leading-relaxed text-slate-200 sm:text-[15px]">{s.sub}</p>
+        <p className="mt-2 line-clamp-2 max-w-md text-[13px] leading-relaxed text-slate-200 sm:line-clamp-none sm:text-[15px]">{s.sub}</p>
         <div className="mt-4">
           <Link href={s.href} className="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-5 py-2.5 text-[13px] font-extrabold uppercase tracking-wide text-navy-950 shadow transition hover:bg-white sm:px-6 sm:py-3 sm:text-sm">
             {s.cta} <ArrowRight size={16} />
@@ -84,7 +84,7 @@ export function HeroSideCard({ p }: { p: CatalogProduct }) {
     <Link
       href={`/product/${p.slug}`}
       aria-label={p.name}
-      className="relative block min-h-0 flex-1 overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg"
+      className="relative block aspect-square min-h-0 w-full overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg lg:aspect-auto lg:flex-1"
     >
       {p.image ? (
         <Image src={p.image} alt={p.name} fill sizes="250px" className="object-contain" />
