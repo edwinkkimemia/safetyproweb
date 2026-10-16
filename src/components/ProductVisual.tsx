@@ -28,15 +28,15 @@ const CAT_ICON: Record<string, string> = {
 };
 
 export function ProductVisual({
-  category, name, image, className, iconSize = 56, eager = false, fit = "cover",
-}: { category: string; name: string; sku?: string; image?: string; className?: string; iconSize?: number; eager?: boolean; fit?: "cover" | "contain" }) {
+  category, name, image, className, iconSize = 56, eager = false, fit = "cover", sizes,
+}: { category: string; name: string; sku?: string; image?: string; className?: string; iconSize?: number; eager?: boolean; fit?: "cover" | "contain"; sizes?: string }) {
   const Icon = ICONS[CAT_ICON[category] ?? "shield"] ?? ShieldCheck;
   const contain = fit === "contain";
   return (
     <div className={cn("relative flex items-center justify-center overflow-hidden", contain ? "bg-white" : cn("bg-gradient-to-br", PALETTES[category] ?? "from-safety-600 to-navy-950"), className)}>
       {image ? (
         <>
-          <Image src={image} alt={name} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"
+          <Image src={image} alt={name} fill sizes={sizes ?? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"}
             className={contain ? "object-contain" : "object-cover"} priority={eager} />
           {!contain && <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent" />}
         </>

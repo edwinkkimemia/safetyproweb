@@ -33,7 +33,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
 
   return (
     <div
-      className="relative h-[210px] overflow-hidden rounded-lg bg-navy-950 sm:h-[300px] lg:h-full lg:min-h-0"
+      className="relative h-[56svh] max-h-[520px] min-h-[400px] overflow-hidden rounded-lg bg-navy-950 sm:h-[440px] lg:h-full lg:max-h-none lg:min-h-0"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -45,14 +45,14 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
       <div className="absolute inset-0 bg-gradient-to-r from-navy-950/95 via-navy-950/60 to-navy-950/10" />
       <div className="absolute inset-0 bg-gradient-to-t from-navy-950/70 via-transparent to-transparent" />
 
-      <div key={i} className="absolute inset-0 flex flex-col justify-center p-4 sm:p-8">
+      <div key={i} className="absolute inset-0 flex flex-col justify-center p-5 sm:p-8">
         <p className="inline-flex w-fit items-center gap-2 rounded-full bg-accent-500 px-3 py-1 text-[10.5px] font-extrabold uppercase tracking-widest text-navy-950 sm:text-xs">
           {s.eyebrow}
         </p>
-        <h1 className="mt-2 max-w-md text-[22px] font-extrabold leading-[1.08] tracking-tight text-white text-balance sm:mt-2.5 sm:text-4xl">
+        <h1 className="mt-2 max-w-md text-[27px] font-extrabold leading-[1.06] tracking-tight text-white text-balance sm:mt-2.5 sm:text-4xl">
           {s.title} <span className="text-accent-500">{s.accent}</span>
         </h1>
-        <p className="mt-2 line-clamp-2 max-w-md text-[13px] leading-relaxed text-slate-200 sm:line-clamp-none sm:text-[15px]">{s.sub}</p>
+        <p className="mt-2 line-clamp-3 max-w-md text-[13.5px] leading-relaxed text-slate-200 sm:line-clamp-none sm:text-[15px]">{s.sub}</p>
         <div className="mt-4">
           <Link href={s.href} className="inline-flex items-center gap-2 rounded-lg bg-accent-500 px-5 py-2.5 text-[13px] font-extrabold uppercase tracking-wide text-navy-950 shadow transition hover:bg-white sm:px-6 sm:py-3 sm:text-sm">
             {s.cta} <ArrowRight size={16} />
@@ -84,7 +84,7 @@ export function HeroSideCard({ p }: { p: CatalogProduct }) {
     <Link
       href={`/product/${p.slug}`}
       aria-label={p.name}
-      className="relative block aspect-square min-h-0 w-full overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg lg:aspect-auto lg:flex-1"
+      className="relative block aspect-[16/10] min-h-0 w-full overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg lg:aspect-auto lg:flex-1"
     >
       {p.image ? (
         <Image src={p.image} alt={p.name} fill sizes="250px" className="object-contain" />

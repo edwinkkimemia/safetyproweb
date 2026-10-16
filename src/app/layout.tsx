@@ -63,7 +63,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     url: SITE_URL,
     logo: `${SITE_URL}/logo/logo.png`,
     slogan: "Protecting People. Powering Safer Workplaces.",
-    email: "info@safetypro.co.ke",
+    email: "sales@kimsafety.co.ke",
     telephone: "+254729396174",
     address: { "@type": "PostalAddress", addressLocality: "Nairobi", addressCountry: "KE" },
   };

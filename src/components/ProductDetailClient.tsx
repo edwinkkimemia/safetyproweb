@@ -56,7 +56,8 @@ export function ProductDetailClient({ p, waNumber }: { p: CatalogProduct; waNumb
           <ProductVisual
             category={p.category} name={p.name} sku={p.sku} image={activeSrc}
             fit="contain" iconSize={96} eager
-            className="h-[300px] w-full sm:h-[400px] lg:h-[440px]"
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 90vw, 45vw"
+            className="aspect-square w-full p-4 sm:aspect-auto sm:h-[400px] sm:p-6 lg:h-[440px]"
           />
         </div>
         {gallery.length > 1 && (
@@ -76,7 +77,7 @@ export function ProductDetailClient({ p, waNumber }: { p: CatalogProduct; waNumb
                     i === active ? "border-accent-500 ring-2 ring-accent-500/30" : "border-slate-200 hover:border-slate-400"
                   )}
                 >
-                  <ProductVisual category={p.category} name={p.name} sku={p.sku} image={src} fit="contain" className="h-full w-full" iconSize={24} />
+                  <ProductVisual category={p.category} name={p.name} sku={p.sku} image={src} fit="contain" sizes="160px" className="h-full w-full p-1.5" iconSize={24} />
                 </button>
               ))}
             </div>
