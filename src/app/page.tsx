@@ -253,7 +253,7 @@ export default async function HomePage() {
                 {g.items.map((p) => (
                   <li key={p.slug}>
                     <Link href={`/product/${p.slug}`} className="group flex items-center gap-3 px-4 py-3 transition hover:bg-mist">
-                      <ProductVisual category={p.category} name={p.name} image={p.image} fit="contain" iconSize={22} className="h-14 w-14 shrink-0 rounded-xl border border-slate-100" />
+                      <ProductVisual category={p.category} name={p.name} image={p.image} fit="contain" iconSize={22} sizes="112px" className="h-14 w-14 shrink-0 rounded-xl border border-slate-100" />
                       <span className="min-w-0 flex-1">
                         <span className="block truncate text-[14px] font-bold text-navy-950 group-hover:text-safety-600">{p.name}</span>
                         <span className="mt-0.5 block truncate text-xs text-slate-500">{p.short?.slice(0, 60) ?? `${p.brand} • In stock`}</span>

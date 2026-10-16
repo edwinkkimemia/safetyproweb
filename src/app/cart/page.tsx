@@ -39,7 +39,7 @@ export default function CartPage() {
             const img = PRODUCT_IMAGES[l.slug] ?? found?.image ?? productImages({ slug: l.slug })[0];
             return (
               <div key={`${l.slug}-${l.size}-${l.colour}`} className="flex gap-4 rounded-2xl border border-slate-200 bg-white p-3.5">
-                <ProductVisual category={cat} name={l.name} sku={l.sku} image={img} className="h-24 w-24 shrink-0 rounded-xl" iconSize={30} />
+                <ProductVisual category={cat} name={l.name} sku={l.sku} image={img} sizes="192px" className="h-24 w-24 shrink-0 rounded-xl" iconSize={30} />
                 <div className="min-w-0 flex-1">
                   <Link href={`/product/${l.slug}`} className="line-clamp-1 font-bold text-navy-950 hover:text-safety-600">{l.name}</Link>
                   <p className="mt-0.5 font-mono text-xs text-slate-400">{l.sku}{l.size ? ` • ${l.size}` : ""}{l.colour ? ` • ${l.colour}` : ""}</p>

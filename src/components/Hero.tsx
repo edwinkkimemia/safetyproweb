@@ -33,7 +33,7 @@ export function HeroSlider({ slides }: { slides: HeroSlide[] }) {
 
   return (
     <div
-      className="relative h-[56svh] max-h-[520px] min-h-[400px] overflow-hidden rounded-lg bg-navy-950 sm:h-[440px] lg:h-full lg:max-h-none lg:min-h-0"
+      className="relative h-[52svh] max-h-[520px] min-h-[360px] overflow-hidden rounded-lg bg-navy-950 sm:h-[440px] lg:h-full lg:max-h-none lg:min-h-0"
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
@@ -84,10 +84,10 @@ export function HeroSideCard({ p }: { p: CatalogProduct }) {
     <Link
       href={`/product/${p.slug}`}
       aria-label={p.name}
-      className="relative block aspect-[16/10] min-h-0 w-full overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg lg:aspect-auto lg:flex-1"
+      className="relative block aspect-square min-h-0 w-full overflow-hidden rounded-lg border border-slate-200 bg-white transition hover:border-accent-500/60 hover:shadow-lg lg:aspect-auto lg:flex-1"
     >
       {p.image ? (
-        <Image src={p.image} alt={p.name} fill sizes="250px" className="object-contain" />
+        <Image src={p.image} alt={p.name} fill sizes="(max-width: 1024px) 50vw, 256px" className="object-contain p-2" />
       ) : (
         <div className="h-full w-full bg-gradient-to-br from-safety-600 to-navy-950" />
       )}

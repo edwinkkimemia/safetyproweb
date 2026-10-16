@@ -112,7 +112,7 @@ export function Header() {
                   onClick={() => setSOpen(false)}
                   className="flex items-center gap-3 px-3 py-2.5 transition hover:bg-mist"
                 >
-                  <ProductVisual category={p.category} name={p.name} image={p.image} fit="contain" iconSize={18} className="h-11 w-11 shrink-0 rounded-lg border border-slate-100" />
+                  <ProductVisual category={p.category} name={p.name} image={p.image} fit="contain" iconSize={18} sizes="88px" className="h-11 w-11 shrink-0 rounded-lg border border-slate-100" />
                   <span className="min-w-0 flex-1">
                     <span className="block truncate text-[13.5px] font-bold text-navy-950">{p.name}</span>
                     <span className="block text-xs font-extrabold text-safety-600">{kes(p.price)}</span>
@@ -146,7 +146,7 @@ export function Header() {
           <span className="hidden sm:inline">24hr Quotation SLA</span>
         </p>
         <div className="hidden shrink-0 items-center gap-4 sm:flex">
-          <a href="mailto:sales@kimsafety.co.ke" className="font-semibold text-slate-300 hover:text-accent-500">sales@kimsafety.co.ke</a>
+          <a href="mailto:sales@safetypro.co.ke" className="font-semibold text-slate-300 hover:text-accent-500">sales@safetypro.co.ke</a>
           <a href="tel:+254729396174" className="flex items-center gap-1.5 font-bold text-accent-100 hover:text-accent-500">
             <Phone size={13} /> 0729 396 174
           </a>

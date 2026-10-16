@@ -192,7 +192,7 @@ export async function getSettings() {
     const s = await tx.siteSettings.findUnique({ where: { id: 1 } });
     if (!s) throw new Error("missing");
     return { whatsapp: s.whatsapp, phone: s.phone, email: s.email, address: s.address, mpesaPaybill: s.mpesaPaybill };
-  }, { whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "254729396174", phone: "+254729396174", email: "sales@kimsafety.co.ke", address: "Nairobi, Kenya", mpesaPaybill: "400200" });
+  }, { whatsapp: process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "254729396174", phone: "+254729396174", email: "sales@safetypro.co.ke", address: "Nairobi, Kenya", mpesaPaybill: "400200" });
 }
 
 export { CATEGORIES, INDUSTRIES, PACKAGES, POSTS, PRODUCT_GALLERIES, productImages, getRelatedProducts };

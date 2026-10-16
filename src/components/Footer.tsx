@@ -55,7 +55,7 @@ export function Footer() {
           </p>
           <div className="mt-4 space-y-2 text-sm">
             <p className="flex items-center gap-2"><Phone size={15} className="text-accent-500" /> 0729 396 174 <span className="text-slate-500">(Mon–Sat, 8am–6pm)</span></p>
-            <p className="flex items-center gap-2"><Mail size={15} className="text-accent-500" /> sales@kimsafety.co.ke</p>
+            <p className="flex items-center gap-2"><Mail size={15} className="text-accent-500" /> sales@safetypro.co.ke</p>
           </div>
           <div className="mt-4 flex gap-2">
             {SOCIALS.map((s) => <SocialIcon key={s.label} {...s} />)}
