@@ -10,11 +10,15 @@ const credentialsSchema = z.object({
   password: z.string().min(1),
 });
 
-// Demo fallback accounts when PostgreSQL is unreachable (dev/preview).
-const DEMO_USERS = [
-  { id: "demo-admin", name: "Site Admin", email: "admin@safetypro.co.ke", password: "Admin@123", role: "SUPER_ADMIN" },
-  { id: "demo-customer", name: "Demo Customer", email: "customer@example.com", password: "Customer@123", role: "CUSTOMER" },
-];
+// Dev-only fallback accounts for when PostgreSQL is unreachable (local development).
+// Hard-gated off in production builds — these must never unlock staff access on the live site.
+const DEMO_USERS =
+  process.env.NODE_ENV === "production"
+    ? []
+    : [
+        { id: "demo-admin", name: "Site Admin", email: "admin@safetypro.co.ke", password: "Admin@123", role: "SUPER_ADMIN" },
+        { id: "demo-customer", name: "Demo Customer", email: "customer@example.com", password: "Customer@123", role: "CUSTOMER" },
+      ];
 
 async function verifyUser(email: string, password: string) {
   if (db) {

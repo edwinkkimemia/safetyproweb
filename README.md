@@ -11,7 +11,7 @@ npm run dev        # http://localhost:3000
 
 The storefront runs fully on the built-in catalog (`src/lib/catalog.ts`) until PostgreSQL is connected.
 
-Demo logins: `admin@safetypro.co.ke / Admin@123` (staff), `customer@example.com / Customer@123`.
+Local-dev logins (disabled in production builds): `admin@safetypro.co.ke / Admin@123` (staff), `customer@example.com / Customer@123` (customer).
 
 ## Production (PostgreSQL)
 
@@ -21,7 +21,7 @@ DATABASE_URL="postgresql://user:password@host:5432/safetypro?schema=public"
 AUTH_SECRET="<32+ random chars>"
 
 # 2. Create tables + seed (24 products, 10 categories, 14 industries,
-#    4 PPE kits, 8 guides, settings, admin user Admin@123)
+#    4 PPE kits, 8 guides, settings, admin user)
 npm run db:push
 npm run db:seed
 
