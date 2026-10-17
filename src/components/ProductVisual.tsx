@@ -1,3 +1,6 @@
+"use client";
+
+import { useEffect, useState } from "react";
 import Image from "next/image";
 import { Anchor, Cone, Ear, Flame, Footprints, Glasses, Hand, HardHat, Shirt, Wind, ShieldCheck, Package } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -32,12 +35,17 @@ export function ProductVisual({
 }: { category: string; name: string; sku?: string; image?: string; className?: string; iconSize?: number; eager?: boolean; fit?: "cover" | "contain"; sizes?: string }) {
   const Icon = ICONS[CAT_ICON[category] ?? "shield"] ?? ShieldCheck;
   const contain = fit === "contain";
+  // If the URL 404s (e.g. a bad admin-pasted URL or dead remote host),
+  // fall back to the branded gradient instead of a broken-image icon.
+  const [failed, setFailed] = useState(false);
+  useEffect(() => setFailed(false), [image]);
+  const showImg = Boolean(image && !failed);
   return (
     <div className={cn("relative flex items-center justify-center overflow-hidden", contain ? "bg-white" : cn("bg-gradient-to-br", PALETTES[category] ?? "from-safety-600 to-navy-950"), className)}>
-      {image ? (
+      {showImg ? (
         <>
-          <Image src={image} alt={name} fill sizes={sizes ?? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"}
-            className={contain ? "object-contain" : "object-cover"} priority={eager} />
+          <Image src={image as string} alt={name} fill sizes={sizes ?? "(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 25vw"}
+            className={contain ? "object-contain" : "object-cover"} priority={eager} onError={() => setFailed(true)} />
           {!contain && <div className="absolute inset-0 bg-gradient-to-t from-navy-950/55 via-transparent to-transparent" />}
         </>
       ) : (

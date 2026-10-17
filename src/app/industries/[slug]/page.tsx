@@ -4,6 +4,7 @@ import Image from "next/image";
 import { notFound } from "next/navigation";
 import { ArrowRight, CheckCircle2, FileText, TriangleAlert } from "lucide-react";
 import { getIndustries, getProducts, getSettings } from "@/lib/data";
+import { industryKeywords, industryFaqs, faqJsonLd } from "@/lib/seo";
 import { waLink } from "@/lib/whatsapp";
 import { ProductCard } from "@/components/ProductCard";
 import { Breadcrumbs, WhatsAppIcon } from "@/components/ui";
@@ -22,7 +23,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `${ind.name} PPE Packages Kenya — Hazards, Gear & Bulk Prices`,
     description: `${ind.blurb} Recommended ${ind.name.toLowerCase()} PPE, site hazards and per-worker package pricing in Kenya. LPO terms, VAT invoices & 47-county delivery.`,
-    keywords: [`${ind.name} PPE Kenya`, `${ind.name} safety equipment`, "bulk PPE Kenya", "industry PPE packages Kenya"],
+    keywords: industryKeywords(ind.name),
     alternates: { canonical: `/industries/${slug}` },
   };
 }
@@ -39,14 +40,12 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
   const ind = industries.find((i) => i.slug === slug);
   if (!ind) notFound();
   const rel = products.filter((p) => p.industries.includes(slug));
+  const faqs = industryFaqs(ind.name, ind.ppe.length ? ind.ppe : rel.slice(0, 8).map((r) => r.name));
 
   return (
     <>
       <Breadcrumbs items={[{ label: "Industries", href: "/industries" }, { label: ind.name }]} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson(ind.name, [
-        { q: `What PPE does ${ind.name.toLowerCase()} work require?`, a: ind.ppe.length ? ind.ppe.join(", ") : rel.slice(0, 5).map((r) => r.name).join(", ") },
-        { q: "Do you offer bulk pricing for this industry?", a: "Yes — send your PPE list via the bulk quotation form for volume pricing, LPO terms and Kenya-wide delivery." },
-      ])) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJson(ind.name, faqs)) }} />
       {/* full-bleed hero — square edges, image background */}
       <div className="relative overflow-hidden bg-navy-950 text-white">
         {(ind as any).image && (
@@ -93,6 +92,21 @@ export default async function IndustryDetailPage({ params }: { params: Promise<{
           </div>
         </div>
       )}
+
+      <div className="mt-10 rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
+        <p className="text-[11.5px] font-extrabold uppercase tracking-[0.16em] text-safety-600">{ind.name} PPE FAQs</p>
+        <h2 className="mt-1 text-xl font-extrabold tracking-tight text-navy-950 sm:text-2xl">Bulk pricing, delivery & certification answers</h2>
+        <div className="mt-2 grid gap-x-8 md:grid-cols-2">
+          {faqs.map((f) => (
+            <details key={f.q} className="group border-b border-slate-100 py-3.5">
+              <summary className="cursor-pointer list-none text-[15px] font-bold text-navy-950 transition group-hover:text-safety-600 [&::-webkit-details-marker]:hidden">
+                <span className="flex items-center justify-between gap-3">{f.q}<span className="shrink-0 text-xl font-light text-accent-500 group-open:rotate-45">+</span></span>
+              </summary>
+              <p className="mt-2 pr-8 text-[14.5px] leading-relaxed text-slate-600">{f.a}</p>
+            </details>
+          ))}
+        </div>
+      </div>
 
       <div className="mt-10 rounded-3xl bg-mist p-8 text-center">
         <h2 className="text-xl font-extrabold text-navy-950">Need a full {ind.name.toLowerCase()} PPE schedule?</h2>

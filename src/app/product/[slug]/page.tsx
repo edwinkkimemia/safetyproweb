@@ -4,6 +4,7 @@ import { ShieldCheck } from "lucide-react";
 import { getProduct, getProducts, getSettings } from "@/lib/data";
 import { kes } from "@/lib/format";
 import { categoryName, getRelatedProducts, productImages } from "@/lib/catalog";
+import { productKeywords, productFaqs, faqJsonLd } from "@/lib/seo";
 import { ProductDetailClient } from "@/components/ProductDetailClient";
 import { ProductCard } from "@/components/ProductCard";
 import { Badge, Breadcrumbs, SectionHead } from "@/components/ui";
@@ -24,10 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   return {
     title: `Buy ${p.name} Online in Kenya — ${kes(p.price)}`,
     description: `${p.name}${certs} — ${p.short} SKU ${p.sku}. Best price ${kes(p.price)}, VAT invoice, LPO terms, M-Pesa & 47-county delivery. In stock now.`,
-    keywords: [
-      p.name, `${p.name} Kenya`, `${p.name} price Kenya`, p.brand, categoryName(p.category),
-      ...p.certifications, `buy ${categoryName(p.category).toLowerCase()} Nairobi`, p.sku,
-    ],
+    keywords: productKeywords({ name: p.name, brand: p.brand, category: p.category, certifications: p.certifications, sku: p.sku }),
     alternates: { canonical: `/product/${p.slug}` },
     openGraph: {
       title: `${p.name} — ${kes(p.price)} | SAFETYPRO AFRICA`, description: `${p.short} Buy online in Kenya. VAT invoice & Kenya-wide delivery.`, type: "website",
@@ -44,9 +42,9 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
   const [all, settings] = await Promise.all([getProducts({}), getSettings()]);
   const related = getRelatedProducts(p, all, 4);
   const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://safetypro.co.ke";
+  const faqs = productFaqs({ name: p.name, brand: p.brand, category: p.category, certifications: p.certifications, vatInclusive: p.vatInclusive });
 
-  const productJsonLd = {
-    "@context": "https://schema.org",
+  const productJsonLd = {    "@context": "https://schema.org",
     "@type": "Product",
     name: p.name,
     sku: p.sku,
@@ -85,6 +83,7 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
       <div className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8 lg:py-12">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd(faqs)) }} />
 
       <ProductDetailClient p={p} waNumber={settings.whatsapp} />
 
@@ -127,6 +126,22 @@ export default async function ProductPage({ params }: { params: Promise<{ slug: 
               <ShieldCheck size={16} className="text-safety-600" /> Standards on file: <strong className="text-navy-950">{p.certifications.join(", ")}</strong>
             </div>
           )}
+        </div>
+      </div>
+
+      {/* buyer FAQs — visible for shoppers, schema for Google + AI citations */}
+      <div className="mt-8 rounded-3xl border border-slate-200 bg-white p-6 sm:p-8">
+        <p className="text-[11.5px] font-extrabold uppercase tracking-[0.16em] text-safety-600">Buying {p.name}</p>
+        <h2 className="mt-1 text-xl font-extrabold tracking-tight text-navy-950 sm:text-2xl">Delivery, VAT & bulk answers</h2>
+        <div className="mt-4 divide-y divide-slate-100">
+          {faqs.map((f) => (
+            <details key={f.q} className="group py-3.5">
+              <summary className="cursor-pointer list-none text-[15px] font-bold text-navy-950 transition group-hover:text-safety-600 [&::-webkit-details-marker]:hidden">
+                <span className="flex items-center justify-between gap-3">{f.q}<span className="shrink-0 text-xl font-light text-accent-500 group-open:rotate-45">+</span></span>
+              </summary>
+              <p className="mt-2 pr-8 text-[14.5px] leading-relaxed text-slate-600">{f.a}</p>
+            </details>
+          ))}
         </div>
       </div>
 
