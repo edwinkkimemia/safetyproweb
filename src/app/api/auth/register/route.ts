@@ -20,8 +20,7 @@ export async function POST(req: Request) {
   const d = parsed.data;
 
   if (!db) {
-    // Demo mode: account creation acknowledged; sign in with demo accounts
-    return Response.json({ ok: true, demo: true, message: "Database not connected — use customer@example.com / Customer@123 to explore." });
+    return Response.json({ error: "Account creation is temporarily unavailable. Please call or WhatsApp 0729 396 174 and our team will set you up." }, { status: 503 });
   }
 
   try {

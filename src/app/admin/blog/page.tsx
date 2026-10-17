@@ -1,11 +1,16 @@
 import Link from "next/link";
 import { Plus } from "lucide-react";
 import { db } from "@/lib/db";
+import { auth } from "@/auth";
 import { DeletePostButton } from "./delete-button";
 
 export const dynamic = "force-dynamic";
 
+const ADMINS = ["SUPER_ADMIN", "ADMIN"];
+
 export default async function AdminBlogPage() {
+  const session = await auth();
+  const isAdmin = ADMINS.includes(((session?.user as any)?.role ?? "") as string);
   let posts: any[] = [];
   if (db) {
     try { posts = await db.blogPost.findMany({ orderBy: { updatedAt: "desc" }, include: { category: true } }); } catch { /* demo */ }
@@ -18,7 +23,7 @@ export default async function AdminBlogPage() {
       </div>
       {posts.length === 0 ? (
         <p className="mt-4 rounded-2xl border border-dashed border-slate-300 bg-white p-10 text-center text-sm text-slate-500">
-          No articles in the database yet. Run the seed script or create one — the site shows built-in guides meanwhile.
+          No articles yet. Create one — the site shows built-in guides meanwhile.
         </p>
       ) : (
         <div className="mt-4 overflow-hidden rounded-2xl border border-slate-200 bg-white">
@@ -27,7 +32,7 @@ export default async function AdminBlogPage() {
               <div><p className="font-bold text-navy-950">{p.title}</p><p className="text-xs text-slate-500">/{p.slug} • {p.published ? "Published" : "Draft"}{p.featured ? " • Featured" : ""}</p></div>
               <span className="flex shrink-0 gap-2">
                 <Link href={`/admin/blog/${p.id}`} className="rounded-lg bg-mist px-3 py-1.5 text-xs font-bold hover:bg-safety-100">Edit</Link>
-                <DeletePostButton id={p.id} />
+                {isAdmin ? <DeletePostButton id={p.id} /> : <span className="self-center text-[11px] font-semibold text-slate-400">Admin-only delete</span>}
               </span>
             </div>
           ))}

@@ -79,7 +79,7 @@ export async function POST(req: Request) {
 }
 
 export async function GET() {
-  if (!db) return Response.json({ orders: [], note: "Database not configured." });
+  if (!db) return Response.json({ orders: [] });
   try {
     const orders = await db.order.findMany({ orderBy: { createdAt: "desc" }, take: 50, include: { items: true } });
     return Response.json({ orders });

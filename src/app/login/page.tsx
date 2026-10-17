@@ -20,7 +20,7 @@ function LoginForm() {
     setSending(true); setError("");
     const res = await signIn("credentials", { email, password, redirect: false });
     setSending(false);
-    if (res?.error) { setError("Invalid email or password. Try the demo accounts below."); return; }
+    if (res?.error) { setError("Invalid email or password. Please try again."); return; }
     router.push(sp.get("callbackUrl") ?? "/account");
     router.refresh();
   };

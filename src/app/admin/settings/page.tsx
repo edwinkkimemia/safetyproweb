@@ -5,7 +5,7 @@ import { inputCls, Field } from "@/components/ui";
 export const dynamic = "force-dynamic";
 
 export default async function AdminSettingsPage() {
-  if (!db) return <p className="rounded-2xl bg-amber-50 p-6 text-sm font-semibold text-amber-800">Connect PostgreSQL to manage settings. The storefront currently uses environment defaults.</p>;
+  if (!db) return <p className="rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Settings are temporarily unavailable.</p>;
   let s: any = null;
   try { s = await db.siteSettings.findUnique({ where: { id: 1 } }); } catch { /* ignore */ }
   return (

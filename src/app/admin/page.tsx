@@ -39,11 +39,6 @@ export default async function AdminHome() {
 
   return (
     <div>
-      {!db && (
-        <p className="mb-4 rounded-2xl bg-amber-50 p-4 text-sm font-semibold text-amber-800 ring-1 ring-amber-200">
-          Demo mode — PostgreSQL not connected. Set DATABASE_URL and run <code className="font-mono">npm run db:push && npm run db:seed</code> for live data. Storefront uses the built-in catalog meanwhile.
-        </p>
-      )}
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {cards.map(([t, v, Icon, href]: any) => (
           <Link key={t} href={href} className="rounded-2xl border border-slate-200 bg-white p-5 transition hover:shadow-lg">

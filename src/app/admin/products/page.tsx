@@ -3,56 +3,117 @@ import { Plus } from "lucide-react";
 import { db } from "@/lib/db";
 import { PRODUCTS } from "@/lib/catalog";
 import { kes } from "@/lib/format";
-import { DeleteProductButton } from "./delete-button";
+import { auth } from "@/auth";
+import { ProductsTable, type AdminProductRow } from "./products-table";
 
 export const dynamic = "force-dynamic";
 
-export default async function AdminProductsPage() {
+const ADMINS = ["SUPER_ADMIN", "ADMIN"];
+
+export default async function AdminProductsPage({ searchParams }: { searchParams: Promise<{ q?: string; category?: string; stock?: string; status?: string }> }) {
+  const sp = await searchParams;
+  const session = await auth();
+  const role = (session?.user as any)?.role as string | undefined;
+  const isAdmin = ADMINS.includes(role ?? "");
+
   let rows: any[] = [];
+  let catNames: string[] = [];
   if (db) {
     try {
-      rows = await db.product.findMany({ orderBy: { updatedAt: "desc" }, include: { category: true, brand: true } });
-    } catch { /* fallback */ }
+      [rows, catNames] = await Promise.all([
+        db.product.findMany({ orderBy: { updatedAt: "desc" }, include: { category: true, brand: true } }),
+        db.category.findMany({ orderBy: { name: "asc" } }).then((cs) => cs.map((c) => c.name)),
+      ]);
+    } catch { /* fallback below */ }
   }
-  const list = rows.length ? rows.map((r) => ({ id: r.id, name: r.name, sku: r.sku, price: Number(r.price), stock: r.stock, category: r.category?.name ?? "—", brand: r.brand?.name ?? "—", featured: r.featured })) : PRODUCTS.map((p) => ({ id: p.slug, name: p.name, sku: p.sku, price: p.price, stock: p.stock, category: p.category, brand: p.brand, featured: !!p.featured, demo: true }));
+
+  const demo = rows.length === 0;
+  const list: AdminProductRow[] = demo
+    ? PRODUCTS.map((p) => ({ id: p.slug, name: p.name, sku: p.sku, slug: p.slug, price: p.price, stock: p.stock, category: p.category, brand: p.brand, featured: !!p.featured, isActive: true }))
+    : rows.map((r) => ({ id: r.id, name: r.name, sku: r.sku, slug: r.slug, price: Number(r.price), stock: r.stock, category: r.category?.name ?? "—", brand: r.brand?.name ?? "—", featured: r.featured, isActive: r.isActive }));
+
+  // Category options — DB names when connected, else names found in the fallback list.
+  const catOptions = [...new Set(demo ? list.map((p) => p.category) : catNames)].sort();
+
+  // Server-side filtering (works on large catalogs without shipping everything).
+  const q = (sp.q ?? "").trim().toLowerCase();
+  const stockFilter = sp.stock ?? "";
+  const statusFilter = sp.status ?? "";
+  const filtered = list.filter((p) => {
+    if (q && !(`${p.name} ${p.sku} ${p.slug} ${p.brand}`.toLowerCase().includes(q))) return false;
+    if (sp.category && p.category !== sp.category) return false;
+    if (stockFilter === "low" && !(p.stock > 0 && p.stock < 15)) return false;
+    if (stockFilter === "out" && p.stock !== 0) return false;
+    if (stockFilter === "ok" && p.stock < 15) return false;
+    if (statusFilter === "active" && !p.isActive) return false;
+    if (statusFilter === "inactive" && p.isActive) return false;
+    if (statusFilter === "featured" && !p.featured) return false;
+    return true;
+  });
+
+  const lowCount = list.filter((p) => p.stock > 0 && p.stock < 15).length;
+  const outCount = list.filter((p) => p.stock === 0).length;
+
+  const buildHref = (patch: Record<string, string>) => {
+    const next = { q: sp.q ?? "", category: sp.category ?? "", stock: sp.stock ?? "", status: sp.status ?? "", ...patch };
+    const qs = Object.entries(next).filter(([, v]) => v).map(([k, v]) => `${k}=${encodeURIComponent(v)}`).join("&");
+    return `/admin/products${qs ? `?${qs}` : ""}`;
+  };
 
   return (
     <div>
-      <div className="flex items-center justify-between">
-        <h2 className="text-lg font-extrabold text-navy-950">Products ({list.length})</h2>
-        <Link href="/admin/products/new" className="inline-flex items-center gap-1.5 rounded-xl bg-navy-950 px-4 py-2.5 text-sm font-bold text-white hover:bg-safety-600"><Plus size={16} /> New product</Link>
+      <div className="flex flex-wrap items-center justify-between gap-3">
+        <h2 className="text-lg font-extrabold text-navy-950">
+          Products ({filtered.length}{filtered.length !== list.length ? ` of ${list.length}` : ""})
+        </h2>
+        <div className="flex flex-wrap items-center gap-2">
+          {lowCount > 0 && <span className="rounded-lg bg-amber-50 px-3 py-1.5 text-xs font-bold text-amber-700 ring-1 ring-amber-200">{lowCount} low stock</span>}
+          {outCount > 0 && <span className="rounded-lg bg-red-50 px-3 py-1.5 text-xs font-bold text-red-600 ring-1 ring-red-200">{outCount} out of stock</span>}
+          <Link href="/admin/products/new" className="inline-flex items-center gap-1.5 rounded-xl bg-navy-950 px-4 py-2.5 text-sm font-bold text-white hover:bg-safety-600"><Plus size={16} /> New product</Link>
+        </div>
       </div>
-      <div className="nice-scroll mt-4 overflow-x-auto rounded-2xl border border-slate-200 bg-white">
-        <table className="w-full min-w-[760px] text-sm">
-          <thead>
-            <tr className="bg-navy-950 text-left text-xs uppercase tracking-wider text-white">
-              <th className="px-4 py-3">Product</th><th className="px-4 py-3">SKU</th><th className="px-4 py-3">Category</th>
-              <th className="px-4 py-3">Price</th><th className="px-4 py-3">Stock</th><th className="px-4 py-3 text-right">Actions</th>
-            </tr>
-          </thead>
-          <tbody className="divide-y divide-slate-100">
-            {list.map((p) => (
-              <tr key={p.id} className="hover:bg-mist">
-                <td className="px-4 py-3 font-bold text-navy-950">{p.name} {p.featured && <span className="ml-1 rounded bg-accent-100 px-1.5 py-0.5 text-[10px] font-bold text-accent-700">FEATURED</span>}</td>
-                <td className="px-4 py-3 font-mono text-xs text-slate-500">{p.sku}</td>
-                <td className="px-4 py-3 text-slate-500">{p.category}</td>
-                <td className="px-4 py-3 font-bold">{kes(p.price)}</td>
-                <td className="px-4 py-3"><span className={p.stock < 15 ? "font-bold text-red-500" : ""}>{p.stock}</span></td>
-                <td className="px-4 py-3 text-right">
-                  {(p as any).demo ? (
-                    <span className="text-xs text-slate-400">Demo — connect DB to edit</span>
-                  ) : (
-                    <span className="inline-flex gap-2">
-                      <Link href={`/admin/products/${p.id}`} className="rounded-lg bg-mist px-3 py-1.5 text-xs font-bold text-navy-950 hover:bg-safety-100">Edit</Link>
-                      <DeleteProductButton id={p.id} />
-                    </span>
-                  )}
-                </td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+
+      {/* filters */}
+      <form method="GET" action="/admin/products" className="mt-4 grid gap-2 rounded-2xl border border-slate-200 bg-white p-3 sm:grid-cols-[minmax(0,1fr)_auto_auto_auto_auto]">
+        <input name="q" defaultValue={sp.q ?? ""} placeholder="Search name, SKU, slug or brand…"
+          className="rounded-xl border border-slate-300 bg-mist px-3.5 py-2.5 text-sm outline-none focus:border-safety-600" />
+        <select name="category" defaultValue={sp.category ?? ""} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-semibold">
+          <option value="">All categories</option>
+          {catOptions.map((c) => <option key={c} value={c}>{c}</option>)}
+        </select>
+        <select name="stock" defaultValue={sp.stock ?? ""} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-semibold">
+          <option value="">Any stock</option>
+          <option value="low">Low (1–14)</option>
+          <option value="out">Out of stock</option>
+          <option value="ok">Healthy (15+)</option>
+        </select>
+        <select name="status" defaultValue={sp.status ?? ""} className="rounded-xl border border-slate-300 bg-white px-3 py-2.5 text-sm font-semibold">
+          <option value="">Any status</option>
+          <option value="active">Active</option>
+          <option value="inactive">Inactive</option>
+          <option value="featured">Featured</option>
+        </select>
+        <button className="rounded-xl bg-navy-950 px-5 py-2.5 text-sm font-bold text-white hover:bg-safety-600">Filter</button>
+      </form>
+      {(q || sp.category || sp.stock || sp.status) && (
+        <p className="mt-2 text-xs font-semibold text-slate-500">
+          Filtering active — <Link href="/admin/products" className="font-bold text-safety-600 hover:underline">clear all</Link>
+          {" · "}
+          {[{ label: "low stock", v: "low" }, { label: "out of stock", v: "out" }].map(({ label, v }) => (
+            <Link key={v} href={buildHref({ stock: v })} className="mr-2 font-bold text-safety-600 hover:underline">{label}</Link>
+          ))}
+        </p>
+      )}
+
+      <ProductsTable
+        rows={filtered}
+        canDelete={isAdmin}
+        isFiltered={Boolean(q || sp.category || sp.stock || sp.status)}
+      />
+
+      <p className="mt-3 text-xs text-slate-400">
+        Tip: product names link straight to the storefront page — check how a product renders after saving.
+      </p>
     </div>
   );
 }

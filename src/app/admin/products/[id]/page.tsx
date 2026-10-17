@@ -1,12 +1,18 @@
 import { saveProduct } from "@/lib/admin-actions";
 import { db } from "@/lib/db";
+import { auth } from "@/auth";
 import { inputCls, Field } from "@/components/ui";
+import { EditProductActions } from "./edit-actions";
 
 export const dynamic = "force-dynamic";
 
+const ADMINS = ["SUPER_ADMIN", "ADMIN"];
+
 export default async function EditProductPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  if (!db) return <p className="rounded-2xl bg-amber-50 p-6 text-sm font-semibold text-amber-800">Connect PostgreSQL to manage products.</p>;
+  if (!db) return <p className="rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Product editor is temporarily unavailable.</p>;
+  const session = await auth();
+  const isAdmin = ADMINS.includes(((session?.user as any)?.role ?? "") as string);
   let p: any = null;
   let cats: any[] = [];
   let brands: any[] = [];
@@ -19,7 +25,10 @@ export default async function EditProductPage({ params }: { params: Promise<{ id
 
   return (
     <div>
-      <h2 className="mb-4 text-lg font-extrabold text-navy-950">Edit: {p.name}</h2>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h2 className="text-lg font-extrabold text-navy-950">Edit: {p.name}</h2>
+        <EditProductActions id={p.id} name={p.name} slug={p.slug} canDelete={isAdmin} />
+      </div>
       <form action={saveProduct} className="grid gap-6 rounded-2xl border border-slate-200 bg-white p-6">
         <input type="hidden" name="id" value={p.id} />
         <div className="grid gap-4 sm:grid-cols-2">

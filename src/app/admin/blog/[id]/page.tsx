@@ -6,7 +6,7 @@ export const dynamic = "force-dynamic";
 
 export default async function EditPostPage({ params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  if (!db) return <p className="rounded-2xl bg-amber-50 p-6 text-sm font-semibold text-amber-800">Connect PostgreSQL to manage articles.</p>;
+  if (!db) return <p className="rounded-2xl border border-slate-200 bg-white p-6 text-sm text-slate-500">Article editor is temporarily unavailable.</p>;
   let post: any = null;
   try { post = await db.blogPost.findUnique({ where: { id } }); } catch { /* ignore */ }
   if (!post) return <p className="rounded-2xl bg-red-50 p-6 text-sm font-semibold text-red-600">Article not found.</p>;
